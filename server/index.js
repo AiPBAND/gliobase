@@ -1,33 +1,40 @@
-import express from "express";
-import expressGraphQL from "express-graphql";
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
-import cors from "cors";
+import express from 'express';
+import mongoose from 'mongoose';
+import { ApolloServer } from 'apollo-server-express';
+import dotenv from 'dotenv';
+import schema from './graphql'
 
-const app = express();
-const PORT = process.env.PORT || "4000";
-const db = "mongodb://localhost:27017/gliobase";
+dotenv.config()
 
-// Connect to MongoDB with Mongoose.
-mongoose.connect(
-    db,
+const APP = express();
+
+const PORT = process.env.PORT;
+
+mongoose.connect(process.env.DB_CONNECTION,
     {
         useCreateIndex: true,
         useNewUrlParser: true
-    }
-)
+    })
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.log(err));
 
+const SERVER = new ApolloServer({
+    schema: schema,
+    playground: {
+        endpoint: `http://localhost:${PORT}/graphql`,
+        settings: {
+            'editor.theme': 'light'
+        }
+    }
+});
 
-app.use(
-    "/graphql",
-    cors(),
-    bodyParser.json(),
-    expressGraphQL({
-        schema,
-        graphiql: true
-    })
-);
-  
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+SERVER.applyMiddleware({
+    app: APP
+});
+
+APP.listen(PORT, () => {
+  console.log(`The server has started on port: ${PORT}`);
+  console.log(`http://localhost:${PORT}/graphql`);
+});
+
+export default APP;
