@@ -2,13 +2,18 @@ import express from 'express';
 import mongoose from 'mongoose';
 import { ApolloServer } from 'apollo-server-express';
 import dotenv from 'dotenv';
-import schema from './graphql'
+import schema from './server/graphql'
 
 dotenv.config()
 
 const APP = express();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
+
+// Express only serves static assets in production
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
 
 mongoose.connect(process.env.DB_CONNECTION,
     {

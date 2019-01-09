@@ -2,7 +2,7 @@
   "name": "gliobase",
   "version": "0.0.1",
   "description": "Glioblastoma multiforme (GBM) biomarker knowledge base",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/thehyve/gliobase.git",
   "author": "AiPBAND <jeremy@thehyve.nl>",
   "license": "MIT",
@@ -24,9 +24,20 @@
     "nodemon": "^1.18.9"
   },
   "devDependencies": {
-    "@babel/node": "^7.2.2"
+    "@babel/node": "^7.2.2",
+    "concurrently": "3.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.9.0"
   },
   "scripts": {
-    "server": "nodemon --exec babel-node server/index.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "stop": "kill -9 $(ps aux | grep \"node\" | awk '{print $2}')",
+    "server": "nodemon --exec babel-node server.js",
+    "client": "node client/start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
   }
 }
