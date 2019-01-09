@@ -1,0 +1,9 @@
+{
+  "name": "gliobase",
+  "version": "0.0.1",
+  "description": "Glioblastoma multiforme (GBM) biomarker knowledge base",
+  "main": "index.js",
+  "repository": "https://github.com/thehyve/gliobase.git",
+  "author": "AiPBAND <jeremy@thehyve.nl>",
+  "license": "MIT"
+}
