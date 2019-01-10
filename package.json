@@ -38,6 +38,7 @@
     "server": "nodemon --exec babel-node server.js",
     "client": "node client/start-client.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
-    "lint": "eslint ."
+	"lint": "eslint .",
+	"postinstall": "cd client && npm install"
   }
 }
