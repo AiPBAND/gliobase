@@ -6,11 +6,7 @@ export default {
         return await Biomarker.findOne({name: name}).exec();
       },
       biomarkers: async (parent, args, context, info) => {
-        const biomarkers = await Biomarker.find({})
-          .populate()
-          .exec();
-  
-        return biomarkers;
+		return await Biomarker.find({}).exec();
       }
     },
     Mutation: {

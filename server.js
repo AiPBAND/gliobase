@@ -2,7 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import { ApolloServer } from 'apollo-server-express';
 import dotenv from 'dotenv';
-import schema from './server/graphql'
+import schema from './server/graphql';
+import seeder from 'mongoose-seed';
+import fs from 'fs';
 
 dotenv.config()
 
@@ -13,6 +15,23 @@ const PORT = process.env.PORT || 3001;
 // Express only serves static assets in production
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
+}
+
+console.log(process.env.NODE_ENV)
+
+if(process.env.NODE_ENV === "development"){
+	const jsonData = JSON.parse(fs.readFileSync('server/models/seed.json', 'utf8'));
+	seeder.connect(process.env.DB_CONNECTION, ()=>{
+		seeder.loadModels([
+			'server/models/Biomarker.js',
+			'server/models/BiomarkerSet.js',
+		])
+		seeder.clearModels(['Biomarker','BiomarkerSet'], ()=>{
+			seeder.populateModels(jsonData, ()=>{
+				//seeder.disconnect();
+			})
+		})
+	})
 }
 
 mongoose.connect(process.env.DB_CONNECTION,
