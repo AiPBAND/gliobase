@@ -1,0 +1,32 @@
+[
+	{
+		"model": "Biomarker",
+		"documents": [
+			{	
+				"_id": "000000000000000000000000",
+				"name": "Glial fibrillary acidic protein",
+				"abreviations": ["GFAP", "GF1"],
+				"description": "This is a description of the biomarker."
+			},
+			{
+				"_id": "000000000000000000000001",
+				"name": "Interleukin 13 receptor",
+				"abreviations": ["IL-13", "IL13", "IL"]
+			},
+			{
+				"_id": "000000000000000000000002",
+				"name": "Polymerase I and transcript release factor",
+				"abreviations": ["Caveolae-associated protein 1", "CAVIN1"]
+			},
+			{
+				"_id": "000000000000000000000003",
+				"name": "Wingless-type MMTV integration site family member 6",
+				"description": "This is a description of the Wingless-type MMTV integration site family member 6 biomarker."
+			},
+			{
+				"_id": "000000000000000000000004",
+				"name": "WDFY3-AS2"
+			}
+		]
+	}
+]

@@ -21,12 +21,12 @@
     "graphql-tools": "^4.0.3",
     "merge-graphql-schemas": "^1.5.8",
     "mongoose": "^5.4.2",
+    "mongoose-seed": "^0.5.1",
     "nodemon": "^1.18.9"
   },
   "devDependencies": {
     "@babel/node": "^7.2.2",
     "concurrently": "3.1.0",
-    "eslint": "^3.19.0",
     "eslint-config-airbnb": "14.1.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
@@ -38,7 +38,7 @@
     "server": "nodemon --exec babel-node server.js",
     "client": "node client/start-client.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
-	"lint": "eslint .",
-	"postinstall": "cd client && npm install"
+    "lint": "eslint .",
+    "postinstall": "cd client && npm install"
   }
 }
