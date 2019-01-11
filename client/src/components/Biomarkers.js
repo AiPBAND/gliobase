@@ -9,9 +9,9 @@ const Biomarkers = () => (
 			if (loading) return <p>Loading...</p>;
 			if (error) return <p>Error :(</p>;
 
-			return data.biomarkers.map(({ name, description, category}) => (
+			return data.biomarkers.map(({id, name, description, category}) => (
 				<div key={name}>
-					<p><b>{name}</b>{category.name}</p>
+					<p>{id}<b>{name}</b>{category.name}</p>
 					<p>{description}</p>
 				</div>
 			));

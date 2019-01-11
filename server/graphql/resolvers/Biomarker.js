@@ -4,8 +4,8 @@ import Source from '../../models/Source';
 
 export default {
     Query: {
-      	biomarker: async (parent, {name}, context, info) => {
-        	return await Biomarker.findOne({name: name}).exec();
+      	biomarker: async (parent, {id}, context, info) => {
+        	return await Biomarker.findOne({_id: id}).exec();
       	},
       	biomarkers: async (parent, args, context, info) => {
 			return await Biomarker.find({}).exec();
