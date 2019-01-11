@@ -1,0 +1,10 @@
+{
+	biomarkers {
+		name
+		abreviations
+		description
+		category {
+			name
+		}
+	} 
+}

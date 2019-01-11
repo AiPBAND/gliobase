@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const schema = new mongoose.Schema({
-	biomarkers: {
+	biomarkerIds: {
 		type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Biomarker' }],
 		required: true
 	}

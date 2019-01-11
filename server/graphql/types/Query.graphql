@@ -1,0 +1,8 @@
+# import Biomarker from "./Biomarker.graphql";
+# import Source from "./Source.graphql";
+# import Category from "./Category.graphql";
+
+type Query {
+    biomarker(name: String!): Biomarker
+    biomarkers: [Biomarker]
+}

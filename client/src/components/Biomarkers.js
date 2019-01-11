@@ -1,7 +1,7 @@
 import React from 'react';
 import { Query } from "react-apollo";
 import { loader } from 'graphql.macro';
-const biomarkersQuery = loader('../queries/biomarkers.gql');
+const biomarkersQuery = loader('../queries/biomarkers.graphql');
 
 const Biomarkers = () => (
 	<Query query={biomarkersQuery}>
@@ -9,9 +9,10 @@ const Biomarkers = () => (
 			if (loading) return <p>Loading...</p>;
 			if (error) return <p>Error :(</p>;
 
-			return data.biomarkers.map(({ name }) => (
+			return data.biomarkers.map(({ name, description, category}) => (
 				<div key={name}>
-					<p>{name}</p>
+					<p><b>{name}</b>{category.name}</p>
+					<p>{description}</p>
 				</div>
 			));
 		}}
