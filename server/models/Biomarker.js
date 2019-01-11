@@ -8,12 +8,12 @@ const schema = new mongoose.Schema({
   	},
   	abreviations: [String],
 	description: String,
-	source: {
+	sourceId: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Source',
 		required: true
 	},
-	category: {
+	categoryId: {
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Category',
 		required: true

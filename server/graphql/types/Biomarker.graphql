@@ -1,0 +1,7 @@
+type Biomarker {
+    name: String!
+    abreviations: [String]
+    description: String,
+	category: Category
+	source: Source
+}
