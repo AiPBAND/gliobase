@@ -1,4 +1,5 @@
 type Biomarker {
+	id: String!
     name: String!
     abreviations: [String]
     description: String,
