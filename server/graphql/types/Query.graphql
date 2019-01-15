@@ -1,8 +1,16 @@
 # import Biomarker from "./Biomarker.graphql";
+# import BiomarkerSet from "./BiomarkerSet.graphql";
 # import Source from "./Source.graphql";
 # import Category from "./Category.graphql";
 
 type Query {
     biomarker(name: String!): Biomarker
     biomarkers: [Biomarker]
+	biomarkersBySource(source: String!): [Biomarker]
+	biomarkersByCategory(category: String!): [Biomarker]
+	biomarkersSearch(text: String!): [Biomarker]
+
+	biomarkerSet(id: String!): BiomarkerSet
+	biomarkerSets: [BiomarkerSet]
+	biomarkerSetSearch(text: String!): [BiomarkerSet]
 }

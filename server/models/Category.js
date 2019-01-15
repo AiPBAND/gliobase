@@ -1,10 +1,8 @@
 import mongoose from 'mongoose';
 
 const schema = new mongoose.Schema({
-	name: {
-    	type: String,
-    	required: true,
-    	unique: true
+	_id: {
+    	type: String
   	},
   	description: String
 });

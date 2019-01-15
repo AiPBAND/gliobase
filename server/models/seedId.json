@@ -1,0 +1,10 @@
+[
+	{
+		"model": "IdGenerator",
+		"documents":[
+			{
+				"_id": "BiomarkerSet"
+			}
+		]
+	}
+]

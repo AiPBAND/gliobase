@@ -5,7 +5,7 @@ const schema = new mongoose.Schema({
 		type: String,
 		validate: {
 			validator: function(v) {
-			  return /B-([A-Z0-9]){6}/.test(v);
+			  return /B([A-Z0-9]){6}/.test(v);
 			},
 			message: props => `${props.value} is not a valid biomarker ID of the form B-XXXXXX.`
 		  }
@@ -18,15 +18,22 @@ const schema = new mongoose.Schema({
   	abreviations: [String],
 	description: String,
 	sourceId: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: String,
 		ref: 'Source',
 		required: true
 	},
 	categoryId: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: String,
 		ref: 'Category',
 		required: true
 	}    
 });
+
+schema.index({
+	_id: "text",
+	name: "text",
+	abreviations: "text",
+	description: "text"
+})
 
 export default mongoose.model("Biomarker", schema);

@@ -1,4 +1,4 @@
 type Category {
-	name: String!
+	id: String!
 	description: String
 }

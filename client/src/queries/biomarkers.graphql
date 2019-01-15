@@ -5,7 +5,10 @@
 		abreviations
 		description
 		category {
-			name
+			id
+		}
+		source {
+			id
 		}
 	} 
 }

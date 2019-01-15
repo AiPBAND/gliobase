@@ -1,22 +1,26 @@
 [
 	{
+		"model": "IdGenerator",
+		"documents":[
+			{
+				"_id": "BiomarkerSet"
+			}
+		]
+	},
+	{
 		"model": "Category",
 		"documents": [
 			{	
-				"_id": "0000000000000000000000C0",
-				"name": "DNA"
+				"_id": "DNA"
 			},
 			{
-				"_id": "0000000000000000000000C1",
-				"name": "RNA"
+				"_id": "RNA"
 			},
 			{
-				"_id": "0000000000000000000000C2",
-				"name": "Protein"
+				"_id": "protein"
 			},
 			{
-				"_id": "0000000000000000000000C3",
-				"name": "Other",
+				"_id": "other",
 				"description": "Also used for undefined."
 			}
 		]
@@ -25,26 +29,21 @@
 		"model": "Source",
 		"documents": [
 			{	
-				"_id": "0000000000000000000000D0",
-				"name": "Tissue"
+				"_id": "tissue"
 			},
 			{
-				"_id": "0000000000000000000000D1",
-				"name": "Blood"
+				"_id": "blood"
 			},
 			{
-				"_id": "0000000000000000000000D2",
-				"name": "CSF",
+				"_id": "CSF",
 				"description": "Cerebrospinal fluid."
 			},
 			{
-				"_id": "0000000000000000000000D3",
-				"name": "Other",
+				"_id": "other",
 				"description": "Also used for undefined."
 			},
 			{
-				"_id": "0000000000000000000000D4",
-				"name": "Fluid"
+				"_id": "fluid"
 			}
 		]
 	},
@@ -52,39 +51,39 @@
 		"model": "Biomarker",
 		"documents": [
 			{	
-				"_id": "B-GFAP00",
+				"_id": "BGFAP00",
 				"name": "Glial fibrillary acidic protein",
 				"abreviations": ["GFAP", "GF1"],
 				"description": "This is a description of the biomarker.",
-				"categoryId": "0000000000000000000000C2",
-				"sourceId": "0000000000000000000000D0"
+				"categoryId": "DNA",
+				"sourceId": "tissue"
 			},
 			{
-				"_id": "B-IL1300",
+				"_id": "BIL1300",
 				"name": "Interleukin 13 receptor",
 				"abreviations": ["IL-13", "IL13", "IL"],
-				"categoryId": "0000000000000000000000C1",
-				"sourceId": "0000000000000000000000D1"
+				"categoryId": "RNA",
+				"sourceId": "blood"
 			},
 			{
-				"_id": "B-CAVIN1",
+				"_id": "BCAVIN1",
 				"name": "Polymerase I and transcript release factor",
 				"abreviations": ["Caveolae-associated protein 1", "CAVIN1"],
-				"categoryId": "0000000000000000000000C3",
-				"sourceId": "0000000000000000000000D2"
+				"categoryId": "protein",
+				"sourceId": "CSF"
 			},
 			{
-				"_id": "B-MMTV00",
+				"_id": "BMMTV00",
 				"name": "Wingless-type MMTV integration site family member 6",
 				"description": "This is a description of the Wingless-type MMTV integration site family member 6 biomarker.",
-				"categoryId": "0000000000000000000000C0",
-				"sourceId": "0000000000000000000000D3"
+				"categoryId": "other",
+				"sourceId": "other"
 			},
 			{
-				"_id": "B-MMTV01",
+				"_id": "BMMTV01",
 				"name": "WDFY3-AS2",
-				"categoryId": "0000000000000000000000C2",
-				"sourceId": "0000000000000000000000D4"
+				"categoryId": "DNA",
+				"sourceId": "fluid"
 			}
 		]
 	},
@@ -92,24 +91,19 @@
 		"model": "BiomarkerSet",
 		"documents": [
 			{	
-				"_id": "0000000000000000000000B0",
-				"biomarkerIds": ["0000000000000000000000A0"]
+				"biomarkerIds": ["BGFAP00"]
 			},
 			{
-				"_id": "0000000000000000000000B1",
-				"biomarkerIds": ["0000000000000000000000A1","0000000000000000000000A2"]
+				"biomarkerIds": ["BGFAP00","BMMTV00"]
 			},
 			{
-				"_id": "0000000000000000000000B2",
-				"biomarkerIds": ["0000000000000000000000A3"]
+				"biomarkerIds": ["BMMTV01"]
 			},
 			{
-				"_id": "0000000000000000000000B3",
-				"biomarkerIds": ["0000000000000000000000A1","0000000000000000000000A2","0000000000000000000000A3"]
+				"biomarkerIds": ["BCAVIN1","BMMTV01","BMMTV00"]
 			},
 			{
-				"_id": "0000000000000000000000B4",
-				"biomarkerIds": ["0000000000000000000000A4"]
+				"biomarkerIds": ["BIL1300"]
 			}
 		]
 	}

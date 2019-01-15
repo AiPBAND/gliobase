@@ -1,6 +1,7 @@
 import Biomarker from '../../models/Biomarker';
 import Category from '../../models/Category';
 import Source from '../../models/Source';
+import {ObjectId} from 'mongodb';
 
 export default {
     Query: {
@@ -9,7 +10,17 @@ export default {
       	},
       	biomarkers: async (parent, args, context, info) => {
 			return await Biomarker.find({}).exec();
-      	}
+		},
+		biomarkersBySource: async (parent, {source}, context, info) => {
+			return await Biomarker.find({ "sourceId" : source}).exec();
+		},
+		biomarkersByCategory: async (parent, {category}, context, info) => {
+			return await Biomarker.find({ "categoryId" : category} ).exec();
+		},
+		biomarkersSearch: async (parent, {text}, context, info) => {
+			return await Biomarker.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
+				.sort( { score: { $meta: "textScore" } } ).exec();
+		}      
 	},
 	Biomarker: {
 		category: async (biomarker) => {
