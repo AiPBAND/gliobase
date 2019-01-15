@@ -1,0 +1,6 @@
+# import Biomarker from "./Biomarker.graphql";
+type BiomarkerSet {
+	id: String!
+	biomarkerIds: [String]
+	biomarkers: [Biomarker]
+}

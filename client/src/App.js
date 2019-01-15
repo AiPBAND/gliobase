@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from "react-apollo";
 import Biomarkers from './components/Biomarkers';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import BiomarkerSets from './components/BiomarkersSets';
   
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -46,6 +47,7 @@ const App = () => (
 				</Breadcrumb>
 				<div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
 					<Biomarkers/>
+					<BiomarkerSets/>
 				</div>
 			</Content>
 			<Footer style={{ textAlign: 'center' }}> 

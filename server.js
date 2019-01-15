@@ -21,16 +21,22 @@ console.log(process.env.NODE_ENV)
 
 if(process.env.NODE_ENV === "development"){
 	const jsonData = JSON.parse(fs.readFileSync('server/models/seed.json', 'utf8'));
-	seeder.connect(process.env.DB_CONNECTION, ()=>{
+	const jsonId = JSON.parse(fs.readFileSync('server/models/seedId.json', 'utf8'));
+	seeder.connect(process.env.DB_CONNECTION, () => {
 		seeder.loadModels([
+			'server/models/IdGenerator.js',
 			'server/models/Biomarker.js',
 			'server/models/BiomarkerSet.js',
 			'server/models/Source.js',
 			'server/models/Category.js',
 		])
-		seeder.clearModels(['Biomarker','BiomarkerSet','Source','Category'], ()=>{
-			seeder.populateModels(jsonData, ()=>{
-				//seeder.disconnect();
+		seeder.clearModels(['IdGenerator'], () => {
+			seeder.populateModels(jsonId, () => {
+				seeder.clearModels(['Biomarker','BiomarkerSet','Source','Category','IdGenerator'], () => {
+					seeder.populateModels(jsonData, () => {
+						//seeder.disconnect();
+					})
+				})
 			})
 		})
 	})
