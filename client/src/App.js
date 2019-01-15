@@ -16,23 +16,25 @@ const App = () => (
 		<Layout style={{ minHeight: '100vh' }}>
 			<Sider collapsible>
           		<div className="logo" />
+				  <Header style={{ background: '#022141', padding: 0 }} />
           			<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             			<Menu.Item key="1">
-              				<Icon type="pie-chart" />
+              				<Icon type="home" />
               				<span>Home</span>
             			</Menu.Item>
             			<Menu.Item key="2">
-							<Icon type="desktop" />
+							<Icon type="search" />
 							<span>Search</span>
             			</Menu.Item>
-						<SubMenu key="sub1" title={<span><Icon type="user" /><span>User</span></span>}>
-							<Menu.Item key="3">Settings</Menu.Item>
-							<Menu.Item key="4">Profile</Menu.Item>
-						</SubMenu>
-						<Menu.Item key="9">
-							<Icon type="file" />
-							<span>File</span>
+						<Menu.Item key="3">
+							<Icon type="pie-chart" />
+							<span>Exploration</span>
 						</Menu.Item>
+						<SubMenu key="sub1" title={<span><Icon type="user" /><span>User</span></span>}>
+							<Menu.Item key="4">Profile</Menu.Item>
+							<Menu.Item key="5">Settings</Menu.Item>
+						</SubMenu>
+						
           			</Menu>
         	</Sider>
         <Layout>
