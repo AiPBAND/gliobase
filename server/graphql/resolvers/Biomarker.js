@@ -18,8 +18,13 @@ export default {
 			return await Biomarker.find({ "categoryId" : category} ).exec();
 		},
 		biomarkersSearch: async (parent, {text}, context, info) => {
-			return await Biomarker.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
-				.sort( { score: { $meta: "textScore" } } ).exec();
+			if(text){
+				return await Biomarker.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
+					.sort( { score: { $meta: "textScore" } } ).exec();
+			}else{
+				return await Biomarker.find({}).exec();
+			}
+			
 		}      
 	},
 	Biomarker: {

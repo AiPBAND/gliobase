@@ -10,8 +10,12 @@ export default {
 			return await BiomarkerSet.find({}).exec();
 		},
 		biomarkerSetSearch: async (parent, {text}, context, info) => {
-			return await BiomarkerSet.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
-				.sort( { score: { $meta: "textScore" } } ).exec();
+			if(text){
+				return await BiomarkerSet.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
+					.sort( { score: { $meta: "textScore" } } ).exec();
+			}else{
+				return await BiomarkerSet.find({}).exec();
+			}
 		}      
 	},
 	BiomarkerSet: {

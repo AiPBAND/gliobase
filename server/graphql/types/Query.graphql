@@ -8,9 +8,9 @@ type Query {
     biomarkers: [Biomarker]
 	biomarkersBySource(source: String!): [Biomarker]
 	biomarkersByCategory(category: String!): [Biomarker]
-	biomarkersSearch(text: String!): [Biomarker]
+	biomarkersSearch(text: String): [Biomarker]
 
 	biomarkerSet(id: String!): BiomarkerSet
 	biomarkerSets: [BiomarkerSet]
-	biomarkerSetSearch(text: String!): [BiomarkerSet]
+	biomarkerSetSearch(text: String): [BiomarkerSet]
 }

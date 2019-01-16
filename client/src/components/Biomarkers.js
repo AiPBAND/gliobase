@@ -3,6 +3,8 @@ import { Query } from "react-apollo";
 import { loader } from 'graphql.macro';
 import Table from 'antd/lib/table';
 import {Tag} from 'antd';
+import Search from './Search';
+import { setDate } from 'date-fns';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
  
@@ -46,6 +48,7 @@ const columns = [{
   
 
 const Biomarkers = () => (
+	
 	<Query query={biomarkersQuery}>
 		{({ loading, error, data }) => {
 			if (loading) return <p>Loading...</p>;
@@ -53,7 +56,10 @@ const Biomarkers = () => (
 
 			console.log(data.biomarkers)
 
-			return <Table dataSource={data.biomarkers} rowKey="id" columns={columns}></Table>
+			return <div>
+				
+				<Table dataSource={data.biomarkers} rowKey="id" columns={columns}></Table>
+			</div>
 		}}
   	</Query>
 );
