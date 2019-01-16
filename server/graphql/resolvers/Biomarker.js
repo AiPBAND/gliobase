@@ -1,7 +1,7 @@
 import Biomarker from '../../models/Biomarker';
 import Category from '../../models/Category';
 import Source from '../../models/Source';
-import {ObjectId} from 'mongodb';
+import Fuse from 'fuse.js';
 
 export default {
     Query: {
@@ -19,8 +19,26 @@ export default {
 		},
 		biomarkersSearch: async (parent, {text}, context, info) => {
 			if(text){
-				return await Biomarker.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
-					.sort( { score: { $meta: "textScore" } } ).exec();
+				const list = await Biomarker.find({}).exec();
+				var options = {
+					shouldSort: true,
+					tokenize: true,
+					findAllMatches: true,
+					threshold: 0,
+					location: 0,
+					distance: 100,
+					maxPatternLength: 32,
+					minMatchCharLength: 1,
+					keys: [
+					  "id",
+					  "name",
+					  "abreviations",
+					  "description"
+				  ]
+				  };
+				  var fuse = new Fuse(list, options); // "list" is the item array
+				  console.log(fuse.search(text))
+				  return fuse.search(text);
 			}else{
 				return await Biomarker.find({}).exec();
 			}

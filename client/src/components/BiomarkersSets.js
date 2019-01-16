@@ -1,5 +1,4 @@
-import React from 'react';
-import { Query } from "react-apollo";
+import React, {Component} from 'react';
 import { loader } from 'graphql.macro';
 import Table from 'antd/lib/table';
 import { Tag } from 'antd';
@@ -23,15 +22,10 @@ const columns = [{
   }];
   
 
-const BiomarkerSets = () => (
-	<Query query={biomarkersQuery}>
-		{({ loading, error, data }) => {
-			if (loading) return <p>Loading...</p>;
-			if (error) return <p>Error :(</p>;
-
-			return <Table dataSource={data.biomarkerSets} rowKey="id" columns={columns}></Table>
-		}}
-  	</Query>
-);
+class BiomarkerSets extends Component {
+	render() {
+		return <Table dataSource={this.props.data} rowKey="id" columns={columns}></Table>
+	}
+}
 
 export default BiomarkerSets

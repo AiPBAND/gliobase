@@ -1,5 +1,6 @@
 import BiomarkerSet from '../../models/BiomarkerSet';
 import Biomarker from '../../models/Biomarker';
+import Fuse from 'fuse.js';
 
 export default {
     Query: {
@@ -11,8 +12,24 @@ export default {
 		},
 		biomarkerSetSearch: async (parent, {text}, context, info) => {
 			if(text){
-				return await BiomarkerSet.find({ "$text" : {"$search": text}}, { score: { $meta: "textScore" } } )
-					.sort( { score: { $meta: "textScore" } } ).exec();
+				const list = await BiomarkerSet.find({}).exec();
+				var options = {
+					shouldSort: true,
+					tokenize: true,
+					findAllMatches: true,
+					threshold: 0,
+					location: 0,
+					distance: 100,
+					maxPatternLength: 32,
+					minMatchCharLength: 1,
+					keys: [
+					  "id",
+					  "biomarkerIds"
+				  ]
+				  };
+				  var fuse = new Fuse(list, options); // "list" is the item array
+				  console.log(fuse.search(text))
+				  return fuse.search(text);
 			}else{
 				return await BiomarkerSet.find({}).exec();
 			}
