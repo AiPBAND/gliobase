@@ -1,0 +1,18 @@
+query searchTerms($text: String){
+	biomarkersSearch(text: $text) {
+		id
+		name
+		abreviations
+		description
+		category {
+			id
+		}
+		source {
+			id
+		}
+	},
+	biomarkerSetSearch(text: $text) {
+		id
+		biomarkerIds
+	} 
+}
