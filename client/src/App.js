@@ -19,8 +19,7 @@ const App = () => (
 	<Router>
 		<Layout style={{ minHeight: '100vh' }}>
 			<Sider collapsible>
-          		<div className="logo" />
-				  <Header style={{ background: '#022141', padding: 0 }} />
+          		<div className="logo" style={{ height: '64px', background: '#022141'}}/>
           			<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             			<Menu.Item key="1">
 							<Link to="/">
