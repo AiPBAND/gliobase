@@ -1,8 +1,8 @@
-.banner{
+.content{
     margin: 30px 40px;
 }
 
-.banner .text-wrapper h1{
+.content .banner h1{
     font-size: 48px;
     font-weight: 600;
     margin: 8px 0 20px;
@@ -11,8 +11,14 @@
     font-variant: tabular-nums;
 }
 
-.banner .text-wrapper p {
+.content .banner p {
+    display: inline-block;
+    margin-right: 12px;
     font-size: 20px;
     line-height: 40px;
     color: #314659;
+}
+
+.content .data-summary{
+    margin: 45px 0;
 }
