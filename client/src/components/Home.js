@@ -1,68 +1,38 @@
-import React from 'react';
-import { Button, Card, Icon, Avatar, Divider } from 'antd';
+import React, {Component} from 'react';
+import { Button, Divider } from 'antd';
 import './Home.css'
-import biomarkerslogo from '../assets/experiment.svg';
-import biomarkersetslogo from '../assets/folder-open.svg';
-import literaturelogo from '../assets/book.svg'
-import { ApolloConsumer } from 'react-apollo';
+import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Biomarkers from './Biomarkers';
+import DataSummary from './DataSummary';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 
-const { Meta } = Card;
-
-const gridStyle = {
-	width: '33%',
-};
-
-const Home = () => {
-	return (
-		<ApolloConsumer>
-			{client => {
-				const { data } = client.query({
-							query: biomarkersQuery,
-				});
-
-				return [
-					<div className = "content">
-						<div className = "banner">
-							<h1>Gliobase</h1>
-							<p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
-							<Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
-						</div>
-						<Divider dashed />
-						<div className = "data-summary">
-							<Card title="Data Summary">
-								<Card.Grid style={gridStyle}>
-									<Meta
-										avatar={<Avatar src={biomarkerslogo} />}
-										title="Biomarkers"
-										description="5"
-									/>
-								</Card.Grid>
-								<Card.Grid style={gridStyle}>
-									<Meta
-										avatar={<Avatar src={biomarkersetslogo} />}
-										title="Biomarker Sets"
-										description="4"
-									/>
-								</Card.Grid>
-								<Card.Grid style={gridStyle}>
-									<Meta
-										avatar={<Avatar src={literaturelogo} />}
-										title="Lierature"
-										description="8"
-									/>
-								</Card.Grid>
-							</Card>
-						</div>
-						<Biomarkers data={data}></Biomarkers>
-					</div>
-				]
-			}}
-		</ApolloConsumer>
-	);
+class Home extends Component {
+	render(){
+		return (
+			<div className = "content">
+				<div className = "banner">
+					<h1>Gliobase</h1>
+					<p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
+					<Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
+				</div>
+				<Divider dashed />
+				<div className = "data-summary">
+					<DataSummary
+						numberOfBiomarker = {5}
+						numberOfBiomarkerSet = {4} 
+						numberOfLiterature = {8}
+					/>
+				</div>
+				<Query query={biomarkersQuery}>
+					{({ data }) => {
+						return <Biomarkers data={data.biomarkers}></Biomarkers>
+					}}
+				</Query>
+			</div>
+		);
+	};
 }
 
 export default Home;
