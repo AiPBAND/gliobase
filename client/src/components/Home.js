@@ -27,6 +27,7 @@ class Home extends Component {
 				</div>
 				<Query query={biomarkersQuery}>
 					{({ data }) => {
+						console.log(data.biomarkers);
 						return <Biomarkers data={data.biomarkers}></Biomarkers>
 					}}
 				</Query>
