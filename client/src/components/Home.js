@@ -5,6 +5,10 @@ import biomarkerslogo from '../assets/experiment.svg';
 import biomarkersetslogo from '../assets/folder-open.svg';
 import literaturelogo from '../assets/book.svg'
 import { ApolloConsumer } from 'react-apollo';
+import { loader } from 'graphql.macro';
+import Biomarkers from './Biomarkers';
+
+const biomarkersQuery = loader('../queries/biomarkers.graphql');
 
 const { Meta } = Card;
 
@@ -16,6 +20,10 @@ const Home = () => {
 	return (
 		<ApolloConsumer>
 			{client => {
+				const { data } = client.query({
+							query: biomarkersQuery,
+				});
+
 				return [
 					<div className = "content">
 						<div className = "banner">
@@ -49,6 +57,7 @@ const Home = () => {
 								</Card.Grid>
 							</Card>
 						</div>
+						<Biomarkers data={data}></Biomarkers>
 					</div>
 				]
 			}}
