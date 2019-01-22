@@ -1,0 +1,8 @@
+{
+	biomarkers {
+		id
+	},
+    biomarkerSets {
+		id
+	}
+}

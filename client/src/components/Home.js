@@ -1,23 +1,93 @@
-import React from 'react';
-import { Button, Radio, Icon } from 'antd';
+import React, {Component} from 'react';
+import { Button, Divider } from 'antd';
 import './Home.css'
+import { Query } from 'react-apollo';
+import { loader } from 'graphql.macro';
+import Biomarkers from './Biomarkers';
+import DataSummary from './DataSummary';
+import BiomarkerSets from './BiomarkersSets';
 
-const Home = () => {
-	return (
-		<div className = "banner">
-			<div className = "text-wrapper">
-				<h1>
-					Gliobase
-				</h1>
-				<p>
-					A glioblastoma multiforme (GBM) biomarker knowledge base
-				</p>
+const biomarkersQuery = loader('../queries/biomarkers.graphql');
+const biomarkerSetsQuery = loader('../queries/biomarkerSets.graphql');
+const dataSummaryQuery = loader('../queries/dataSummary.graphql');
+
+function ExampleData(props) {
+	switch (props.showData) {
+		case 0:
+			return (
+				<Query query={biomarkersQuery}>
+				{({ loading, error, data }) => {
+					if (loading) return <p>Loading...</p>;
+					if (error) return <p>Error</p>;
+					return <Biomarkers data={data.biomarkers}/>
+				}}
+			</Query>
+			)
+		case 1:
+			return (
+				<Query query={biomarkerSetsQuery}>
+				{({ loading, error, data }) => {
+					if (loading) return <p>Loading...</p>;
+					if (error) return <p>Error</p>;
+					return <BiomarkerSets data={data.biomarkerSets}/>
+				}}
+			</Query>
+			)
+		default:
+			return null
+	}
+}
+
+class Home extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		  showData: 0,
+		};
+	}
+
+	showBiomarkers() {
+		this.setState({
+			showData: 0,
+		});
+	}
+
+	showBiomarkerSets() {
+		this.setState({
+			showData: 1,
+		});
+	}
+
+	render(){
+		return (
+			<div className = "content">
+				<div className = "banner">
+					<h1>Gliobase</h1>
+					<p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
+					<Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
+				</div>
+				<Divider dashed />
+				<div className = "data-summary">
+					<Query query={dataSummaryQuery}>
+						{({ loading, error, data }) => {
+							if (loading) return <p>Loading...</p>;
+							if (error) return <p>Error</p>;
+							return (
+								<DataSummary
+									numberOfBiomarker = {data.biomarkers.length}
+									numberOfBiomarkerSet = {data.biomarkerSets.length} 
+									numberOfLiterature = {'?'}
+									onClickBiomarkers = {() => this.showBiomarkers()}
+									onClickBiomarkerSets = {() => this.showBiomarkerSets()}
+								/>
+							);
+						}}
+					</Query>	
+				</div>
+				<ExampleData showData = {this.state.showData} />
 			</div>
-			<div className = "gitbub-btn">
-				<Button icon="github" size="default" href="https://github.com/thehyve/gliobase">Github</Button>
-			</div>
-		</div>
-	);
+		);
+	};
 }
 
 export default Home;
