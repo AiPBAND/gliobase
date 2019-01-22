@@ -8,7 +8,8 @@ import literaturelogo from '../assets/book.svg'
 const { Meta } = Card;
 
 const gridStyle = {
-	width: '33%',
+    width: '1/3',
+    cursor: 'pointer'
 };
 
 class DataSummary extends Component{
