@@ -7,6 +7,7 @@ import Biomarkers from './Biomarkers';
 import DataSummary from './DataSummary';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
+const dataSummaryQuery = loader('../queries/dataSummary.graphql');
 
 class Home extends Component {
 	render(){
@@ -19,16 +20,25 @@ class Home extends Component {
 				</div>
 				<Divider dashed />
 				<div className = "data-summary">
-					<DataSummary
-						numberOfBiomarker = {5}
-						numberOfBiomarkerSet = {4} 
-						numberOfLiterature = {8}
-					/>
+					<Query query={dataSummaryQuery}>
+						{({ loading, error, data }) => {
+							if (loading) return <p>Loading...</p>;
+							if (error) return <p>Error</p>;
+							return (
+								<DataSummary
+									numberOfBiomarker = {data.biomarkers.length}
+									numberOfBiomarkerSet = {data.biomarkerSets.length} 
+									numberOfLiterature = {'?'}
+								/>
+							);
+						}}
+					</Query>	
 				</div>
 				<Query query={biomarkersQuery}>
-					{({ data }) => {
-						console.log(data.biomarkers);
-						return <Biomarkers data={data.biomarkers}></Biomarkers>
+					{({ loading, error, data }) => {
+						if (loading) return <p>Loading...</p>;
+						if (error) return <p>Error</p>;
+						return <Biomarkers data={data.biomarkers}/>
 					}}
 				</Query>
 			</div>
