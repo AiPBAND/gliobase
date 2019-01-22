@@ -15,14 +15,14 @@ class DataSummary extends Component{
     render(){
         return(
             <Card title="Data Summary">
-                <Card.Grid style={gridStyle}>
+                <Card.Grid style={gridStyle} onClick={this.props.onClickBiomarkers}>
                     <Meta
                         avatar={<Avatar src={biomarkerslogo} />}
                         title="Biomarkers"
                         description={this.props.numberOfBiomarker}
                     />
                 </Card.Grid>
-                <Card.Grid style={gridStyle}>
+                <Card.Grid style={gridStyle} onClick={this.props.onClickBiomarkerSets}>
                     <Meta
                         avatar={<Avatar src={biomarkersetslogo} />}
                         title="Biomarker Sets"

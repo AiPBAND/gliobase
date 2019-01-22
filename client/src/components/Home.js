@@ -5,11 +5,59 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Biomarkers from './Biomarkers';
 import DataSummary from './DataSummary';
+import BiomarkerSets from './BiomarkersSets';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
+const biomarkerSetsQuery = loader('../queries/biomarkerSets.graphql');
 const dataSummaryQuery = loader('../queries/dataSummary.graphql');
 
+function ExampleData(props) {
+	switch (props.showData) {
+		case 0:
+			return (
+				<Query query={biomarkersQuery}>
+				{({ loading, error, data }) => {
+					if (loading) return <p>Loading...</p>;
+					if (error) return <p>Error</p>;
+					return <Biomarkers data={data.biomarkers}/>
+				}}
+			</Query>
+			)
+		case 1:
+			return (
+				<Query query={biomarkerSetsQuery}>
+				{({ loading, error, data }) => {
+					if (loading) return <p>Loading...</p>;
+					if (error) return <p>Error</p>;
+					return <BiomarkerSets data={data.biomarkerSets}/>
+				}}
+			</Query>
+			)
+		default:
+			return null
+	}
+}
+
 class Home extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		  showData: 0,
+		};
+	}
+
+	showBiomarkers() {
+		this.setState({
+			showData: 0,
+		});
+	}
+
+	showBiomarkerSets() {
+		this.setState({
+			showData: 1,
+		});
+	}
+
 	render(){
 		return (
 			<div className = "content">
@@ -29,18 +77,14 @@ class Home extends Component {
 									numberOfBiomarker = {data.biomarkers.length}
 									numberOfBiomarkerSet = {data.biomarkerSets.length} 
 									numberOfLiterature = {'?'}
+									onClickBiomarkers = {() => this.showBiomarkers()}
+									onClickBiomarkerSets = {() => this.showBiomarkerSets()}
 								/>
 							);
 						}}
 					</Query>	
 				</div>
-				<Query query={biomarkersQuery}>
-					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
-						if (error) return <p>Error</p>;
-						return <Biomarkers data={data.biomarkers}/>
-					}}
-				</Query>
+				<ExampleData showData = {this.state.showData} />
 			</div>
 		);
 	};
