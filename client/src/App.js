@@ -2,12 +2,10 @@ import React from 'react';
 import './App.css';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from "react-apollo";
-import Biomarkers from './components/Biomarkers';
-import BiomarkerSets from './components/BiomarkersSets';
-import Home from './components/Home';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Icon } from 'antd';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Search from './components/Search';
+import Search from './pages/Search';
+import Home from './pages/Home';
 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
