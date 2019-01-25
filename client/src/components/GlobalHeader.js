@@ -41,7 +41,7 @@ class GlobalHeader extends Component{
                 </span>
               </Dropdown>
             ) : (
-              <Spin size="small" style={{ marginLeft: 8 }} />
+              <Spin size="default" style={{ margin: '0 28px' }} />
             )}
           </div>
         </div>
