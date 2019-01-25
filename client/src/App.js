@@ -9,6 +9,7 @@ import Search from './pages/Search';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import Login from './pages/Login';
 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -88,7 +89,8 @@ class App extends Component {
 								<Route path="/search" component={Search} />
 								<Route path="/profile" component={Profile} />
 								<Route path="/settings" component={Settings} />
-							</div>
+								<Route path="/login" component={Login} />
+ 							</div>
 						</Content>
 						<Footer style={{ textAlign: 'center' }}> 
 							AiPBAND ©2018
