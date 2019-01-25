@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import GlobalHeader from './components/GlobalHeader';
 import Search from './pages/Search';
 import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -55,8 +57,16 @@ class App extends Component {
 									<span>Exploration</span>
 								</Menu.Item>
 								<SubMenu key="sub1" title={<span><Icon type="user" /><span>User</span></span>}>
-									<Menu.Item key="4">Profile</Menu.Item>
-									<Menu.Item key="5">Settings</Menu.Item>
+									<Menu.Item key="4">
+										<Link to="/profile">
+											<span>Profile</span>
+										</Link>
+									</Menu.Item>
+									<Menu.Item key="5">
+										<Link to="/settings">
+											<span>Settings</span>
+										</Link>
+									</Menu.Item>
 								</SubMenu>
 							</Menu>
 					</Sider>
@@ -76,6 +86,8 @@ class App extends Component {
 							<div style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280, }}>
 								<Route exact path="/" component={Home} />
 								<Route path="/search" component={Search} />
+								<Route path="/profile" component={Profile} />
+								<Route path="/settings" component={Settings} />
 							</div>
 						</Content>
 						<Footer style={{ textAlign: 'center' }}> 

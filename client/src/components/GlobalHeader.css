@@ -42,3 +42,10 @@
     vertical-align: middle;
 }
 
+.menu {
+    width: 125px;
+}
+
+.menu span {
+    margin-left: 8px;
+}

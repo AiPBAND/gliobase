@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Menu, Icon, Dropdown, Avatar, Spin } from 'antd';
+import { Link } from "react-router-dom";
 import './GlobalHeader.css'
 
 class GlobalHeader extends Component{
@@ -13,10 +14,16 @@ class GlobalHeader extends Component{
       const menu = (
         <Menu className="menu" selectedKeys={[]}>
           <Menu.Item>
-            <Icon type="user" />Profile
+            <Link to="/profile">
+              <Icon type="user"/>
+              <span>Profile</span>
+            </Link>
           </Menu.Item>
           <Menu.Item>
-            <Icon type="setting" />Settings
+            <Link to="/settings">
+              <Icon type="setting"/>
+              <span>Settings</span>
+            </Link>
           </Menu.Item>
           <Menu.Divider />
           <Menu.Item key="logout">
