@@ -33,7 +33,7 @@ class DataSummary extends Component{
                 <Card.Grid style={gridStyle}>
                     <Meta
                         avatar={<Avatar src={literaturelogo} />}
-                        title="Lierature"
+                        title="Literature"
                         description={this.props.numberOfLiterature}
                     />
                 </Card.Grid>

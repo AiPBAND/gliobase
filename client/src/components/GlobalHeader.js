@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Menu, Icon, Dropdown, Avatar, Button } from 'antd';
 import { Link } from "react-router-dom";
 import './GlobalHeader.css'

@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import './App.css';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from "react-apollo";
-import { Layout, Menu, Icon } from 'antd';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Layout } from 'antd';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import GlobalHeader from './components/GlobalHeader';
+import GlobalSider from './components/GlobalSider';
 import Search from './pages/Search';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
@@ -12,7 +13,6 @@ import Settings from './pages/Settings';
 import Login from './pages/Login';
 
 const { Header, Content, Footer, Sider } = Layout;
-const SubMenu = Menu.SubMenu;
 
 const graphQlClient = new ApolloClient({});
 
@@ -39,37 +39,7 @@ class App extends Component {
 						collapsible
 						collapsed={this.state.collapsed}
 					>
-						<div className="logo" style={{ height: '64px', background: '#022141'}}/>
-							<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-								<Menu.Item key="1">
-									<Link to="/">
-										<Icon type="home"/>
-										<span>Home</span>
-									</Link>
-								</Menu.Item>
-								<Menu.Item key="2">
-									<Link to="/search">
-										<Icon type="search"/>
-										<span>Search</span>
-									</Link>
-								</Menu.Item>
-								<Menu.Item key="3">
-									<Icon type="pie-chart" />
-									<span>Exploration</span>
-								</Menu.Item>
-								<SubMenu key="sub1" title={<span><Icon type="user" /><span>User</span></span>}>
-									<Menu.Item key="4">
-										<Link to="/profile">
-											<span>Profile</span>
-										</Link>
-									</Menu.Item>
-									<Menu.Item key="5">
-										<Link to="/settings">
-											<span>Settings</span>
-										</Link>
-									</Menu.Item>
-								</SubMenu>
-							</Menu>
+						<GlobalSider />
 					</Sider>
 					<Layout>
 						<Header style={{ padding: 0 }}>
