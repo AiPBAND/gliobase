@@ -46,13 +46,13 @@ class Home extends Component {
 		};
 	}
 
-	showBiomarkers() {
+	showBiomarkers = () => {
 		this.setState({
 			showData: 0,
 		});
 	}
 
-	showBiomarkerSets() {
+	showBiomarkerSets = () => {
 		this.setState({
 			showData: 1,
 		});
@@ -77,8 +77,8 @@ class Home extends Component {
 									numberOfBiomarker = {data.biomarkers.length}
 									numberOfBiomarkerSet = {data.biomarkerSets.length} 
 									numberOfLiterature = {'?'}
-									onClickBiomarkers = {() => this.showBiomarkers()}
-									onClickBiomarkerSets = {() => this.showBiomarkerSets()}
+									onClickBiomarkers = {this.showBiomarkers}
+									onClickBiomarkerSets = {this.showBiomarkerSets}
 								/>
 							);
 						}}

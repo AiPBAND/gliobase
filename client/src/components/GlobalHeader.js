@@ -8,7 +8,7 @@ class GlobalHeader extends Component{
 		super(props);
 		this.state = {
 		  currentUser: this.props.currentUser,
-		};
+    };
 	}
 
   handleClickLogout = () => {
