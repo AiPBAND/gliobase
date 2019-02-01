@@ -1,0 +1,51 @@
+.header {
+    height: 64px;
+    padding: 0 12px 0 0;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+}
+
+.header .trigger {
+    font-size: 20px;
+    line-height: 63px;
+    cursor: pointer;
+    transition: all 0.3s, padding 0s;
+    padding: 0 24px;
+}
+
+.header .trigger:hover {
+    background: #fafafa;
+}
+
+.header .toolbar {
+    float: right;
+    height: 100%;
+}
+
+.header .toolbar .user-info {
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 0 15px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.header .toolbar .user-info:hover {
+    background: #fafafa;
+}
+
+.header .toolbar .user-info .user-avatar {
+    margin: 20px 8px 20px 0;
+    background: rgba(255, 255, 255, 0.85);
+    vertical-align: middle;
+}
+
+.menu {
+    width: 125px;
+}
+
+.menu span {
+    margin-left: 8px;
+}

@@ -1,4 +1,4 @@
-{
+query dataSummary{
 	biomarkers {
 		id
 	},

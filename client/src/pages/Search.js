@@ -4,8 +4,8 @@ import { loader } from 'graphql.macro';
 import { Query } from "react-apollo";
 import { ApolloConsumer } from 'react-apollo';
 import './Search.css'
-import Biomarkers from './Biomarkers';
-import BiomarkerSets from './BiomarkersSets';
+import Biomarkers from '../components/Biomarkers';
+import BiomarkerSets from '../components/BiomarkersSets';
 
 const biomarkersQuery = loader('../queries/searchTerms.graphql');
 

@@ -3,9 +3,9 @@ import { Button, Divider } from 'antd';
 import './Home.css'
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import Biomarkers from './Biomarkers';
-import DataSummary from './DataSummary';
-import BiomarkerSets from './BiomarkersSets';
+import Biomarkers from '../components/Biomarkers';
+import DataSummary from '../components/DataSummary';
+import BiomarkerSets from '../components/BiomarkersSets';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 const biomarkerSetsQuery = loader('../queries/biomarkerSets.graphql');
@@ -16,22 +16,22 @@ function ExampleData(props) {
 		case 0:
 			return (
 				<Query query={biomarkersQuery}>
-				{({ loading, error, data }) => {
-					if (loading) return <p>Loading...</p>;
-					if (error) return <p>Error</p>;
-					return <Biomarkers data={data.biomarkers}/>
-				}}
-			</Query>
+					{({ loading, error, data }) => {
+						if (loading) return <p>Loading...</p>;
+						if (error) return <p>Error</p>;
+						return <Biomarkers data={data.biomarkers}/>
+					}}
+				</Query>
 			)
 		case 1:
 			return (
 				<Query query={biomarkerSetsQuery}>
-				{({ loading, error, data }) => {
-					if (loading) return <p>Loading...</p>;
-					if (error) return <p>Error</p>;
-					return <BiomarkerSets data={data.biomarkerSets}/>
-				}}
-			</Query>
+					{({ loading, error, data }) => {
+						if (loading) return <p>Loading...</p>;
+						if (error) return <p>Error</p>;
+						return <BiomarkerSets data={data.biomarkerSets}/>
+					}}
+				</Query>
 			)
 		default:
 			return null
@@ -46,13 +46,13 @@ class Home extends Component {
 		};
 	}
 
-	showBiomarkers() {
+	showBiomarkers = () => {
 		this.setState({
 			showData: 0,
 		});
 	}
 
-	showBiomarkerSets() {
+	showBiomarkerSets = () => {
 		this.setState({
 			showData: 1,
 		});
@@ -77,8 +77,8 @@ class Home extends Component {
 									numberOfBiomarker = {data.biomarkers.length}
 									numberOfBiomarkerSet = {data.biomarkerSets.length} 
 									numberOfLiterature = {'?'}
-									onClickBiomarkers = {() => this.showBiomarkers()}
-									onClickBiomarkerSets = {() => this.showBiomarkerSets()}
+									onClickBiomarkers = {this.showBiomarkers}
+									onClickBiomarkerSets = {this.showBiomarkerSets}
 								/>
 							);
 						}}
