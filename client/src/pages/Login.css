@@ -1,5 +1,17 @@
-.login-form {
+.login {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 260px;
+}
+
+.login .login-logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login .login-logo h1{
+  margin-top: 8px;
+  font-weight: 235;
+  font-size: 32px;
 }
