@@ -17,15 +17,15 @@ class App extends Component {
 		return (
 			<ApolloProvider client={graphQlClient}>
 			<Router>
-        <MainLayout>
-          <Switch>
+        <Switch>
+          <Route path="/login" component={Login} />
+          <MainLayout>        
             <Route exact path="/" component={Home} />
             <Route path="/search" component={Search} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
-            <Route path="/login" component={Login} />
-          </Switch>
-        </MainLayout>
+          </MainLayout>
+        </Switch>
 			</Router>
 			</ApolloProvider>
 		)
