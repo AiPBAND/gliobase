@@ -6,9 +6,11 @@
 		description
 		category {
 			id
+			reflink
 		}
 		source {
 			id
+			reflink
 		}
 	} 
 }

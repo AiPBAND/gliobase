@@ -11,13 +11,16 @@
 		"model": "Category",
 		"documents": [
 			{	
-				"_id": "DNA"
+				"_id": "DNA",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
-				"_id": "RNA"
+				"_id": "RNA",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
-				"_id": "protein"
+				"_id": "protein",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
 				"_id": "other",
@@ -29,21 +32,25 @@
 		"model": "Source",
 		"documents": [
 			{	
-				"_id": "tissue"
+				"_id": "tissue",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
-				"_id": "blood"
+				"_id": "blood",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
 				"_id": "CSF",
-				"description": "Cerebrospinal fluid."
+				"description": "Cerebrospinal fluid.",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			},
 			{
 				"_id": "other",
 				"description": "Also used for undefined."
 			},
 			{
-				"_id": "fluid"
+				"_id": "fluid",
+				"reflink": "https://www.ncbi.nlm.nih.gov/books/NBK21325/def-item/A3280/"
 			}
 		]
 	},
