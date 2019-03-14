@@ -60,32 +60,32 @@ class Home extends Component {
 
 	render(){
 		return (
-			<div className = "content">
-				<div className = "banner">
-					<h1>Gliobase</h1>
-					<p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
-					<Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
-				</div>
-				<Divider dashed />
-				<div className = "data-summary">
-					<Query query={dataSummaryQuery}>
-						{({ loading, error, data }) => {
-							if (loading) return <p>Loading...</p>;
-							if (error) return <p>Error</p>;
-							return (
-								<DataSummary
-									numberOfBiomarker = {data.biomarkers.length}
-									numberOfBiomarkerSet = {data.biomarkerSets.length} 
-									numberOfLiterature = {'?'}
-									onClickBiomarkers = {this.showBiomarkers}
-									onClickBiomarkerSets = {this.showBiomarkerSets}
-								/>
-							);
-						}}
-					</Query>	
-				</div>
-				<ExampleData showData = {this.state.showData} />
-			</div>
+      <div className = "content">
+        <div className = "banner">
+          <h1>Gliobase</h1>
+          <p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
+          <Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
+        </div>
+        <Divider dashed />
+        <div className = "data-summary">
+          <Query query={dataSummaryQuery}>
+            {({ loading, error, data }) => {
+              if (loading) return <p>Loading...</p>;
+              if (error) return <p>Error</p>;
+              return (
+                <DataSummary
+                  numberOfBiomarker = {data.biomarkers.length}
+                  numberOfBiomarkerSet = {data.biomarkerSets.length} 
+                  numberOfLiterature = {'?'}
+                  onClickBiomarkers = {this.showBiomarkers}
+                  onClickBiomarkerSets = {this.showBiomarkerSets}
+                />
+              );
+            }}
+          </Query>	
+        </div>
+        <ExampleData showData = {this.state.showData} />
+      </div>
 		);
 	};
 }
