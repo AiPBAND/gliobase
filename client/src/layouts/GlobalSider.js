@@ -23,8 +23,10 @@ class GlobalSider extends Component {
             </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Icon type="pie-chart" />
-            <span>Exploration</span>
+            <Link to="/exploration">
+              <Icon type="pie-chart" />
+              <span>Exploration</span>
+            </Link>            
           </Menu.Item>
           <SubMenu key="sub1" title={<span><Icon type="user" /><span>User</span></span>}>
             <Menu.Item key="4">
