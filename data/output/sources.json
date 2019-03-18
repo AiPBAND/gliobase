@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "Glioma Stem Cells",
+        "description": ""
+    },
+    {
+        "_id": "TIssue",
+        "description": ""
+    },
+    {
+        "_id": "Tissue",
+        "description": ""
+    },
+    {
+        "_id": "Cell lines",
+        "description": ""
+    },
+    {
+        "_id": "Sera",
+        "description": ""
+    },
+    {
+        "_id": "Imaging",
+        "description": ""
+    },
+    {
+        "_id": "Blood",
+        "description": ""
+    },
+    {
+        "_id": "Fluid",
+        "description": ""
+    },
+    {
+        "_id": "Serum",
+        "description": ""
+    },
+    {
+        "_id": "Cell line",
+        "description": ""
+    }
+]

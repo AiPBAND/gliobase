@@ -7,9 +7,6 @@ query searchTerms($text: String){
 		category {
 			id
 		}
-		source {
-			id
-		}
 	},
 	biomarkerSetSearch(text: $text) {
 		id
