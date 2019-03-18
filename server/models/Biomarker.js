@@ -17,11 +17,6 @@ const schema = new mongoose.Schema({
   	},
   	abreviations: [String],
 	description: String,
-	sourceId: {
-		type: String,
-		ref: 'Source',
-		required: true
-	},
 	categoryId: {
 		type: String,
 		ref: 'Category',

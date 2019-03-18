@@ -48,9 +48,6 @@ export default {
 	Biomarker: {
 		category: async (biomarker) => {
 			return await Category.findOne({_id: biomarker.categoryId}).exec();
-		},
-		source: async (biomarker) => {
-			return await Source.findOne({_id: biomarker.sourceId}).exec();
 		}
 	}
 }
