@@ -1,5 +1,9 @@
 [
     {
+        "_id": "Cell line",
+        "description": ""
+    },
+    {
         "_id": "Glioma Stem Cells",
         "description": ""
     },
@@ -12,7 +16,11 @@
         "description": ""
     },
     {
-        "_id": "Cell lines",
+        "_id": "Serum",
+        "description": ""
+    },
+    {
+        "_id": "Fluid",
         "description": ""
     },
     {
@@ -24,19 +32,11 @@
         "description": ""
     },
     {
+        "_id": "Cell lines",
+        "description": ""
+    },
+    {
         "_id": "Blood",
-        "description": ""
-    },
-    {
-        "_id": "Fluid",
-        "description": ""
-    },
-    {
-        "_id": "Serum",
-        "description": ""
-    },
-    {
-        "_id": "Cell line",
         "description": ""
     }
 ]
