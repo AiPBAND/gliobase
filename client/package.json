@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
+    "ant-design-pro": "^2.2.1",
     "antd": "^3.12.1",
     "apollo-boost": "^0.1.23",
     "graphql": "^14.0.2",

@@ -3,7 +3,7 @@ import { Card, Avatar } from 'antd';
 
 import biomarkerslogo from '../assets/experiment.svg';
 import biomarkersetslogo from '../assets/folder-open.svg';
-import literaturelogo from '../assets/book.svg'
+import evidenceslogo from '../assets/book.svg'
 
 const { Meta } = Card;
 
@@ -32,9 +32,9 @@ class DataSummary extends Component{
                 </Card.Grid>
                 <Card.Grid style={gridStyle}>
                     <Meta
-                        avatar={<Avatar src={literaturelogo} />}
-                        title="Literature"
-                        description={this.props.numberOfLiterature}
+                        avatar={<Avatar src={evidenceslogo} />}
+                        title="Evidences"
+                        description={this.props.numberOfEvidences}
                     />
                 </Card.Grid>
             </Card>

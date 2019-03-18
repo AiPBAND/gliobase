@@ -76,7 +76,7 @@ class Home extends Component {
                 <DataSummary
                   numberOfBiomarker = {data.biomarkers.length}
                   numberOfBiomarkerSet = {data.biomarkerSets.length} 
-                  numberOfLiterature = {'?'}
+                  numberOfEvidences = {'?'}
                   onClickBiomarkers = {this.showBiomarkers}
                   onClickBiomarkerSets = {this.showBiomarkerSets}
                 />
