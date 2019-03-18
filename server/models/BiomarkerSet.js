@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import IdGenerator from './IdGenerator';
 
 const schema = new mongoose.Schema({
 	_id: {
@@ -15,16 +14,6 @@ const schema = new mongoose.Schema({
 		type: [{ type: String, ref: 'Biomarker' }],
 		required: true
 	}
-});
-
-schema.pre('save', function(next) {
-	const doc = this
-	IdGenerator.findByIdAndUpdate({_id: "BiomarkerSet"}, {$inc: { seq: 1} }, (error, counter) => {
-		if(error) return next(error);
-		const paddedHex = counter.seq.toString(16).padStart(6, "0")
-		doc._id = "S"+paddedHex
-		next();
-    });
 });
 
 schema.index({
