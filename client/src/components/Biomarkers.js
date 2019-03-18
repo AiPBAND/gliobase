@@ -8,11 +8,7 @@ const biomarkersQuery = loader('../queries/biomarkers.graphql');
 const colors = {
 	DNA: "green",
 	protein: "cyan",
-	RNA: "magenta",
-	tissue: "blue",
-	blood: "purple",
-	fluid: "red",
-	CSF: "gold"
+	RNA: "magenta"
 }
 
 const columns = [{
@@ -30,15 +26,6 @@ const columns = [{
 	render: category => (
 		<span>
 		  	<Tag color={colors[category.id]} key={category.id}> <a href = {category.reflink}>{category.id}</a></Tag>
-		</span>
-	)
-  }, {
-	title: 'Source',
-	dataIndex: 'source',
-	key: 'source.id',
-	render: source => (
-		<span>
-		  	<Tag color={colors[source.id]} key={source.id}> <a href = {source.reflink}>{source.id}</a></Tag>
 		</span>
 	)
   }];

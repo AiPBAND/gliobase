@@ -8,9 +8,5 @@
 			id
 			reflink
 		}
-		source {
-			id
-			reflink
-		}
 	} 
 }

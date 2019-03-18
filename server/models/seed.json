@@ -1,13 +1,5 @@
 [
 	{
-		"model": "IdGenerator",
-		"documents":[
-			{
-				"_id": "BiomarkerSet"
-			}
-		]
-	},
-	{
 		"model": "Category",
 		"documents": [
 			{	
