@@ -4,7 +4,7 @@
 # import Category from "./Category.graphql";
 
 type Query {
-    biomarker(name: String!): Biomarker
+    biomarker(id: String!): Biomarker
     biomarkers: [Biomarker]
 	biomarkersBySource(source: String!): [Biomarker]
 	biomarkersByCategory(category: String!): [Biomarker]

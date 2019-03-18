@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import MainLayout from './layouts/MainLayout';
+import Biomarker from './pages/Biomarker';
 
 
 const graphQlClient = new ApolloClient({});
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/search" component={Search} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
+            <Route path="/biomarker/:id" component={Biomarker} />
           </MainLayout>
         </Switch>
 			</Router>
