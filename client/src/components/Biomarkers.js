@@ -21,11 +21,11 @@ const columns = [{
 	key: 'name'
   }, {
 	title: 'Category',
-	dataIndex: 'category.id',
+	dataIndex: 'category',
 	key: 'category.id',
 	render: category => (
 		<span>
-		  	<Tag color={colors[category]} key={category}>{category}</Tag>
+		  	<Tag color={colors[category.id]} key={category.id}> <a href = {category.reflink}>{category.id}</a></Tag>
 		</span>
 	)
   }];
@@ -33,6 +33,7 @@ const columns = [{
 
 class Biomarkers extends Component {
 	render() {
+		console.log(this.props.data)
 		return <Table dataSource={this.props.data} rowKey="id" columns={columns}></Table>
 	}
 }
