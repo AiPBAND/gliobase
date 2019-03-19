@@ -55,7 +55,7 @@ type Evidence {
 	region: [String]
 	research: Research
 	application: Application
-	clinical: clinical
+	clinical: Clinical
 	comments: String
 	curator: String
 }
