@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import { Tabs, Icon } from 'antd';
+import { Tabs, Icon, Row, Col } from 'antd';
 import { Pie } from 'ant-design-pro/lib/Charts';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
+import './Exploration.css'
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 
@@ -10,17 +11,6 @@ const TabPane = Tabs.TabPane;
 
 class Exploration extends Component {
 	render(){
-    // const categories = [
-    //   {
-    //     x: 'RNA',
-    //     y: 4544,
-    //   },
-    //   {
-    //     x: 'Aminopeptidase',
-    //     y: 3321,
-    //   },
-    // ];
-
 		return (
       <Tabs type="card">
         <TabPane tab={<span><Icon type="experiment" />Biomarkers</span>} key="1">
@@ -41,11 +31,28 @@ class Exploration extends Component {
               const inputData = Object.entries(tally).map(el => ({ x: el[0], y: el[1]}));
               {/* console.log(inputData); */}
               return (
-                <Pie
-                  className="exploration-pie-chart-biomarker-category"
-                  data={inputData}
-                  height={150}
-                />
+                <div className='exploration-statistics'>
+                  <h4>Catagory</h4>
+                  <Pie
+                        className="exploration-pie-chart-biomarker-category"
+                        data={inputData}
+                        height={150}
+                  />
+                  
+                  {/* <Row>
+                    <Col span={6}>
+                      <h2>Catagory</h2>
+                      <Pie
+                        className="exploration-pie-chart-biomarker-category"
+                        data={inputData}
+                        height={150}
+                      />
+                    </Col>
+                  </Row>  */}
+
+
+
+                </div>
               );
             }}
           </Query>	
