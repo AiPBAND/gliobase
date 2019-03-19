@@ -1,0 +1,61 @@
+
+type Gender {
+	male: Int
+	female: Int
+	other: Int
+}
+
+type Range {
+	cutoff: Int
+	under: Int
+	over: Int
+}
+
+type Age {
+	min: Float
+	max: Float
+	med: Float
+	avg: Float
+	sd: Float
+	range: Range
+}
+
+type Research {
+	methods: [String]
+	results: [String]
+	conclusions: [String]
+}
+
+type Application {
+	validated: String
+	diagnosis: String
+	prognosis: String
+	predictive: String
+	therapeutic: String
+}
+
+type Clinical {
+	relevance: String
+	implication: String
+	treatment: String
+}
+
+type Evidence {
+	id: String!
+	biomarkerSetId: String
+	pmid: String
+	sourceIds: [String]
+	sources: [Source]
+	samples: String
+	species: [String]
+	age: Age
+	gender: Gender
+	stage: [String]
+	whoclass: String
+	region: [String]
+	research: Research
+	application: Application
+	clinical: Clinical
+	comments: String
+	curator: String
+}
