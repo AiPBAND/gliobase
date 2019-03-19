@@ -39,7 +39,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "stop": "kill -9 $(ps aux | grep \"node\" | awk '{print $2}')",
-	"server": "nodemon --exec babel-node server.js",
+    "server": "nodemon --exec babel-node server.js",
     "client": "node client/start-client.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
     "lint": "eslint .",
