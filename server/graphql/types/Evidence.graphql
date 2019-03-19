@@ -23,7 +23,7 @@ type Age {
 type Research {
 	methods: [String]
 	results: [String]
-	conclusions[String]
+	conclusions: [String]
 }
 
 type Application {
