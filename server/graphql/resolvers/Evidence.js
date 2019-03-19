@@ -1,4 +1,5 @@
 import Evidence from '../../models/Evidence';
+import BiomarkerSet from '../../models/BiomarkerSet';
 
 export default {
     Query: {
@@ -8,5 +9,10 @@ export default {
       	evidences: async (parent, args, context, info) => {
 			return await Evidence.find({}).exec();
 		}     
+	},
+	Evidence: {
+		biomarkerSet: async (evidence) => {
+			return await BiomarkerSet.findOne({_id: evidence.biomarkerSetId}).exec();
+		}
 	}
 }

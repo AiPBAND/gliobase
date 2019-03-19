@@ -8,7 +8,7 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import MainLayout from './layouts/MainLayout';
-
+import Evidence from './pages/Evidence';
 
 const graphQlClient = new ApolloClient({});
 
@@ -24,6 +24,7 @@ class App extends Component {
             <Route path="/search" component={Search} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
+			<Route path="/evidence/:id" component={Evidence} />
           </MainLayout>
         </Switch>
 			</Router>
