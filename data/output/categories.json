@@ -1,6 +1,34 @@
 [
     {
+        "_id": "RNA",
+        "description": ""
+    },
+    {
+        "_id": "Others",
+        "description": ""
+    },
+    {
+        "_id": "Aminopeptidase",
+        "description": ""
+    },
+    {
+        "_id": "Cytokine",
+        "description": ""
+    },
+    {
+        "_id": "Enzyme",
+        "description": ""
+    },
+    {
+        "_id": "Metabolite",
+        "description": ""
+    },
+    {
         "_id": "Lipid",
+        "description": ""
+    },
+    {
+        "_id": "DNA",
         "description": ""
     },
     {
@@ -13,34 +41,6 @@
     },
     {
         "_id": "Other",
-        "description": ""
-    },
-    {
-        "_id": "RNA",
-        "description": ""
-    },
-    {
-        "_id": "DNA",
-        "description": ""
-    },
-    {
-        "_id": "Others",
-        "description": ""
-    },
-    {
-        "_id": "Metabolite",
-        "description": ""
-    },
-    {
-        "_id": "Enzyme",
-        "description": ""
-    },
-    {
-        "_id": "Aminopeptidase",
-        "description": ""
-    },
-    {
-        "_id": "Cytokine",
         "description": ""
     },
     {

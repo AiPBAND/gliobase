@@ -27,8 +27,9 @@ if(process.env.NODE_ENV === "development"){
 			'server/models/BiomarkerSet.js',
 			'server/models/Source.js',
 			'server/models/Category.js',
+			'server/models/Evidence.js'
 		])
-		seeder.clearModels(['Biomarker','BiomarkerSet','Source','Category'], () => {
+		seeder.clearModels(['Biomarker','BiomarkerSet','Source','Category', 'Evidence'], () => {
 			seeder.populateModels(jsonData, () => {
 				//seeder.disconnect();
 			})
