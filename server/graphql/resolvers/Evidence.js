@@ -5,7 +5,7 @@ export default {
       	evidence: async (parent, {id}, context, info) => {
         	return await Evidence.findOne({_id: id}).exec();
       	},
-      	biomarkers: async (parent, args, context, info) => {
+      	evidences: async (parent, args, context, info) => {
 			return await Evidence.find({}).exec();
 		}     
 	}
