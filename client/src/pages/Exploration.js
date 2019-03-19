@@ -3,6 +3,7 @@ import { Tabs, Icon, Row, Col } from 'antd';
 import { Pie } from 'ant-design-pro/lib/Charts';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
+import Biomarkers from '../components/Biomarkers';
 import './Exploration.css'
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
@@ -32,12 +33,14 @@ class Exploration extends Component {
               {/* console.log(inputData); */}
               return (
                 <div className='exploration-statistics'>
-                  <h4>Catagory</h4>
+                  <h4>Catagory of Biomarkers</h4>
                   <Pie
                         className="exploration-pie-chart-biomarker-category"
                         data={inputData}
                         height={150}
                   />
+                  <Biomarkers data={biomarkerData.biomarkers}/>
+
                   
                   {/* <Row>
                     <Col span={6}>
@@ -49,8 +52,6 @@ class Exploration extends Component {
                       />
                     </Col>
                   </Row>  */}
-
-
 
                 </div>
               );
