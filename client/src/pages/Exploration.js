@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import { Tabs, Icon, Row, Col } from 'antd';
-import { Pie } from 'ant-design-pro/lib/Charts';
+import { Tabs, Icon } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Biomarkers from '../components/Biomarkers';
+import PieChart from '../components/PieChart';
 import './Exploration.css'
+
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 
@@ -29,16 +30,12 @@ class Exploration extends Component {
                 return accumulator;
               }, {});
               {/* console.log(tally); */}
-              const inputData = Object.entries(tally).map(el => ({ x: el[0], y: el[1]}));
+              const inputData = Object.entries(tally).map(el => ({ item: el[0], count: el[1]}));
               {/* console.log(inputData); */}
               return (
                 <div className='exploration-statistics'>
-                  <h4>Catagory of Biomarkers</h4>
-                  <Pie
-                        className="exploration-pie-chart-biomarker-category"
-                        data={inputData}
-                        height={150}
-                  />
+                  <h3>Catagory</h3>
+                  <PieChart data={inputData}/>
                   <Biomarkers data={biomarkerData.biomarkers}/>
 
                   
