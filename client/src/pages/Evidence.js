@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Collapse, Tag, Alert, List, Row, Col} from 'antd';
+import { Card, Collapse, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import {Statistic} from 'antd';
 import './Evidence.css';
+
+const { Title, Text } = Typography;
 
 const Panel = Collapse.Panel;
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -109,14 +111,23 @@ class Evidence extends Component {
 				}
 					
 				return (<div>
-					<Card title={data.evidence.id} extra={data.evidence.pmid}>
-						<Collapse bordered={false} defaultActiveKey={['1','2','3','4','5','6']}>
-							<Panel header="Biomarkers" key="1">
-								<span>{listIds}</span>
-							</Panel>
-							<Panel header="Samples" key="2">
-								<div>Sources: <span>{sourceIds}</span></div>
-								<div>Species: <span>{species}</span></div>
+
+					<Title>
+						{data.evidence.id}
+						<Title level={2}>
+							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
+						</Title>
+					</Title>
+					<span>{listIds}</span>
+
+					<Row gutter={15}>
+						<Col span={12}>
+							<Card title="Samples" size="small">
+								<b>Sources</b>
+								<div>{sourceIds}</div>
+								<b>Species</b>
+								<div>{species}</div>
+								<b>Gender</b>
 								<Row gutter={16}>
 									<Col span={12}>
 										<Statistic title="Male" value={showZero(data.evidence.gender.male)}/>
@@ -125,75 +136,79 @@ class Evidence extends Component {
 										<Statistic title="Female" value={showZero(data.evidence.gender.female)}/>
 									</Col>
 								</Row>
-							</Panel>
-							<Panel header="Classification" key="3">
+							</Card>
+						</Col>
+						<Col span={12}>
+							<Card title="Classification" size="small">
 								<b>WHO Classification</b>
 								<p>{data.evidence.whoclass}</p>
 								<b>Stage</b>
 								<p>{stage}</p>
-							</Panel>
-							<Panel header="Research" key="4">
-								<b>Methods</b>
-								<List
-									bordered
-									dataSource={data.evidence.research.methods}
-									renderItem={item => (<List.Item>{item}</List.Item>)}
-								/>
-								<b>Results</b>
-								<List
-									bordered
-									dataSource={data.evidence.research.results}
-									renderItem={item => (<List.Item>{item}</List.Item>)}
-								/>
-								<b>Conclusions</b>
-								<List
-									bordered
-									dataSource={data.evidence.research.conclusions}
-									renderItem={item => (<List.Item>{item}</List.Item>)}
-								/>
-							</Panel>
-							<Panel header="Clinical" key="5">
-								<b>Relevance</b>
-								<p>{data.evidence.clinical.relevance}</p>
-								<b>Implication</b>
-								<p>{data.evidence.clinical.implication}</p>
-								<b>Treatment</b>
-								<p>{data.evidence.clinical.treatment}</p>
-							</Panel>
-							<Panel header="Application" key="6">
-								<b>Validation</b>
-								<Alert
-									message={validatedMessage()}
-									type={validatedType()}
-									showIcon
-								/>
-								<b>Diagnostic application</b>
-								<Alert
-									message={diagnosisMessage()}
-									type={diagnosisType()}
-									showIcon
-								/>
-								<b>Prognostic application</b>
-								<Alert
-									message={prognosisMessage()}
-									type={prognosisType()}
-									showIcon
-								/>
-								<b>Predictive application</b>
-								<Alert
-									message={predictiveMessage()}
-									type={predictiveType()}
-									showIcon
-								/>
-								<b>Therapeutic application</b>
-								<Alert
-									message={therapeuticMessage()}
-									type={therapeuticType()}
-									showIcon
-								/>
-							</Panel>
+							</Card>
+						</Col>
+					</Row>
 
-						</Collapse>
+					<Card title="Research" size="small">
+						<b>Methods</b>
+						<List
+							bordered
+							dataSource={data.evidence.research.methods}
+							renderItem={item => (<List.Item>{item}</List.Item>)}
+						/>
+						<b>Results</b>
+						<List
+							bordered
+							dataSource={data.evidence.research.results}
+							renderItem={item => (<List.Item>{item}</List.Item>)}
+						/>
+						<b>Conclusions</b>
+						<List
+							bordered
+							dataSource={data.evidence.research.conclusions}
+							renderItem={item => (<List.Item>{item}</List.Item>)}
+						/>
+					</Card>
+
+					<Card title="Clinical" size="small">
+						<b>Relevance</b>
+						<p>{data.evidence.clinical.relevance}</p>
+						<b>Implication</b>
+						<p>{data.evidence.clinical.implication}</p>
+						<b>Treatment</b>
+						<p>{data.evidence.clinical.treatment}</p>
+					</Card>
+
+					<Card title="Application" size="small">
+						<b>Validation</b>
+						<Alert
+							message={validatedMessage()}
+							type={validatedType()}
+							showIcon
+						/>
+						<b>Diagnostic application</b>
+						<Alert
+							message={diagnosisMessage()}
+							type={diagnosisType()}
+							showIcon
+						/>
+						<b>Prognostic application</b>
+						<Alert
+							message={prognosisMessage()}
+							type={prognosisType()}
+							showIcon
+						/>
+						<b>Predictive application</b>
+						<Alert
+							message={predictiveMessage()}
+							type={predictiveType()}
+							showIcon
+						/>
+						<b>Therapeutic application</b>
+						<Alert
+							message={therapeuticMessage()}
+							type={therapeuticType()}
+							showIcon
+						/>
 					</Card>
 				</div>)
 			}}
