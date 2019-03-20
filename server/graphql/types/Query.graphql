@@ -2,6 +2,7 @@
 # import BiomarkerSet from "./BiomarkerSet.graphql";
 # import Source from "./Source.graphql";
 # import Category from "./Category.graphql";
+# import Evidence from "./Evidence.graphql";
 
 type Query {
     biomarker(id: String!): Biomarker
@@ -13,4 +14,7 @@ type Query {
 	biomarkerSet(id: String!): BiomarkerSet
 	biomarkerSets: [BiomarkerSet]
 	biomarkerSetSearch(text: String): [BiomarkerSet]
+
+	evidence(id: String!): Evidence
+	evidences: [Evidence]
 }
