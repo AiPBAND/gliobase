@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from "react-apollo";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Search from './pages/Search';
 import Home from './pages/Home';
+import Search from './pages/Search';
+import Exploration from './pages/Exploration';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
@@ -23,6 +24,7 @@ class App extends Component {
           <MainLayout>        
             <Route exact path="/" component={Home} />
             <Route path="/search" component={Search} />
+            <Route path="/exploration" component={Exploration} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
             <Route path="/biomarker/:id" component={Biomarker} />

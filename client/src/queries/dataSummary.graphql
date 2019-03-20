@@ -2,7 +2,10 @@ query dataSummary{
 	biomarkers {
 		id
 	},
-    biomarkerSets {
+  biomarkerSets {
 		id
 	}
+  evidences {
+    id
+  }
 }

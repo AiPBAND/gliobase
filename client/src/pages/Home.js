@@ -42,20 +42,34 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		  showData: 0,
+		  showData: -1,
 		};
 	}
 
 	showBiomarkers = () => {
-		this.setState({
-			showData: 0,
-		});
+    if (this.state.showData === 0){
+      this.setState({
+        showData: -1,
+      });
+    }
+    else {
+      this.setState({
+        showData: 0,
+      });
+    }
 	}
 
 	showBiomarkerSets = () => {
-		this.setState({
-			showData: 1,
-		});
+    if (this.state.showData === 1){
+      this.setState({
+        showData: -1,
+      });
+    }
+    else {
+      this.setState({
+        showData: 1,
+      });
+    }
 	}
 
 	render(){
@@ -76,7 +90,7 @@ class Home extends Component {
                 <DataSummary
                   numberOfBiomarker = {data.biomarkers.length}
                   numberOfBiomarkerSet = {data.biomarkerSets.length} 
-                  numberOfLiterature = {'?'}
+                  numberOfEvidences = {data.evidences.length}
                   onClickBiomarkers = {this.showBiomarkers}
                   onClickBiomarkerSets = {this.showBiomarkerSets}
                 />
