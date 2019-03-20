@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { loader } from 'graphql.macro';
 import Table from 'antd/lib/table';
 import {Tag} from 'antd';
+import BioID from './BioID';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
  
@@ -14,7 +15,10 @@ const colors = {
 const columns = [{
 	title: 'ID',
 	dataIndex: 'id',
-	key: 'id'
+	key: 'id',
+	render: id => (
+		<BioID id={id}/>
+	)
   }, {
 	title: 'Name',
 	dataIndex: 'name',
