@@ -1,0 +1,12 @@
+query Biomarker($poop: String!){
+	biomarker(id: $poop){
+		id
+		name
+		abreviations
+		description
+		category {
+			id
+			reflink
+		}
+	} 
+}
