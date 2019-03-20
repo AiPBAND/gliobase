@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-import { loader } from 'graphql.macro';
 import Table from 'antd/lib/table';
 import {Tag} from 'antd';
-
-const biomarkersQuery = loader('../queries/biomarkers.graphql');
  
 const colors = {
 	DNA: "green",
