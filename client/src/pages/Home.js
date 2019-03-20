@@ -46,15 +46,8 @@ function ExampleData(props) {
 				</Query>
 			)
 		default:
-			return (
-				<Query query={biomarkersQuery}>
-					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
-						if (error) return <p>Error</p>;
-						return <Biomarkers data={data.biomarkers}/>
-					}}
-				</Query>
-			)
+      return null
+      // Give user the function to close the detail information of data summary
 	}
 }
 
@@ -62,7 +55,7 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		  showData: -1,
+		  showData: 0,
 		};
 	}
 
@@ -125,8 +118,8 @@ class Home extends Component {
                   numberOfBiomarkerSet = {data.biomarkerSets.length} 
                   numberOfEvidences = {data.evidences.length}
                   onClickBiomarkers = {this.showBiomarkers}
-				  onClickBiomarkerSets = {this.showBiomarkerSets}
-				  onClickEvidences = {this.showEvidences}
+				          onClickBiomarkerSets = {this.showBiomarkerSets}
+				          onClickEvidences = {this.showEvidences}
                 />
               );
             }}
