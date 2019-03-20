@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Table from 'antd/lib/table';
 import {Tag} from 'antd';
+import BioID from './BioID';
  
 const colors = {
 	DNA: "green",
@@ -11,7 +12,10 @@ const colors = {
 const columns = [{
 	title: 'ID',
 	dataIndex: 'id',
-	key: 'id'
+	key: 'id',
+	render: id => (
+		<BioID id={id}/>
+	)
   }, {
 	title: 'Name',
 	dataIndex: 'name',
