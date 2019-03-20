@@ -1,5 +1,6 @@
 import BiomarkerSet from '../../models/BiomarkerSet';
 import Biomarker from '../../models/Biomarker';
+import Evidence from '../../models/Evidence';
 import Fuse from 'fuse.js';
 
 export default {
@@ -38,6 +39,9 @@ export default {
 	BiomarkerSet: {
 		biomarkers: async (biomarkerSet) => {
 			return await Biomarker.find({_id: {$in: biomarkerSet.biomarkerIds}}).exec();
+		},
+		evidences: async (biomarkerSet) => {
+			return await Evidence.find({biomarkerSetId: biomarkerSet.id}).exec();
 		}
 	}
 }

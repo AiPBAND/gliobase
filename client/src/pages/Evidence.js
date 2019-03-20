@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Collapse, Tag, Alert, List, Row, Col, Typography} from 'antd';
+import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import {Statistic} from 'antd';
 import './Evidence.css';
 
 const { Title, Text } = Typography;
 
-const Panel = Collapse.Panel;
 const evidenceQuery = loader('../queries/evidence.graphql');
 
 class Evidence extends Component {
