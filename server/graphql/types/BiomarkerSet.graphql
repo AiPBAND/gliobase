@@ -3,4 +3,5 @@ type BiomarkerSet {
 	id: String!
 	biomarkerIds: [String]
 	biomarkers: [Biomarker]
+	evidences: [Evidence]
 }

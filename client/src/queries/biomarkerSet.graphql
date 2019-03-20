@@ -1,0 +1,23 @@
+query BiomarkerSet($id: String!){
+	biomarkerSet(id: $id){
+		id
+		biomarkerIds
+		biomarkers {
+			id
+			name
+		}
+		evidences {
+			id
+			pmid
+			stage
+			whoclass
+			application {
+				validated
+				diagnosis
+				prognosis
+				predictive
+				therapeutic
+			}
+		}
+	} 
+}

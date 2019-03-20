@@ -6,9 +6,11 @@ import { loader } from 'graphql.macro';
 import Biomarkers from '../components/Biomarkers';
 import DataSummary from '../components/DataSummary';
 import BiomarkerSets from '../components/BiomarkersSets';
+import Evidences from '../components/Evidences';
 
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 const biomarkerSetsQuery = loader('../queries/biomarkerSets.graphql');
+const evidencesQuery = loader('../queries/evidences.graphql');
 const dataSummaryQuery = loader('../queries/dataSummary.graphql');
 
 function ExampleData(props) {
@@ -33,8 +35,26 @@ function ExampleData(props) {
 					}}
 				</Query>
 			)
+		case 2:
+			return (
+				<Query query={evidencesQuery}>
+					{({ loading, error, data }) => {
+						if (loading) return <p>Loading...</p>;
+						if (error) return <p>Error</p>;
+						return <Evidences data={data.evidences}/>
+					}}
+				</Query>
+			)
 		default:
-			return null
+			return (
+				<Query query={biomarkersQuery}>
+					{({ loading, error, data }) => {
+						if (loading) return <p>Loading...</p>;
+						if (error) return <p>Error</p>;
+						return <Biomarkers data={data.biomarkers}/>
+					}}
+				</Query>
+			)
 	}
 }
 
@@ -72,6 +92,19 @@ class Home extends Component {
     }
 	}
 
+	showEvidences = () => {
+		if (this.state.showData === 2){
+		  this.setState({
+			showData: -1,
+		  });
+		}
+		else {
+		  this.setState({
+			showData: 2,
+		  });
+		}
+	}
+
 	render(){
 		return (
       <div className = "content">
@@ -92,7 +125,8 @@ class Home extends Component {
                   numberOfBiomarkerSet = {data.biomarkerSets.length} 
                   numberOfEvidences = {data.evidences.length}
                   onClickBiomarkers = {this.showBiomarkers}
-                  onClickBiomarkerSets = {this.showBiomarkerSets}
+				  onClickBiomarkerSets = {this.showBiomarkerSets}
+				  onClickEvidences = {this.showEvidences}
                 />
               );
             }}

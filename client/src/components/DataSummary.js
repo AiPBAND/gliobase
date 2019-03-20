@@ -30,7 +30,7 @@ class DataSummary extends Component{
                         description={this.props.numberOfBiomarkerSet}
                     />
                 </Card.Grid>
-                <Card.Grid style={gridStyle}>
+                <Card.Grid style={gridStyle} onClick={this.props.onClickEvidences}>
                     <Meta
                         avatar={<Avatar src={evidenceslogo} />}
                         title="Evidences"
