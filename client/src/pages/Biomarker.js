@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { List, Typography} from 'antd';
+import { Typography, Skeleton} from 'antd';
 import './Evidence.css';
 import Evidences from '../components/Evidences';
-import BioID from '../components/tags/BioID';
+import EntityList from '../components/lists/EntityList';
 
 const { Title} = Typography;
 
@@ -16,25 +16,19 @@ class Biomarker extends Component {
 		return(
 			<Query query={biomarkerQuery} variables={{id: bioid}}>
 			{({ loading, error, data }) => {
-				if (loading) return <p>Loading...</p>;
+				if (loading) return <Skeleton/>;
 				if (error) return <p>Error</p>;
 
-				return (<div>
+				return <div>
 
-					<Title>
-						{data.biomarker.id}
-					</Title>
-					<List
-						header={<div>Entities</div>}
-						bordered
-						dataSource={data.biomarker.entities}
-						renderItem={item => (<List.Item><BioID id={item.id}>{item.id}</BioID>{" - "+item.name}</List.Item>)}
-					/>
+					<Title>{data.biomarker.id}</Title>
+					<EntityList data={data.biomarker.entities}/>
+
 					<Title level={2}>Evidence</Title>
 					
 					<Evidences data={data.biomarker.evidences}></Evidences>
 
-				</div>)
+				</div>
 			}}
 			</Query>
 		)

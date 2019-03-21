@@ -9,6 +9,7 @@ import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
 import Species from '../components/tags/Species';
 import Stage from '../components/tags/Stage';
+import EntityList from '../components/lists/EntityList';
 
 
 const { Title, Text } = Typography;
@@ -125,7 +126,7 @@ class Evidence extends Component {
 							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
 						</Title>
 					</Title>
-					<span>{listIds}</span>
+					<EntityList data={data.evidence.biomarker.entities}></EntityList>
 
 					<Row gutter={15}>
 						<Col span={12}>
