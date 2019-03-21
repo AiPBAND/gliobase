@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Empty, Button, Card, Tag } from 'antd';
-import Category from './../components/Category';
+import Category from '../components/tags/Category';
 
 const entityQuery = loader('../queries/entity.graphql');
 
@@ -39,7 +39,7 @@ class Entity extends Component {
 
 				<b>Biological category</b>
 				<br/>
-				
+
 				<Category name={data.entity.category.id}/>
 					 <Card
 					   style={{ marginTop: 16}}
