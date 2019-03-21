@@ -1,26 +1,35 @@
 import React, {Component} from 'react';
-import {Icon, Table} from 'antd';
+import {Icon, Table, Popover} from 'antd';
 import BioID from './BioID';
 const getIcon = (mess) => {
 	if (mess === "Yes" || mess === "YES") return "check-circle"
 	if (mess === "No" || mess === "NO") return "stop"
 	if (mess === "Potential" || mess === "POTENTIAL") return "info-circle"
-	return "warning"
+	return "minus-circle"
 }
 
 const getColor = (mess) => {
-	if (mess === "Yes" || mess === "YES") return "green"
+	if (mess === "Yes" || mess === "YES") return "#52c41a"
 	if (mess === "No" || mess === "NO") return "red"
 	if (mess === "Potential" || mess === "POTENTIAL") return "blue"
-	return "grey"
+	return "gray"
+}
+
+const getPopover = (mess) => {
+	if (mess === "Yes" || mess === "YES") return "Yes"
+	if (mess === "No" || mess === "NO") return "No"
+	if (mess === "Potential" || mess === "POTENTIAL") return "Potential"
+	return "Unavailable"
 }
 
 const renderIcon = (val) => {
-	return <Icon 
-	type={getIcon(val)}
-	theme="twoTone"
-	twoToneColor={getColor(val)}
-	style={{ fontSize: '16px' }} />
+	return <Popover content={getPopover(val)}>
+		<Icon 
+		type={getIcon(val)}
+		theme="twoTone"
+		twoToneColor={getColor(val)}
+		style={{ fontSize: '16px' }} />
+  	</Popover>
 }
 
 const columns = [{
