@@ -46,16 +46,6 @@ class PieChart extends Component {
               stroke: "#fff"
             }}
           >
-            <Label
-              content="count"
-              offset={-25}
-              textStyle={{
-                rotate: 0,
-                textAlign: "center",
-                shadowBlur: 2,
-                shadowColor: "rgba(0, 0, 0, .45)"
-              }}
-            />
           </Geom>
         </Chart>
       </div>
