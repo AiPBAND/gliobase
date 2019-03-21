@@ -8,6 +8,7 @@ import BioID from './../components/tags/BioID';
 import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
 import Species from '../components/tags/Species';
+import Stage from '../components/tags/Stage';
 
 
 const { Title, Text } = Typography;
@@ -36,7 +37,7 @@ class Evidence extends Component {
 				})
 
 				const stage = data.evidence.stage.map(id => {
-					return <Tag>{id+" "}</Tag>;
+					return <Stage name={id}/>
 				})
 				
 				//TODO: Clean this mess
