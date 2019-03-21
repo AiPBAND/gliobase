@@ -5,6 +5,9 @@ query Biomarker($id: String!){
 		entities {
 			id
 			name
+			category {
+				id
+			}
 		}
 		evidences {
 			id
