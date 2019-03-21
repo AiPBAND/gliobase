@@ -31,7 +31,7 @@ class PieChart extends Component {
           <Geom
             type="intervalStack"
             position="count"
-            color="item"
+            color={this.props.colorSet}
             tooltip={[
               "item*count",
               (item, count) => {
@@ -61,6 +61,11 @@ class PieChart extends Component {
       </div>
     );
   }
+}
+
+PieChart.defaultProps={
+  intervalWidth: 2,
+  colorSet: 'item'
 }
 
 export default PieChart

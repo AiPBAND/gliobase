@@ -16,6 +16,7 @@ const TabPane = Tabs.TabPane;
 
 class Exploration extends Component {
 	render(){
+    const entityColorSet = ['item', ['#13c2c2', '#006d75', '#1890ff', '#003a8c']];
 		return (
       <Tabs type="card">
         
@@ -42,7 +43,7 @@ class Exploration extends Component {
               return (
                 <div className='exploration-statistics'>
                   <h3>Catagory</h3>
-                  <PieChart data={inputDataCatagory} intervalWidth={2}/>
+                  <PieChart data={inputDataCatagory} intervalWidth={2} colorSet= {entityColorSet}/>
                   <Entities data={entityData.entities}/>
                 </div>
               );
