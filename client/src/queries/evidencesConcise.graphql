@@ -1,0 +1,52 @@
+{
+	evidences {
+		id
+		biomarkerSetId
+		biomarkerSet {
+			biomarkerIds
+		}
+		pmid
+		sourceIds
+		samples
+		species
+		age {
+			min
+			max
+			med
+			avg
+			sd
+			range {
+				cutoff
+				over
+				under
+			}
+		}
+		gender {
+			male
+			female
+			other
+		}
+		stage
+		whoclass
+		region
+		research {
+			methods
+			results
+			conclusions
+		}
+		application {
+			validated
+			diagnosis
+			prognosis
+			predictive
+			therapeutic
+		}
+		clinical {
+			relevance
+			implication
+			treatment
+		}
+		comments
+		curator
+	} 
+}
