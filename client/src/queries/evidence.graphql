@@ -4,6 +4,13 @@ query Evidence($id: String!){
 		biomarkerId
 		biomarker {
 			entityIds
+			entities{
+				id
+				name
+				category {
+					id
+				}
+			}
 		}
 		pmid
 		sourceIds

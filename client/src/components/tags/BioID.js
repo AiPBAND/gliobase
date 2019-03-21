@@ -9,7 +9,13 @@ class BioID extends Component {
 			if (ref.charAt(0) === "B") return "biomarker";
 			else return "notfound";
 		}
-		return <Tag>
+		function getColor(name) {
+			if (name.charAt(0) === "E") return "orange";
+			if (name.charAt(0) === "V") return "green";
+			if (name.charAt(0) === "B") return "blue";
+			else return "";
+		}
+		return <Tag color={getColor(this.props.id)}>
 			<a href={"/"+refLink(this.props.id)+"/"+this.props.id}>{this.props.id}</a>
 		</Tag>
 	}
