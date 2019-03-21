@@ -5,7 +5,7 @@ import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
 import BioID from './../components/BioID';
 import Gender from './../components/Gender'
-
+import Age from './../components/Age'
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -131,6 +131,12 @@ class Evidence extends Component {
 								<div>{species}</div>
 								<b>Gender</b>
 								<Gender male={data.evidence.gender.male} female={data.evidence.gender.female} ></Gender>
+							    <b>Age</b>
+								<Age min={data.evidence.age.min} max={data.evidence.age.max}
+								     mean={data.evidence.age.mean} sd={data.evidence.age.sd}
+									 med={data.evidence.age.med} under={data.evidence.age.range.under}
+									 cut={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
+								></Age>
 							</Card>
 						</Col>
 						<Col span={12}>

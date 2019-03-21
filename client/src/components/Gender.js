@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Statistic} from 'antd';
+import { Statistic } from 'antd';
 import { Row, Col } from 'antd';
-import './../pages/Evidence.css';
 class Gender extends Component {
 	render() {
         function genData(gen){
