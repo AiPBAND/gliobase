@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Tag, Alert, List, Row, Col, Typography, Statistic} from 'antd';
+import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
 import BioID from './../components/BioID';
+import Gender from './../components/Gender'
 
 const { Title, Text } = Typography;
 
@@ -129,14 +130,7 @@ class Evidence extends Component {
 								<b>Species</b>
 								<div>{species}</div>
 								<b>Gender</b>
-								<Row gutter={16}>
-									<Col span={12}>
-										<Statistic title="Male" value={showZero(data.evidence.gender.male)}/>
-									</Col>
-									<Col span={12}>
-										<Statistic title="Female" value={showZero(data.evidence.gender.female)}/>
-									</Col>
-								</Row>
+								<Gender male={data.evidence.gender.male} female={data.evidence.gender.female} ></Gender>
 							</Card>
 						</Col>
 						<Col span={12}>
