@@ -1,0 +1,12 @@
+query Entity($id: String!){
+	entity(id: $id){
+		id
+		name
+		abreviations
+		description
+		category {
+			id
+			reflink
+		}
+	} 
+}

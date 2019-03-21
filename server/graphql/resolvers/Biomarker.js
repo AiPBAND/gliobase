@@ -1,6 +1,6 @@
 import Biomarker from '../../models/Biomarker';
-import Category from '../../models/Category';
-import Source from '../../models/Source';
+import Entity from '../../models/Entity';
+import Evidence from '../../models/Evidence';
 import Fuse from 'fuse.js';
 
 export default {
@@ -11,13 +11,7 @@ export default {
       	biomarkers: async (parent, args, context, info) => {
 			return await Biomarker.find({}).exec();
 		},
-		biomarkersBySource: async (parent, {source}, context, info) => {
-			return await Biomarker.find({ "sourceId" : source}).exec();
-		},
-		biomarkersByCategory: async (parent, {category}, context, info) => {
-			return await Biomarker.find({ "categoryId" : category} ).exec();
-		},
-		biomarkersSearch: async (parent, {text}, context, info) => {
+		biomarkerSearch: async (parent, {text}, context, info) => {
 			if(text){
 				const list = await Biomarker.find({}).exec();
 				var options = {
@@ -31,9 +25,7 @@ export default {
 					minMatchCharLength: 1,
 					keys: [
 					  "id",
-					  "name",
-					  "abreviations",
-					  "description"
+					  "entityIds"
 				  ]
 				  };
 				  var fuse = new Fuse(list, options); // "list" is the item array
@@ -42,12 +34,14 @@ export default {
 			}else{
 				return await Biomarker.find({}).exec();
 			}
-			
 		}      
 	},
 	Biomarker: {
-		category: async (biomarker) => {
-			return await Category.findOne({_id: biomarker.categoryId}).exec();
+		entities: async (biomarker) => {
+			return await Entity.find({_id: {$in: biomarker.entityIds}}).exec();
+		},
+		evidences: async (biomarker) => {
+			return await Evidence.find({biomarkerId: biomarker.id}).exec();
 		}
 	}
 }

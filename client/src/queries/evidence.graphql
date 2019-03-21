@@ -1,9 +1,9 @@
 query Evidence($id: String!){
 	evidence(id: $id){
 		id
-		biomarkerSetId
-		biomarkerSet {
-			biomarkerIds
+		biomarkerId
+		biomarker {
+			entityIds
 		}
 		pmid
 		sourceIds
