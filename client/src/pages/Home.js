@@ -59,42 +59,21 @@ class Home extends Component {
 	}
 
 	showEntities = () => {
-    if (this.state.showData === 0){
-      this.setState({
-        showData: -1,
-      });
-    }
-    else {
-      this.setState({
-        showData: 0,
-      });
-    }
+    this.setState({
+      showData: 0,
+    });
 	}
 
 	showBiomarkers = () => {
-    if (this.state.showData === 1){
-      this.setState({
-        showData: -1,
-      });
-    }
-    else {
-      this.setState({
-        showData: 1,
-      });
-    }
+    this.setState({
+      showData: 1,
+    });
 	}
 
 	showEvidences = () => {
-		if (this.state.showData === 2){
-		  this.setState({
-			showData: -1,
-		  });
-		}
-		else {
-		  this.setState({
-			showData: 2,
-		  });
-		}
+    this.setState({
+    showData: 2,
+    });
 	}
 
 	render(){
