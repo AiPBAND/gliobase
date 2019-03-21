@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Table from 'antd/lib/table';
-import BioID from './BioID';
+import BioID from './tags/BioID';
 
 const columns = [{
 	title: 'ID',

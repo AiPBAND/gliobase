@@ -4,7 +4,7 @@ import { loader } from 'graphql.macro';
 import { List, Typography} from 'antd';
 import './Evidence.css';
 import Evidences from '../components/Evidences';
-import BioID from '../components/BioID';
+import BioID from '../components/tags/BioID';
 
 const { Title} = Typography;
 
