@@ -14,7 +14,7 @@ class BioID extends Component {
             return ("biomarker")
           }
         }
-		return (
+		    return (
             <Tag><a href= {"/"+refLink(this.props.id)+"/"+this.props.id}> {this.props.id} </a>
             </Tag>
         )
