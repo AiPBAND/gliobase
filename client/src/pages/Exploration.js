@@ -6,6 +6,7 @@ import Entities from '../components/Entities';
 import Biomarkers from '../components/Biomarkers';
 import Evidences from '../components/Evidences';
 import PieChart from '../components/PieChart';
+import {CategoryColors} from '../commons/ColorSettings';
 import './Exploration.css'
 
 const entitiesQuery = loader('../queries/entities.graphql');
@@ -16,7 +17,8 @@ const TabPane = Tabs.TabPane;
 
 class Exploration extends Component {
 	render(){
-    const entityColorSet = ['item', ['#13c2c2', '#006d75', '#1890ff', '#003a8c']];
+
+    const entityColorSet = ['item', [CategoryColors['Protein'], CategoryColors['Others'], CategoryColors['RNA'], CategoryColors['DNA']]];
 		return (
       <Tabs type="card">
         
