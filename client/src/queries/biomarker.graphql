@@ -1,12 +1,23 @@
-query Biomarker($poop: String!){
-	biomarker(id: $poop){
+query Biomarker($id: String!){
+	biomarker(id: $id){
 		id
-		name
-		abreviations
-		description
-		category {
+		entityIds
+		entities {
 			id
-			reflink
+			name
+		}
+		evidences {
+			id
+			pmid
+			stage
+			whoclass
+			application {
+				validated
+				diagnosis
+				prognosis
+				predictive
+				therapeutic
+			}
 		}
 	} 
 }

@@ -9,9 +9,9 @@ import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import MainLayout from './layouts/MainLayout';
-import Biomarker from './pages/Biomarker';
+import Entity from './pages/Entity';
 import Evidence from './pages/Evidence';
-import BiomarkerSet from './pages/BiomarkerSet';
+import Biomarker from './pages/Biomarker';
 
 const graphQlClient = new ApolloClient({});
 
@@ -28,9 +28,9 @@ class App extends Component {
             <Route path="/exploration" component={Exploration} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
-            <Route path="/biomarker/:id" component={Biomarker} />
+            <Route path="/entity/:id" component={Entity} />
 			<Route path="/evidence/:id" component={Evidence} />
-			<Route path="/set/:id" component={BiomarkerSet} />
+			<Route path="/biomarker/:id" component={Biomarker} />
           </MainLayout>
         </Switch>
 			</Router>

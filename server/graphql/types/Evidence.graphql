@@ -42,8 +42,8 @@ type Clinical {
 
 type Evidence {
 	id: String!
-	biomarkerSetId: String
-	biomarkerSet: BiomarkerSet
+	biomarkerId: String
+	biomarker: Biomarker
 	pmid: String
 	sourceIds: [String]
 	sources: [Source]

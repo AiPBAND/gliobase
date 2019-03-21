@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Card, Avatar } from 'antd';
 
-import biomarkerslogo from '../assets/experiment.svg';
-import biomarkersetslogo from '../assets/folder-open.svg';
+import entitieslogo from '../assets/experiment.svg';
+import biomarkerslogo from '../assets/folder-open.svg';
 import evidenceslogo from '../assets/book.svg'
 
 const { Meta } = Card;
@@ -16,18 +16,18 @@ class DataSummary extends Component{
     render(){
         return(
             <Card title="Data Summary">
+                <Card.Grid style={gridStyle} onClick={this.props.onClickEntities}>
+                    <Meta
+                        avatar={<Avatar src={entitieslogo} />}
+                        title="Entities"
+                        description={this.props.numberOfEntity}
+                    />
+                </Card.Grid>
                 <Card.Grid style={gridStyle} onClick={this.props.onClickBiomarkers}>
                     <Meta
                         avatar={<Avatar src={biomarkerslogo} />}
                         title="Biomarkers"
                         description={this.props.numberOfBiomarker}
-                    />
-                </Card.Grid>
-                <Card.Grid style={gridStyle} onClick={this.props.onClickBiomarkerSets}>
-                    <Meta
-                        avatar={<Avatar src={biomarkersetslogo} />}
-                        title="Biomarker Sets"
-                        description={this.props.numberOfBiomarkerSet}
                     />
                 </Card.Grid>
                 <Card.Grid style={gridStyle} onClick={this.props.onClickEvidences}>

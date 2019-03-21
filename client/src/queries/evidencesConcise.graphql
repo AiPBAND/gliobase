@@ -1,9 +1,9 @@
 {
 	evidences {
 		id
-		biomarkerSetId
-		biomarkerSet {
-			biomarkerIds
+		biomarkerId
+		biomarker {
+			entityIds
 		}
 		pmid
 		sourceIds

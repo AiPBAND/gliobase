@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
-import {Statistic} from 'antd';
+import { Card, Tag, Alert, List, Row, Col, Typography, Statistic} from 'antd';
 import './Evidence.css';
 import BioID from './../components/BioID';
 
@@ -19,7 +18,7 @@ class Evidence extends Component {
 				if (loading) return <p>Loading...</p>;
 				if (error) return <p>Error</p>;
 
-				const listIds = data.evidence.biomarkerSet.biomarkerIds.map(id => {
+				const listIds = data.evidence.biomarker.entityIds.map(id => {
 					return <BioID id={id}>{id+" "}</BioID>;
 				})
 
@@ -34,6 +33,8 @@ class Evidence extends Component {
 				const stage = data.evidence.stage.map(id => {
 					return <Tag>{id+" "}</Tag>;
 				})
+				
+				//TODO: Clean this mess
 
 				const validatedMessage = () =>{
 					if(data.evidence.application.validated === "Yes") return "Validated"
