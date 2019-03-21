@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Tag, Divider, List, Table, Typography, Icon} from 'antd';
+import { List, Typography} from 'antd';
 import './Evidence.css';
-import { get } from 'https';
 import Evidences from '../components/Evidences';
 
 const { Title, Text } = Typography;

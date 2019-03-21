@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button, Divider } from 'antd';
+import { Button, Divider, Skeleton } from 'antd';
 import './Home.css'
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
@@ -19,7 +19,7 @@ function ExampleData(props) {
 			return (
 				<Query query={biomarkersQuery}>
 					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
+						if (loading) return <Skeleton active />;
 						if (error) return <p>Error</p>;
 						return <Biomarkers data={data.biomarkers}/>
 					}}
@@ -29,7 +29,7 @@ function ExampleData(props) {
 			return (
 				<Query query={biomarkerSetsQuery}>
 					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
+						if (loading) return <Skeleton active />;
 						if (error) return <p>Error</p>;
 						return <BiomarkerSets data={data.biomarkerSets}/>
 					}}
@@ -39,7 +39,7 @@ function ExampleData(props) {
 			return (
 				<Query query={evidencesQuery}>
 					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
+						if (loading) return <Skeleton active />;
 						if (error) return <p>Error</p>;
 						return <Evidences data={data.evidences}/>
 					}}
@@ -49,7 +49,7 @@ function ExampleData(props) {
 			return (
 				<Query query={biomarkersQuery}>
 					{({ loading, error, data }) => {
-						if (loading) return <p>Loading...</p>;
+						if (loading) return <Skeleton active />;
 						if (error) return <p>Error</p>;
 						return <Biomarkers data={data.biomarkers}/>
 					}}
@@ -117,7 +117,7 @@ class Home extends Component {
         <div className = "data-summary">
           <Query query={dataSummaryQuery}>
             {({ loading, error, data }) => {
-              if (loading) return <p>Loading...</p>;
+              if (loading) return <Skeleton active />;
               if (error) return <p>Error</p>;
               return (
                 <DataSummary
