@@ -3,7 +3,8 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Card, Tag, Alert, List, Row, Col, Typography, Statistic} from 'antd';
 import './Evidence.css';
-import BioID from './../components/BioID';
+import BioID from './../components/tags/BioID';
+import Source from './../components/tags/Source';
 
 const { Title, Text } = Typography;
 
@@ -23,7 +24,7 @@ class Evidence extends Component {
 				})
 
 				const sourceIds = data.evidence.sourceIds.map(id => {
-					return <Tag>{id+" "}</Tag>;
+					return <Source name={id}/>;
 				})
 
 				const species = data.evidence.species.map(id => {
