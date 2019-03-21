@@ -34,7 +34,7 @@ class PieChart extends Component {
           height={210}
           data={dv}
           scale={cols}
-          padding={[0, 100, 20, 100]}
+          padding={[0, 20, 20, 20]}
           forceFit
         >
           <Coord type="theta" radius={0.9} />
@@ -63,17 +63,16 @@ class PieChart extends Component {
               }
             ]}
             style={{
-              lineWidth: 2,
+              lineWidth: this.props.intervalWidth,
               stroke: "#fff"
             }}
           >
             <Label
               content="count"
-              offset={-22}
+              offset={-25}
               textStyle={{
                 rotate: 0,
                 textAlign: "center",
-                fontWeight: 'bold',
                 shadowBlur: 2,
                 shadowColor: "rgba(0, 0, 0, .45)"
               }}

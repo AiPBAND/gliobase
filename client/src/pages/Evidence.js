@@ -4,6 +4,7 @@ import { loader } from 'graphql.macro';
 import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import {Statistic} from 'antd';
 import './Evidence.css';
+import BioID from './../components/BioID';
 
 const { Title, Text } = Typography;
 
@@ -19,7 +20,7 @@ class Evidence extends Component {
 				if (error) return <p>Error</p>;
 
 				const listIds = data.evidence.biomarkerSet.biomarkerIds.map(id => {
-					return <Tag>{id+" "}</Tag>;
+					return <BioID id={id}>{id+" "}</BioID>;
 				})
 
 				const sourceIds = data.evidence.sourceIds.map(id => {

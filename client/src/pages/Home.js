@@ -62,7 +62,7 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		  showData: -1,
+		  showData: 0,
 		};
 	}
 
@@ -125,8 +125,8 @@ class Home extends Component {
                   numberOfBiomarkerSet = {data.biomarkerSets.length} 
                   numberOfEvidences = {data.evidences.length}
                   onClickBiomarkers = {this.showBiomarkers}
-				  onClickBiomarkerSets = {this.showBiomarkerSets}
-				  onClickEvidences = {this.showEvidences}
+				          onClickBiomarkerSets = {this.showBiomarkerSets}
+				          onClickEvidences = {this.showEvidences}
                 />
               );
             }}

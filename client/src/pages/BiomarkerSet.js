@@ -4,6 +4,7 @@ import { loader } from 'graphql.macro';
 import { List, Typography} from 'antd';
 import './Evidence.css';
 import Evidences from '../components/Evidences';
+import BioID from './../components/BioID';
 
 const { Title, Text } = Typography;
 
@@ -29,7 +30,7 @@ class BiomarkerSet extends Component {
 						header={<div>Biomarkers</div>}
 						bordered
 						dataSource={data.biomarkerSet.biomarkers}
-						renderItem={item => (<List.Item>{item.id+" - "+ item.name}</List.Item>)}
+						renderItem={item => (<List.Item><BioID id={item.id}>{item.id}</BioID>{" - "+item.name}</List.Item>)}
 					/>
 					<Title level={2}>Evidence</Title>
 					
