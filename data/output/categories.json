@@ -1,10 +1,6 @@
 [
     {
-        "_id": "Others",
-        "description": ""
-    },
-    {
-        "_id": "Cytokine",
+        "_id": "DNA",
         "description": ""
     },
     {
@@ -12,39 +8,11 @@
         "description": ""
     },
     {
-        "_id": "Aminopeptidase",
-        "description": ""
-    },
-    {
-        "_id": "Lipid",
-        "description": ""
-    },
-    {
-        "_id": "Stem cells",
-        "description": ""
-    },
-    {
-        "_id": "Enzyme",
-        "description": ""
-    },
-    {
-        "_id": "Labelling index",
-        "description": ""
-    },
-    {
         "_id": "Protein",
         "description": ""
     },
     {
-        "_id": "Other",
-        "description": ""
-    },
-    {
-        "_id": "Metabolite",
-        "description": ""
-    },
-    {
-        "_id": "DNA",
+        "_id": "Others",
         "description": ""
     }
 ]

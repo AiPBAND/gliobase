@@ -57,7 +57,7 @@ seed.append({
 
 # Category *****************************************************************************************
 clist = []
-for item in extractUnique(df['category']):
+for item in ["DNA", "RNA", "Protein", "Others"]:
 	clist.append({
 		"_id": item,
 		"description": ""
