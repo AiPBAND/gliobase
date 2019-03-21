@@ -4,7 +4,11 @@
   "description": "Glioblastoma multiforme (GBM) biomarker knowledge base",
   "main": "server.js",
   "repository": "https://github.com/thehyve/gliobase.git",
-  "author": "AiPBAND <jeremy@thehyve.nl>",
+  "contrubutor": [
+    "Jeremy Georges-Filteau <jeremy@thehyve.nl>",
+    "Xiaoyu Zhang <x.zhang18@imperial.ac.uk>",
+    "Birbal Prasad <b.prasad@tees.ac.uk>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.2.3",
