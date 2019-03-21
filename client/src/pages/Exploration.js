@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Tabs, Icon } from 'antd';
+import { Tabs, Icon, Skeleton, Spin } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Entities from '../components/Entities';
@@ -18,10 +18,16 @@ class Exploration extends Component {
 	render(){
 		return (
       <Tabs type="card">
+        
         <TabPane tab={<span><Icon type="experiment" />Entities</span>} key="1">
           <Query query={entitiesQuery}>
             {({ loading, error, data: entityData }) => {
-              if (loading) return <p>Loading...</p>;
+              if (loading) return (
+                <div className='exploration-loading'>
+                  <Spin size="large" />
+                  <Skeleton active paragraph={{ rows: 4 }} />
+                </div>
+              );
               if (error) return <p>Error</p>;
               const entityCategory = entityData.entities.map(el => el.category.id);
               const tally = entityCategory.reduce((accumulator, el) => {
@@ -36,17 +42,23 @@ class Exploration extends Component {
               return (
                 <div className='exploration-statistics'>
                   <h3>Catagory</h3>
-                  <PieChart data={inputDataCatagory} intervalWidth={1}/>
+                  <PieChart data={inputDataCatagory} intervalWidth={2}/>
                   <Entities data={entityData.entities}/>
                 </div>
               );
             }}
           </Query>	
         </TabPane>
+
         <TabPane tab={<span><Icon type="folder-open" />Biomarkers</span>} key="2">
           <Query query={biomarkersQuery}>
             {({ loading, error, data }) => {
-              if (loading) return <p>Loading...</p>;
+              if (loading) return (
+                <div className='exploration-loading'>
+                  <Spin size="large" />
+                  <Skeleton active paragraph={{ rows: 4 }} />
+                </div>
+              );
               if (error) return <p>Error</p>;
               return <Biomarkers data={data.biomarkers}/>
             }}
@@ -55,7 +67,12 @@ class Exploration extends Component {
         <TabPane tab={<span><Icon type="book" />Evidences</span>} key="3">
           <Query query={evidencesQuery}>
             {({ loading, error, data: evidenceData }) => {
-              if (loading) return <p>Loading...</p>;
+              if (loading) return (
+                <div className='exploration-loading'>
+                  <Spin size="large" />
+                  <Skeleton active paragraph={{ rows: 4 }} />
+                </div>
+              );
               if (error) return <p>Error</p>;
 
               const evidenceSource = evidenceData.evidences.map(el => el.sourceIds);
