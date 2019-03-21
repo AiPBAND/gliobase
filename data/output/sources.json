@@ -1,33 +1,5 @@
 [
     {
-        "_id": "Tissue",
-        "description": ""
-    },
-    {
-        "_id": "Blood",
-        "description": ""
-    },
-    {
-        "_id": "Glioma Stem Cells",
-        "description": ""
-    },
-    {
-        "_id": "Serum",
-        "description": ""
-    },
-    {
-        "_id": "Imaging",
-        "description": ""
-    },
-    {
-        "_id": "TIssue",
-        "description": ""
-    },
-    {
-        "_id": "Cell lines",
-        "description": ""
-    },
-    {
         "_id": "Cell line",
         "description": ""
     },
@@ -36,7 +8,35 @@
         "description": ""
     },
     {
+        "_id": "TIssue",
+        "description": ""
+    },
+    {
         "_id": "Sera",
+        "description": ""
+    },
+    {
+        "_id": "Glioma Stem Cells",
+        "description": ""
+    },
+    {
+        "_id": "Cell lines",
+        "description": ""
+    },
+    {
+        "_id": "Imaging",
+        "description": ""
+    },
+    {
+        "_id": "Tissue",
+        "description": ""
+    },
+    {
+        "_id": "Blood",
+        "description": ""
+    },
+    {
+        "_id": "Serum",
         "description": ""
     }
 ]
