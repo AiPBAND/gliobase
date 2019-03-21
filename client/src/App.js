@@ -12,6 +12,7 @@ import MainLayout from './layouts/MainLayout';
 import Entity from './pages/Entity';
 import Evidence from './pages/Evidence';
 import Biomarker from './pages/Biomarker';
+import NotFound from './NotFound';
 
 const graphQlClient = new ApolloClient({});
 
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/entity/:id" component={Entity} />
 			<Route path="/evidence/:id" component={Evidence} />
 			<Route path="/biomarker/:id" component={Biomarker} />
+			<Route path="/notfound" component={NotFound} />
           </MainLayout>
         </Switch>
 			</Router>
