@@ -8,57 +8,36 @@ import {
   Label,
   Legend,
 } from "bizcharts";
-import DataSet from "@antv/data-set";
 
 class PieChart extends Component {
   render() {
-    const { DataView } = DataSet;
-    const dv = new DataView();
-    dv.source(this.props.data).transform({
-      type: "percent",
-      field: "count",
-      dimension: "item",
-      as: "percent"
-    });
-    const cols = {
-      percent: {
-        formatter: val => {
-          val = (val * 100).toFixed(2) + "%";
-          return val;
-        }
-      }
-    };
     return (
       <div>
         <Chart
-          height={210}
-          data={dv}
-          scale={cols}
-          padding={[0, 20, 20, 20]}
+          height={250}
+          data={this.props.data}
+          padding={[0, 0, 60, 0]}
           forceFit
         >
           <Coord type="theta" radius={0.9} />
           <Axis name="count" />
-          {/* <Legend
-            position="right"
-            offsetY={0}
-            offsetX={0}
-          /> */}
+          <Legend
+            position="bottom"
+          />
           <Tooltip
             showTitle={false}
-            itemTpl="<li><span style=&quot;background-color:{color};&quot; class=&quot;g2-tooltip-marker&quot;></span>{name}</li>"
+            itemTpl="<li><span style=&quot;background-color:{color};&quot; class=&quot;g2-tooltip-marker&quot;></span>{name}: {value}</li>"
           />
           <Geom
             type="intervalStack"
-            position="percent"
+            position="count"
             color="item"
             tooltip={[
-              "item*percent",
-              (item, percent) => {
-                percent = percent * 100 + "%";
+              "item*count",
+              (item, count) => {
                 return {
                   name: item,
-                  value: percent
+                  value: count
                 };
               }
             ]}
