@@ -1,8 +1,8 @@
 [
     {
-        "_id": "E000000",
+        "_id": "V000000",
         "pmid": "23429371",
-        "biomarkerSetId": "S000000",
+        "biomarkerId": "B000000",
         "sourceIds": [
             "Tissue"
         ],
@@ -64,9 +64,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000001",
+        "_id": "V000001",
         "pmid": "26452024",
-        "biomarkerSetId": "S000001",
+        "biomarkerId": "B000001",
         "sourceIds": [
             "Tissue"
         ],
@@ -134,9 +134,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000002",
+        "_id": "V000002",
         "pmid": "29731893",
-        "biomarkerSetId": "S000002",
+        "biomarkerId": "B000002",
         "sourceIds": [
             "Tissue"
         ],
@@ -198,9 +198,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000003",
+        "_id": "V000003",
         "pmid": "23411595",
-        "biomarkerSetId": "S000003",
+        "biomarkerId": "B000003",
         "sourceIds": [
             "Tissue"
         ],
@@ -265,9 +265,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000004",
+        "_id": "V000004",
         "pmid": "25469866",
-        "biomarkerSetId": "S000004",
+        "biomarkerId": "B000004",
         "sourceIds": [
             "Tissue"
         ],
@@ -337,9 +337,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000005",
+        "_id": "V000005",
         "pmid": "29156757",
-        "biomarkerSetId": "S000005",
+        "biomarkerId": "B000005",
         "sourceIds": [
             "Tissue"
         ],
@@ -402,9 +402,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000006",
+        "_id": "V000006",
         "pmid": "25455102",
-        "biomarkerSetId": "S000006",
+        "biomarkerId": "B000006",
         "sourceIds": [
             "Tissue"
         ],
@@ -475,9 +475,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000007",
+        "_id": "V000007",
         "pmid": "30096248",
-        "biomarkerSetId": "S000007",
+        "biomarkerId": "B000007",
         "sourceIds": [
             "Tissue"
         ],
@@ -541,9 +541,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000008",
+        "_id": "V000008",
         "pmid": "27358635",
-        "biomarkerSetId": "S000008",
+        "biomarkerId": "B000008",
         "sourceIds": [
             "Tissue"
         ],
@@ -609,9 +609,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000009",
+        "_id": "V000009",
         "pmid": "25655102",
-        "biomarkerSetId": "S0001E4",
+        "biomarkerId": "B0001E4",
         "sourceIds": [
             "Tissue"
         ],
@@ -679,9 +679,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00000A",
+        "_id": "V00000A",
         "pmid": "21786013",
-        "biomarkerSetId": "S00000A",
+        "biomarkerId": "B00000A",
         "sourceIds": [
             "Tissue"
         ],
@@ -749,9 +749,9 @@
         "curator": null
     },
     {
-        "_id": "E00000B",
+        "_id": "V00000B",
         "pmid": "24523440",
-        "biomarkerSetId": "S00000B",
+        "biomarkerId": "B00000B",
         "sourceIds": [
             "Tissue"
         ],
@@ -823,9 +823,9 @@
         "curator": null
     },
     {
-        "_id": "E00000C",
+        "_id": "V00000C",
         "pmid": "17264249",
-        "biomarkerSetId": "S00000C",
+        "biomarkerId": "B00000C",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -888,9 +888,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00000D",
+        "_id": "V00000D",
         "pmid": "9870820",
-        "biomarkerSetId": "S00000D",
+        "biomarkerId": "B00000D",
         "sourceIds": [
             "Tissue"
         ],
@@ -947,9 +947,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00000E",
+        "_id": "V00000E",
         "pmid": "11882906",
-        "biomarkerSetId": "S00004A",
+        "biomarkerId": "B00004A",
         "sourceIds": [
             "Tissue"
         ],
@@ -1006,9 +1006,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00000F",
+        "_id": "V00000F",
         "pmid": "20702468",
-        "biomarkerSetId": "S00000F",
+        "biomarkerId": "B00000F",
         "sourceIds": [
             "Tissue"
         ],
@@ -1081,9 +1081,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000010",
+        "_id": "V000010",
         "pmid": "16575014",
-        "biomarkerSetId": "S000010",
+        "biomarkerId": "B000010",
         "sourceIds": [
             "Tissue"
         ],
@@ -1147,9 +1147,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000011",
+        "_id": "V000011",
         "pmid": "22169598",
-        "biomarkerSetId": "S000011",
+        "biomarkerId": "B000011",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1216,9 +1216,9 @@
         "curator": null
     },
     {
-        "_id": "E000012",
+        "_id": "V000012",
         "pmid": "20353279",
-        "biomarkerSetId": "S000012",
+        "biomarkerId": "B000012",
         "sourceIds": [
             "Tissue"
         ],
@@ -1278,9 +1278,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000013",
+        "_id": "V000013",
         "pmid": "20126476",
-        "biomarkerSetId": "S000013",
+        "biomarkerId": "B000013",
         "sourceIds": [
             "Tissue"
         ],
@@ -1343,9 +1343,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000014",
+        "_id": "V000014",
         "pmid": "21960689",
-        "biomarkerSetId": "S000014",
+        "biomarkerId": "B000014",
         "sourceIds": [
             "Tissue"
         ],
@@ -1412,9 +1412,9 @@
         "curator": null
     },
     {
-        "_id": "E000015",
+        "_id": "V000015",
         "pmid": "24521322",
-        "biomarkerSetId": "S000015",
+        "biomarkerId": "B000015",
         "sourceIds": [
             "Tissue",
             "Cell line",
@@ -1488,9 +1488,9 @@
         "curator": null
     },
     {
-        "_id": "E000016",
+        "_id": "V000016",
         "pmid": "27466078",
-        "biomarkerSetId": "S000016",
+        "biomarkerId": "B000016",
         "sourceIds": [
             "Tissue"
         ],
@@ -1550,9 +1550,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000017",
+        "_id": "V000017",
         "pmid": "21895872",
-        "biomarkerSetId": "S000017",
+        "biomarkerId": "B000017",
         "sourceIds": [
             "Tissue"
         ],
@@ -1620,9 +1620,9 @@
         "curator": null
     },
     {
-        "_id": "E000018",
+        "_id": "V000018",
         "pmid": "12908754",
-        "biomarkerSetId": "S000018",
+        "biomarkerId": "B000018",
         "sourceIds": [
             "Tissue"
         ],
@@ -1680,9 +1680,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000019",
+        "_id": "V000019",
         "pmid": "23494873",
-        "biomarkerSetId": "S000019",
+        "biomarkerId": "B000019",
         "sourceIds": [
             "Tissue"
         ],
@@ -1743,9 +1743,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00001A",
+        "_id": "V00001A",
         "pmid": "23645533",
-        "biomarkerSetId": "S00001A",
+        "biomarkerId": "B00001A",
         "sourceIds": [
             "Tissue"
         ],
@@ -1809,9 +1809,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00001B",
+        "_id": "V00001B",
         "pmid": "29920451",
-        "biomarkerSetId": "S00001B",
+        "biomarkerId": "B00001B",
         "sourceIds": [
             "Tissue"
         ],
@@ -1872,9 +1872,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00001C",
+        "_id": "V00001C",
         "pmid": "12888899",
-        "biomarkerSetId": "S00001C",
+        "biomarkerId": "B00001C",
         "sourceIds": [
             "Tissue"
         ],
@@ -1931,9 +1931,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00001D",
+        "_id": "V00001D",
         "pmid": "14612923",
-        "biomarkerSetId": "S00016F",
+        "biomarkerId": "B00016F",
         "sourceIds": [
             "Tissue"
         ],
@@ -1992,9 +1992,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00001E",
+        "_id": "V00001E",
         "pmid": "18821037",
-        "biomarkerSetId": "S00001E",
+        "biomarkerId": "B00001E",
         "sourceIds": [
             "Tissue"
         ],
@@ -2056,9 +2056,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00001F",
+        "_id": "V00001F",
         "pmid": "24194606",
-        "biomarkerSetId": "S00001F",
+        "biomarkerId": "B00001F",
         "sourceIds": [
             "Tissue"
         ],
@@ -2129,9 +2129,9 @@
         "curator": null
     },
     {
-        "_id": "E000020",
+        "_id": "V000020",
         "pmid": "22990979",
-        "biomarkerSetId": "S000020",
+        "biomarkerId": "B000020",
         "sourceIds": [
             "Tissue"
         ],
@@ -2196,9 +2196,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000021",
+        "_id": "V000021",
         "pmid": "22570426",
-        "biomarkerSetId": "S000021",
+        "biomarkerId": "B000021",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2265,9 +2265,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000022",
+        "_id": "V000022",
         "pmid": "30129426",
-        "biomarkerSetId": "S000022",
+        "biomarkerId": "B000022",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2330,9 +2330,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000023",
+        "_id": "V000023",
         "pmid": "22926763",
-        "biomarkerSetId": "S000023",
+        "biomarkerId": "B000023",
         "sourceIds": [
             "Tissue"
         ],
@@ -2403,9 +2403,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000024",
+        "_id": "V000024",
         "pmid": "27495233",
-        "biomarkerSetId": "S000024",
+        "biomarkerId": "B000024",
         "sourceIds": [
             "Tissue"
         ],
@@ -2465,9 +2465,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000025",
+        "_id": "V000025",
         "pmid": "23902708",
-        "biomarkerSetId": "S000025",
+        "biomarkerId": "B000025",
         "sourceIds": [
             "Tissue"
         ],
@@ -2540,9 +2540,9 @@
         "curator": null
     },
     {
-        "_id": "E000026",
+        "_id": "V000026",
         "pmid": "23510544",
-        "biomarkerSetId": "S000026",
+        "biomarkerId": "B000026",
         "sourceIds": [
             "Tissue"
         ],
@@ -2606,9 +2606,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000027",
+        "_id": "V000027",
         "pmid": "26356815",
-        "biomarkerSetId": "S000027",
+        "biomarkerId": "B000027",
         "sourceIds": [
             "Tissue"
         ],
@@ -2673,9 +2673,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000028",
+        "_id": "V000028",
         "pmid": "25322872",
-        "biomarkerSetId": "S000028",
+        "biomarkerId": "B000028",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2743,9 +2743,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000029",
+        "_id": "V000029",
         "pmid": "21242845",
-        "biomarkerSetId": "S000029",
+        "biomarkerId": "B000029",
         "sourceIds": [
             "Tissue"
         ],
@@ -2810,9 +2810,9 @@
         "curator": null
     },
     {
-        "_id": "E00002A",
+        "_id": "V00002A",
         "pmid": "24466377",
-        "biomarkerSetId": "S00002A",
+        "biomarkerId": "B00002A",
         "sourceIds": [
             "Tissue"
         ],
@@ -2878,9 +2878,9 @@
         "curator": null
     },
     {
-        "_id": "E00002B",
+        "_id": "V00002B",
         "pmid": "18097589",
-        "biomarkerSetId": "S00002B",
+        "biomarkerId": "B00002B",
         "sourceIds": [
             "Tissue"
         ],
@@ -2948,9 +2948,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00002C",
+        "_id": "V00002C",
         "pmid": "29782850",
-        "biomarkerSetId": "S00002C",
+        "biomarkerId": "B00002C",
         "sourceIds": [
             "Tissue"
         ],
@@ -3014,9 +3014,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00002D",
+        "_id": "V00002D",
         "pmid": "25849941",
-        "biomarkerSetId": "S00002D",
+        "biomarkerId": "B00002D",
         "sourceIds": [
             "Tissue"
         ],
@@ -3075,9 +3075,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00002E",
+        "_id": "V00002E",
         "pmid": "22034964",
-        "biomarkerSetId": "S00002E",
+        "biomarkerId": "B00002E",
         "sourceIds": [
             "Tissue"
         ],
@@ -3146,9 +3146,9 @@
         "curator": null
     },
     {
-        "_id": "E00002F",
+        "_id": "V00002F",
         "pmid": "7507162",
-        "biomarkerSetId": "S00002F",
+        "biomarkerId": "B00002F",
         "sourceIds": [
             "Tissue"
         ],
@@ -3205,9 +3205,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000030",
+        "_id": "V000030",
         "pmid": "18192970",
-        "biomarkerSetId": "S000030",
+        "biomarkerId": "B000030",
         "sourceIds": [
             "Tissue"
         ],
@@ -3271,9 +3271,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000031",
+        "_id": "V000031",
         "pmid": "29136645",
-        "biomarkerSetId": "S000031",
+        "biomarkerId": "B000031",
         "sourceIds": [
             "Tissue"
         ],
@@ -3343,9 +3343,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000032",
+        "_id": "V000032",
         "pmid": "11300931",
-        "biomarkerSetId": "S000032",
+        "biomarkerId": "B000032",
         "sourceIds": [
             "Tissue"
         ],
@@ -3407,9 +3407,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000033",
+        "_id": "V000033",
         "pmid": 0,
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -3472,9 +3472,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000034",
+        "_id": "V000034",
         "pmid": "23178488",
-        "biomarkerSetId": "S000034",
+        "biomarkerId": "B000034",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3546,9 +3546,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000035",
+        "_id": "V000035",
         "pmid": "15565811",
-        "biomarkerSetId": "S000035",
+        "biomarkerId": "B000035",
         "sourceIds": [
             "Tissue"
         ],
@@ -3610,9 +3610,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000036",
+        "_id": "V000036",
         "pmid": "22816225",
-        "biomarkerSetId": "S000036",
+        "biomarkerId": "B000036",
         "sourceIds": [
             "Tissue"
         ],
@@ -3680,9 +3680,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000037",
+        "_id": "V000037",
         "pmid": "20135187",
-        "biomarkerSetId": "S0001CF",
+        "biomarkerId": "B0001CF",
         "sourceIds": [
             "Tissue"
         ],
@@ -3741,9 +3741,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000038",
+        "_id": "V000038",
         "pmid": "7760096",
-        "biomarkerSetId": "S000038",
+        "biomarkerId": "B000038",
         "sourceIds": [
             "Tissue"
         ],
@@ -3804,9 +3804,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000039",
+        "_id": "V000039",
         "pmid": "23908590",
-        "biomarkerSetId": "S000039",
+        "biomarkerId": "B000039",
         "sourceIds": [
             "Tissue"
         ],
@@ -3876,9 +3876,9 @@
         "curator": null
     },
     {
-        "_id": "E00003A",
+        "_id": "V00003A",
         "pmid": "11207049",
-        "biomarkerSetId": "S00003A",
+        "biomarkerId": "B00003A",
         "sourceIds": [
             "Tissue"
         ],
@@ -3937,9 +3937,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00003B",
+        "_id": "V00003B",
         "pmid": "29806672",
-        "biomarkerSetId": "S00018B",
+        "biomarkerId": "B00018B",
         "sourceIds": [
             "Tissue"
         ],
@@ -3998,9 +3998,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00003C",
+        "_id": "V00003C",
         "pmid": "24055034",
-        "biomarkerSetId": "S00003C",
+        "biomarkerId": "B00003C",
         "sourceIds": [
             "Tissue"
         ],
@@ -4069,9 +4069,9 @@
         "curator": null
     },
     {
-        "_id": "E00003D",
+        "_id": "V00003D",
         "pmid": "30038102",
-        "biomarkerSetId": "S00003D",
+        "biomarkerId": "B00003D",
         "sourceIds": [
             "Tissue"
         ],
@@ -4139,9 +4139,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00003E",
+        "_id": "V00003E",
         "pmid": "26482617",
-        "biomarkerSetId": "S00003E",
+        "biomarkerId": "B00003E",
         "sourceIds": [
             "Tissue"
         ],
@@ -4205,9 +4205,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00003F",
+        "_id": "V00003F",
         "pmid": "20425045",
-        "biomarkerSetId": "S00003F",
+        "biomarkerId": "B00003F",
         "sourceIds": [
             "Tissue"
         ],
@@ -4268,9 +4268,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000040",
+        "_id": "V000040",
         "pmid": "19637364",
-        "biomarkerSetId": "S000040",
+        "biomarkerId": "B000040",
         "sourceIds": [
             "Tissue"
         ],
@@ -4330,9 +4330,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000041",
+        "_id": "V000041",
         "pmid": "18666438",
-        "biomarkerSetId": "S000176",
+        "biomarkerId": "B000176",
         "sourceIds": [
             "Tissue"
         ],
@@ -4391,9 +4391,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000042",
+        "_id": "V000042",
         "pmid": "20232102",
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -4452,9 +4452,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000043",
+        "_id": "V000043",
         "pmid": "28351326",
-        "biomarkerSetId": "S000043",
+        "biomarkerId": "B000043",
         "sourceIds": [
             "Tissue"
         ],
@@ -4522,9 +4522,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000044",
+        "_id": "V000044",
         "pmid": "23934769",
-        "biomarkerSetId": "S000090",
+        "biomarkerId": "B000090",
         "sourceIds": [
             "Tissue"
         ],
@@ -4595,9 +4595,9 @@
         "curator": null
     },
     {
-        "_id": "E000045",
+        "_id": "V000045",
         "pmid": "23619925",
-        "biomarkerSetId": "S000045",
+        "biomarkerId": "B000045",
         "sourceIds": [
             "Tissue"
         ],
@@ -4660,9 +4660,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000046",
+        "_id": "V000046",
         "pmid": "17504928",
-        "biomarkerSetId": "S000046",
+        "biomarkerId": "B000046",
         "sourceIds": [
             "Tissue"
         ],
@@ -4730,9 +4730,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000047",
+        "_id": "V000047",
         "pmid": "19809523",
-        "biomarkerSetId": "S000047",
+        "biomarkerId": "B000047",
         "sourceIds": [
             "Tissue"
         ],
@@ -4792,9 +4792,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000048",
+        "_id": "V000048",
         "pmid": "21769436",
-        "biomarkerSetId": "S000048",
+        "biomarkerId": "B000048",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -4872,9 +4872,9 @@
         "curator": null
     },
     {
-        "_id": "E000049",
+        "_id": "V000049",
         "pmid": "8605096",
-        "biomarkerSetId": "S000049",
+        "biomarkerId": "B000049",
         "sourceIds": [
             "Tissue"
         ],
@@ -4936,9 +4936,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00004A",
+        "_id": "V00004A",
         "pmid": "22734595",
-        "biomarkerSetId": "S00004A",
+        "biomarkerId": "B00004A",
         "sourceIds": [
             "Tissue"
         ],
@@ -5009,9 +5009,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00004B",
+        "_id": "V00004B",
         "pmid": "28945172",
-        "biomarkerSetId": "S00004B",
+        "biomarkerId": "B00004B",
         "sourceIds": [
             "Tissue"
         ],
@@ -5078,9 +5078,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00004C",
+        "_id": "V00004C",
         "pmid": "12548606",
-        "biomarkerSetId": "S00004C",
+        "biomarkerId": "B00004C",
         "sourceIds": [
             "Tissue"
         ],
@@ -5140,9 +5140,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00004D",
+        "_id": "V00004D",
         "pmid": "14642363",
-        "biomarkerSetId": "S00004D",
+        "biomarkerId": "B00004D",
         "sourceIds": [
             "Tissue"
         ],
@@ -5199,9 +5199,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00004E",
+        "_id": "V00004E",
         "pmid": "20821342",
-        "biomarkerSetId": "S00004E",
+        "biomarkerId": "B00004E",
         "sourceIds": [
             "Tissue"
         ],
@@ -5260,9 +5260,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00004F",
+        "_id": "V00004F",
         "pmid": "25862796",
-        "biomarkerSetId": "S00004F",
+        "biomarkerId": "B00004F",
         "sourceIds": [
             "Tissue"
         ],
@@ -5319,9 +5319,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000050",
+        "_id": "V000050",
         "pmid": "26142442",
-        "biomarkerSetId": "S000050",
+        "biomarkerId": "B000050",
         "sourceIds": [
             "Blood"
         ],
@@ -5383,9 +5383,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000051",
+        "_id": "V000051",
         "pmid": "22359215",
-        "biomarkerSetId": "S0001C1",
+        "biomarkerId": "B0001C1",
         "sourceIds": [
             "Tissue"
         ],
@@ -5453,9 +5453,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000052",
+        "_id": "V000052",
         "pmid": "22296176",
-        "biomarkerSetId": "S000052",
+        "biomarkerId": "B000052",
         "sourceIds": [
             "Tissue"
         ],
@@ -5522,9 +5522,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000053",
+        "_id": "V000053",
         "pmid": "19088037",
-        "biomarkerSetId": "S000053",
+        "biomarkerId": "B000053",
         "sourceIds": [
             "Tissue"
         ],
@@ -5585,9 +5585,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000054",
+        "_id": "V000054",
         "pmid": "18973197",
-        "biomarkerSetId": "S00016B",
+        "biomarkerId": "B00016B",
         "sourceIds": [
             "Tissue"
         ],
@@ -5646,9 +5646,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000055",
+        "_id": "V000055",
         "pmid": "23514245",
-        "biomarkerSetId": "S000055",
+        "biomarkerId": "B000055",
         "sourceIds": [
             "Tissue"
         ],
@@ -5709,9 +5709,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000056",
+        "_id": "V000056",
         "pmid": "25695077",
-        "biomarkerSetId": "S000056",
+        "biomarkerId": "B000056",
         "sourceIds": [
             "Tissue"
         ],
@@ -5777,9 +5777,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000057",
+        "_id": "V000057",
         "pmid": "27302927",
-        "biomarkerSetId": "S000057",
+        "biomarkerId": "B000057",
         "sourceIds": [
             "Tissue"
         ],
@@ -5842,9 +5842,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000058",
+        "_id": "V000058",
         "pmid": "15541001",
-        "biomarkerSetId": "S000058",
+        "biomarkerId": "B000058",
         "sourceIds": [
             "Tissue"
         ],
@@ -5901,9 +5901,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000059",
+        "_id": "V000059",
         "pmid": "12091064",
-        "biomarkerSetId": "S000059",
+        "biomarkerId": "B000059",
         "sourceIds": [
             "Tissue"
         ],
@@ -5960,9 +5960,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00005A",
+        "_id": "V00005A",
         "pmid": "15899794",
-        "biomarkerSetId": "S00005A",
+        "biomarkerId": "B00005A",
         "sourceIds": [
             "Tissue"
         ],
@@ -6025,9 +6025,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00005B",
+        "_id": "V00005B",
         "pmid": "29523123",
-        "biomarkerSetId": "S00005B",
+        "biomarkerId": "B00005B",
         "sourceIds": [
             "Tissue"
         ],
@@ -6085,9 +6085,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00005C",
+        "_id": "V00005C",
         "pmid": "26757925",
-        "biomarkerSetId": "S00005C",
+        "biomarkerId": "B00005C",
         "sourceIds": [
             "Tissue"
         ],
@@ -6156,9 +6156,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00005D",
+        "_id": "V00005D",
         "pmid": "26008605",
-        "biomarkerSetId": "S00005D",
+        "biomarkerId": "B00005D",
         "sourceIds": [
             "Tissue"
         ],
@@ -6219,9 +6219,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00005E",
+        "_id": "V00005E",
         "pmid": "\u00a026369702",
-        "biomarkerSetId": "S00005E",
+        "biomarkerId": "B00005E",
         "sourceIds": [
             "Tissue"
         ],
@@ -6282,9 +6282,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00005F",
+        "_id": "V00005F",
         "pmid": "27478330",
-        "biomarkerSetId": "S00005F",
+        "biomarkerId": "B00005F",
         "sourceIds": [
             "Tissue"
         ],
@@ -6348,9 +6348,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000060",
+        "_id": "V000060",
         "pmid": "23096413",
-        "biomarkerSetId": "S000060",
+        "biomarkerId": "B000060",
         "sourceIds": [
             "Tissue"
         ],
@@ -6416,9 +6416,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000061",
+        "_id": "V000061",
         "pmid": "25031733",
-        "biomarkerSetId": "S000061",
+        "biomarkerId": "B000061",
         "sourceIds": [
             "Tissue"
         ],
@@ -6485,9 +6485,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000062",
+        "_id": "V000062",
         "pmid": "22655594",
-        "biomarkerSetId": "S000062",
+        "biomarkerId": "B000062",
         "sourceIds": [
             "Tissue"
         ],
@@ -6556,9 +6556,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000063",
+        "_id": "V000063",
         "pmid": "12902879",
-        "biomarkerSetId": "S000063",
+        "biomarkerId": "B000063",
         "sourceIds": [
             "Tissue"
         ],
@@ -6615,9 +6615,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000064",
+        "_id": "V000064",
         "pmid": "18507036",
-        "biomarkerSetId": "S000168",
+        "biomarkerId": "B000168",
         "sourceIds": [
             "Tissue"
         ],
@@ -6678,9 +6678,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000065",
+        "_id": "V000065",
         "pmid": "17987795",
-        "biomarkerSetId": "S000065",
+        "biomarkerId": "B000065",
         "sourceIds": [
             "Tissue"
         ],
@@ -6742,9 +6742,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000066",
+        "_id": "V000066",
         "pmid": "23566417",
-        "biomarkerSetId": "S000066",
+        "biomarkerId": "B000066",
         "sourceIds": [
             "Tissue"
         ],
@@ -6804,9 +6804,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000067",
+        "_id": "V000067",
         "pmid": "23416698",
-        "biomarkerSetId": "S000067",
+        "biomarkerId": "B000067",
         "sourceIds": [
             "Tissue"
         ],
@@ -6870,9 +6870,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000068",
+        "_id": "V000068",
         "pmid": "21764585",
-        "biomarkerSetId": "S000068",
+        "biomarkerId": "B000068",
         "sourceIds": [
             "Tissue"
         ],
@@ -6942,9 +6942,9 @@
         "curator": null
     },
     {
-        "_id": "E000069",
+        "_id": "V000069",
         "pmid": "29952031",
-        "biomarkerSetId": "S000069",
+        "biomarkerId": "B000069",
         "sourceIds": [
             "Tissue"
         ],
@@ -7006,9 +7006,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00006A",
+        "_id": "V00006A",
         "pmid": "24274717",
-        "biomarkerSetId": "S00006A",
+        "biomarkerId": "B00006A",
         "sourceIds": [
             "Tissue",
             "Glioma Stem Cells"
@@ -7080,9 +7080,9 @@
         "curator": null
     },
     {
-        "_id": "E00006B",
+        "_id": "V00006B",
         "pmid": "20455002",
-        "biomarkerSetId": "S00006B",
+        "biomarkerId": "B00006B",
         "sourceIds": [
             "Tissue"
         ],
@@ -7143,9 +7143,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00006C",
+        "_id": "V00006C",
         "pmid": "9804374",
-        "biomarkerSetId": "S00006C",
+        "biomarkerId": "B00006C",
         "sourceIds": [
             "Tissue"
         ],
@@ -7204,9 +7204,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00006D",
+        "_id": "V00006D",
         "pmid": "19861461",
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -7265,9 +7265,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00006E",
+        "_id": "V00006E",
         "pmid": "16619508",
-        "biomarkerSetId": "S00006E",
+        "biomarkerId": "B00006E",
         "sourceIds": [
             "Tissue"
         ],
@@ -7328,9 +7328,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00006F",
+        "_id": "V00006F",
         "pmid": "24160898",
-        "biomarkerSetId": "S00006F",
+        "biomarkerId": "B00006F",
         "sourceIds": [
             "Tissue"
         ],
@@ -7401,9 +7401,9 @@
         "curator": null
     },
     {
-        "_id": "E000070",
+        "_id": "V000070",
         "pmid": "26503470",
-        "biomarkerSetId": "S000070",
+        "biomarkerId": "B000070",
         "sourceIds": [
             "Tissue"
         ],
@@ -7478,9 +7478,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000071",
+        "_id": "V000071",
         "pmid": "24810474",
-        "biomarkerSetId": "S000071",
+        "biomarkerId": "B000071",
         "sourceIds": [
             "Tissue"
         ],
@@ -7554,9 +7554,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000072",
+        "_id": "V000072",
         "pmid": "26201842",
-        "biomarkerSetId": "S000072",
+        "biomarkerId": "B000072",
         "sourceIds": [
             "Tissue"
         ],
@@ -7615,9 +7615,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000073",
+        "_id": "V000073",
         "pmid": 0,
-        "biomarkerSetId": "S000073",
+        "biomarkerId": "B000073",
         "sourceIds": [
             "Tissue"
         ],
@@ -7673,9 +7673,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000074",
+        "_id": "V000074",
         "pmid": "15466382",
-        "biomarkerSetId": "S000074",
+        "biomarkerId": "B000074",
         "sourceIds": [
             "Tissue"
         ],
@@ -7736,9 +7736,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000075",
+        "_id": "V000075",
         "pmid": "28938636",
-        "biomarkerSetId": "S000075",
+        "biomarkerId": "B000075",
         "sourceIds": [
             "Tissue"
         ],
@@ -7806,9 +7806,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000076",
+        "_id": "V000076",
         "pmid": "23245659",
-        "biomarkerSetId": "S000076",
+        "biomarkerId": "B000076",
         "sourceIds": [
             "Tissue"
         ],
@@ -7881,9 +7881,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000077",
+        "_id": "V000077",
         "pmid": "18618497",
-        "biomarkerSetId": "S000077",
+        "biomarkerId": "B000077",
         "sourceIds": [
             "Tissue"
         ],
@@ -7943,9 +7943,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000078",
+        "_id": "V000078",
         "pmid": "26914704",
-        "biomarkerSetId": "S0000EB",
+        "biomarkerId": "B0000EB",
         "sourceIds": [
             "Tissue"
         ],
@@ -8013,9 +8013,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000079",
+        "_id": "V000079",
         "pmid": "26490980",
-        "biomarkerSetId": "S000079",
+        "biomarkerId": "B000079",
         "sourceIds": [
             "Tissue"
         ],
@@ -8079,9 +8079,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00007A",
+        "_id": "V00007A",
         "pmid": "23673813",
-        "biomarkerSetId": "S00007A",
+        "biomarkerId": "B00007A",
         "sourceIds": [
             "Tissue"
         ],
@@ -8138,9 +8138,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00007B",
+        "_id": "V00007B",
         "pmid": "22624064",
-        "biomarkerSetId": "S00007B",
+        "biomarkerId": "B00007B",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -8209,9 +8209,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00007C",
+        "_id": "V00007C",
         "pmid": "22274399",
-        "biomarkerSetId": "S00007C",
+        "biomarkerId": "B00007C",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -8286,9 +8286,9 @@
         "curator": null
     },
     {
-        "_id": "E00007D",
+        "_id": "V00007D",
         "pmid": "25948789",
-        "biomarkerSetId": "S00007D",
+        "biomarkerId": "B00007D",
         "sourceIds": [
             "Tissue"
         ],
@@ -8351,9 +8351,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00007E",
+        "_id": "V00007E",
         "pmid": "28787701",
-        "biomarkerSetId": "S00007E",
+        "biomarkerId": "B00007E",
         "sourceIds": [
             "Tissue"
         ],
@@ -8414,9 +8414,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00007F",
+        "_id": "V00007F",
         "pmid": "22690797",
-        "biomarkerSetId": "S00007F",
+        "biomarkerId": "B00007F",
         "sourceIds": [
             "Tissue"
         ],
@@ -8488,9 +8488,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000080",
+        "_id": "V000080",
         "pmid": "30009411",
-        "biomarkerSetId": "S000080",
+        "biomarkerId": "B000080",
         "sourceIds": [
             "Tissue"
         ],
@@ -8566,9 +8566,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000081",
+        "_id": "V000081",
         "pmid": "22589395",
-        "biomarkerSetId": "S000081",
+        "biomarkerId": "B000081",
         "sourceIds": [
             "Tissue"
         ],
@@ -8637,9 +8637,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000082",
+        "_id": "V000082",
         "pmid": "19657395",
-        "biomarkerSetId": "S000082",
+        "biomarkerId": "B000082",
         "sourceIds": [
             "Tissue"
         ],
@@ -8699,9 +8699,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000083",
+        "_id": "V000083",
         "pmid": "26347581",
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -8758,9 +8758,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000084",
+        "_id": "V000084",
         "pmid": "25752997",
-        "biomarkerSetId": "S000084",
+        "biomarkerId": "B000084",
         "sourceIds": [
             "Tissue"
         ],
@@ -8817,9 +8817,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000085",
+        "_id": "V000085",
         "pmid": "26022161",
-        "biomarkerSetId": "S000085",
+        "biomarkerId": "B000085",
         "sourceIds": [
             "Tissue"
         ],
@@ -8878,9 +8878,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000086",
+        "_id": "V000086",
         "pmid": "28295288",
-        "biomarkerSetId": "S000086",
+        "biomarkerId": "B000086",
         "sourceIds": [
             "Tissue"
         ],
@@ -8943,9 +8943,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000087",
+        "_id": "V000087",
         "pmid": "23393205",
-        "biomarkerSetId": "S000087",
+        "biomarkerId": "B000087",
         "sourceIds": [
             "Tissue"
         ],
@@ -9014,9 +9014,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000088",
+        "_id": "V000088",
         "pmid": "27143410",
-        "biomarkerSetId": "S000088",
+        "biomarkerId": "B000088",
         "sourceIds": [
             "Tissue"
         ],
@@ -9080,9 +9080,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000089",
+        "_id": "V000089",
         "pmid": "26934681",
-        "biomarkerSetId": "S000089",
+        "biomarkerId": "B000089",
         "sourceIds": [
             "Tissue"
         ],
@@ -9142,9 +9142,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00008A",
+        "_id": "V00008A",
         "pmid": "29031038",
-        "biomarkerSetId": "S00008A",
+        "biomarkerId": "B00008A",
         "sourceIds": [
             "Tissue"
         ],
@@ -9214,9 +9214,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00008B",
+        "_id": "V00008B",
         "pmid": "20298476",
-        "biomarkerSetId": "S00008B",
+        "biomarkerId": "B00008B",
         "sourceIds": [
             "Tissue"
         ],
@@ -9275,9 +9275,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00008C",
+        "_id": "V00008C",
         "pmid": "22417385",
-        "biomarkerSetId": "S0001C4",
+        "biomarkerId": "B0001C4",
         "sourceIds": [
             "Tissue"
         ],
@@ -9344,9 +9344,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00008D",
+        "_id": "V00008D",
         "pmid": "22139906",
-        "biomarkerSetId": "S0001E4",
+        "biomarkerId": "B0001E4",
         "sourceIds": [
             "Tissue"
         ],
@@ -9414,9 +9414,9 @@
         "curator": null
     },
     {
-        "_id": "E00008E",
+        "_id": "V00008E",
         "pmid": "28212808",
-        "biomarkerSetId": "S00008E",
+        "biomarkerId": "B00008E",
         "sourceIds": [
             "Tissue"
         ],
@@ -9476,9 +9476,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00008F",
+        "_id": "V00008F",
         "pmid": "29662659",
-        "biomarkerSetId": "S00008F",
+        "biomarkerId": "B00008F",
         "sourceIds": [
             "Tissue"
         ],
@@ -9535,9 +9535,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000090",
+        "_id": "V000090",
         "pmid": "24511544",
-        "biomarkerSetId": "S000090",
+        "biomarkerId": "B000090",
         "sourceIds": [
             "Tissue"
         ],
@@ -9603,9 +9603,9 @@
         "curator": null
     },
     {
-        "_id": "E000091",
+        "_id": "V000091",
         "pmid": "16930331",
-        "biomarkerSetId": "S000091",
+        "biomarkerId": "B000091",
         "sourceIds": [
             "Tissue"
         ],
@@ -9671,9 +9671,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000092",
+        "_id": "V000092",
         "pmid": "23624749",
-        "biomarkerSetId": "S000092",
+        "biomarkerId": "B000092",
         "sourceIds": [
             "Tissue"
         ],
@@ -9732,9 +9732,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000093",
+        "_id": "V000093",
         "pmid": "27229531",
-        "biomarkerSetId": "S000093",
+        "biomarkerId": "B000093",
         "sourceIds": [
             "Tissue",
             "Blood"
@@ -9798,9 +9798,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000094",
+        "_id": "V000094",
         "pmid": "22472960",
-        "biomarkerSetId": "S000094",
+        "biomarkerId": "B000094",
         "sourceIds": [
             "Tissue"
         ],
@@ -9868,9 +9868,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000095",
+        "_id": "V000095",
         "pmid": "26933808",
-        "biomarkerSetId": "S000095",
+        "biomarkerId": "B000095",
         "sourceIds": [
             "Tissue"
         ],
@@ -9935,9 +9935,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000096",
+        "_id": "V000096",
         "pmid": "28379477",
-        "biomarkerSetId": "S000096",
+        "biomarkerId": "B000096",
         "sourceIds": [
             "Tissue"
         ],
@@ -10007,9 +10007,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000097",
+        "_id": "V000097",
         "pmid": "23328811",
-        "biomarkerSetId": "S000097",
+        "biomarkerId": "B000097",
         "sourceIds": [
             "Tissue"
         ],
@@ -10079,9 +10079,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000098",
+        "_id": "V000098",
         "pmid": "26887055",
-        "biomarkerSetId": "S000098",
+        "biomarkerId": "B000098",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -10153,9 +10153,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000099",
+        "_id": "V000099",
         "pmid": "18698034",
-        "biomarkerSetId": "S000099",
+        "biomarkerId": "B000099",
         "sourceIds": [
             "Tissue"
         ],
@@ -10216,9 +10216,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00009A",
+        "_id": "V00009A",
         "pmid": "23399898",
-        "biomarkerSetId": "S00009A",
+        "biomarkerId": "B00009A",
         "sourceIds": [
             "Tissue"
         ],
@@ -10293,9 +10293,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00009B",
+        "_id": "V00009B",
         "pmid": "26163539",
-        "biomarkerSetId": "S00009B",
+        "biomarkerId": "B00009B",
         "sourceIds": [
             "Tissue"
         ],
@@ -10356,9 +10356,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00009C",
+        "_id": "V00009C",
         "pmid": 0,
-        "biomarkerSetId": "S00009C",
+        "biomarkerId": "B00009C",
         "sourceIds": [
             "Tissue"
         ],
@@ -10418,9 +10418,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00009D",
+        "_id": "V00009D",
         "pmid": "27626492",
-        "biomarkerSetId": "S00013E",
+        "biomarkerId": "B00013E",
         "sourceIds": [
             "Tissue"
         ],
@@ -10482,9 +10482,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00009E",
+        "_id": "V00009E",
         "pmid": "27450656",
-        "biomarkerSetId": "S00009E",
+        "biomarkerId": "B00009E",
         "sourceIds": [
             "Tissue"
         ],
@@ -10543,9 +10543,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00009F",
+        "_id": "V00009F",
         "pmid": "23015095",
-        "biomarkerSetId": "S00009F",
+        "biomarkerId": "B00009F",
         "sourceIds": [
             "Tissue"
         ],
@@ -10612,9 +10612,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0000A0",
+        "_id": "V0000A0",
         "pmid": "22772608",
-        "biomarkerSetId": "S0000A0",
+        "biomarkerId": "B0000A0",
         "sourceIds": [
             "Tissue"
         ],
@@ -10679,9 +10679,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0000A1",
+        "_id": "V0000A1",
         "pmid": "20219118",
-        "biomarkerSetId": "S0000A1",
+        "biomarkerId": "B0000A1",
         "sourceIds": [
             "Tissue"
         ],
@@ -10740,9 +10740,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000A2",
+        "_id": "V0000A2",
         "pmid": "16568472",
-        "biomarkerSetId": "S0000A2",
+        "biomarkerId": "B0000A2",
         "sourceIds": [
             "Tissue"
         ],
@@ -10803,9 +10803,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000A3",
+        "_id": "V0000A3",
         "pmid": "16103458",
-        "biomarkerSetId": "S0000A3",
+        "biomarkerId": "B0000A3",
         "sourceIds": [
             "Blood"
         ],
@@ -10870,9 +10870,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000A4",
+        "_id": "V0000A4",
         "pmid": "23595628",
-        "biomarkerSetId": "S0000A4",
+        "biomarkerId": "B0000A4",
         "sourceIds": [
             "Tissue"
         ],
@@ -10937,9 +10937,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0000A5",
+        "_id": "V0000A5",
         "pmid": "19884580",
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -10998,9 +10998,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000A6",
+        "_id": "V0000A6",
         "pmid": "20150644",
-        "biomarkerSetId": "S0000A6",
+        "biomarkerId": "B0000A6",
         "sourceIds": [
             "Tissue"
         ],
@@ -11061,9 +11061,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000A7",
+        "_id": "V0000A7",
         "pmid": "25977169",
-        "biomarkerSetId": "S0000A7",
+        "biomarkerId": "B0000A7",
         "sourceIds": [
             "Tissue"
         ],
@@ -11121,9 +11121,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000A8",
+        "_id": "V0000A8",
         "pmid": "28784160",
-        "biomarkerSetId": "S0000A8",
+        "biomarkerId": "B0000A8",
         "sourceIds": [
             "Tissue"
         ],
@@ -11190,9 +11190,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000A9",
+        "_id": "V0000A9",
         "pmid": "26451167",
-        "biomarkerSetId": "S0000A9",
+        "biomarkerId": "B0000A9",
         "sourceIds": [
             "Tissue"
         ],
@@ -11258,9 +11258,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000AA",
+        "_id": "V0000AA",
         "pmid": "7954264",
-        "biomarkerSetId": "S0000AA",
+        "biomarkerId": "B0000AA",
         "sourceIds": [
             "Tissue"
         ],
@@ -11317,9 +11317,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E0000AB",
+        "_id": "V0000AB",
         "pmid": "11147905",
-        "biomarkerSetId": "S0000AB",
+        "biomarkerId": "B0000AB",
         "sourceIds": [
             "Tissue"
         ],
@@ -11382,9 +11382,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E0000AC",
+        "_id": "V0000AC",
         "pmid": "27409829",
-        "biomarkerSetId": "S0000AC",
+        "biomarkerId": "B0000AC",
         "sourceIds": [
             "Tissue"
         ],
@@ -11450,9 +11450,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000AD",
+        "_id": "V0000AD",
         "pmid": "18371184",
-        "biomarkerSetId": "S000155",
+        "biomarkerId": "B000155",
         "sourceIds": [
             "Tissue"
         ],
@@ -11516,9 +11516,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000AE",
+        "_id": "V0000AE",
         "pmid": "28787434",
-        "biomarkerSetId": "S0000AE",
+        "biomarkerId": "B0000AE",
         "sourceIds": [
             "Tissue"
         ],
@@ -11582,9 +11582,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000AF",
+        "_id": "V0000AF",
         "pmid": "28662073",
-        "biomarkerSetId": "S0000AF",
+        "biomarkerId": "B0000AF",
         "sourceIds": [
             "Tissue"
         ],
@@ -11652,9 +11652,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000B0",
+        "_id": "V0000B0",
         "pmid": "24026199",
-        "biomarkerSetId": "S0000B0",
+        "biomarkerId": "B0000B0",
         "sourceIds": [
             "Tissue"
         ],
@@ -11723,9 +11723,9 @@
         "curator": null
     },
     {
-        "_id": "E0000B1",
+        "_id": "V0000B1",
         "pmid": "18761091",
-        "biomarkerSetId": "S0001CF",
+        "biomarkerId": "B0001CF",
         "sourceIds": [
             "Tissue"
         ],
@@ -11786,9 +11786,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000B2",
+        "_id": "V0000B2",
         "pmid": "24970813",
-        "biomarkerSetId": "S0000B2",
+        "biomarkerId": "B0000B2",
         "sourceIds": [
             "Tissue"
         ],
@@ -11857,9 +11857,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000B3",
+        "_id": "V0000B3",
         "pmid": "29409474",
-        "biomarkerSetId": "S0000B3",
+        "biomarkerId": "B0000B3",
         "sourceIds": [
             "Tissue"
         ],
@@ -11918,9 +11918,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000B4",
+        "_id": "V0000B4",
         "pmid": "24722048",
-        "biomarkerSetId": "S0000B4",
+        "biomarkerId": "B0000B4",
         "sourceIds": [
             "Tissue"
         ],
@@ -11988,9 +11988,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000B5",
+        "_id": "V0000B5",
         "pmid": "22179774",
-        "biomarkerSetId": "S0000B5",
+        "biomarkerId": "B0000B5",
         "sourceIds": [
             "Tissue"
         ],
@@ -12058,9 +12058,9 @@
         "curator": null
     },
     {
-        "_id": "E0000B6",
+        "_id": "V0000B6",
         "pmid": "23361281",
-        "biomarkerSetId": "S0000B6",
+        "biomarkerId": "B0000B6",
         "sourceIds": [
             "Tissue"
         ],
@@ -12129,9 +12129,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0000B7",
+        "_id": "V0000B7",
         "pmid": "29642484",
-        "biomarkerSetId": "S0000B7",
+        "biomarkerId": "B0000B7",
         "sourceIds": [
             "Tissue"
         ],
@@ -12190,9 +12190,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000B8",
+        "_id": "V0000B8",
         "pmid": "19430729",
-        "biomarkerSetId": "S0000B8",
+        "biomarkerId": "B0000B8",
         "sourceIds": [
             "Tissue"
         ],
@@ -12253,9 +12253,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000B9",
+        "_id": "V0000B9",
         "pmid": "19636000",
-        "biomarkerSetId": "S0000B9",
+        "biomarkerId": "B0000B9",
         "sourceIds": [
             "Tissue"
         ],
@@ -12316,9 +12316,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0000BA",
+        "_id": "V0000BA",
         "pmid": "30311408",
-        "biomarkerSetId": "S0000BA",
+        "biomarkerId": "B0000BA",
         "sourceIds": [
             "Tissue"
         ],
@@ -12393,9 +12393,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000BB",
+        "_id": "V0000BB",
         "pmid": "30290990",
-        "biomarkerSetId": "S0000BB",
+        "biomarkerId": "B0000BB",
         "sourceIds": [
             "Tissue"
         ],
@@ -12460,9 +12460,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000BC",
+        "_id": "V0000BC",
         "pmid": "30279739",
-        "biomarkerSetId": "S0000BC",
+        "biomarkerId": "B0000BC",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -12549,9 +12549,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000BD",
+        "_id": "V0000BD",
         "pmid": "30277538",
-        "biomarkerSetId": "S00018B",
+        "biomarkerId": "B00018B",
         "sourceIds": [
             "Tissue"
         ],
@@ -12620,9 +12620,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000BE",
+        "_id": "V0000BE",
         "pmid": "30146921",
-        "biomarkerSetId": "S0000BE",
+        "biomarkerId": "B0000BE",
         "sourceIds": [
             "Tissue"
         ],
@@ -12690,9 +12690,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000BF",
+        "_id": "V0000BF",
         "pmid": "30132538",
-        "biomarkerSetId": "S0000BF",
+        "biomarkerId": "B0000BF",
         "sourceIds": [
             "Tissue"
         ],
@@ -12755,9 +12755,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C0",
+        "_id": "V0000C0",
         "pmid": "30080989",
-        "biomarkerSetId": "S0000C0",
+        "biomarkerId": "B0000C0",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -12832,9 +12832,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C1",
+        "_id": "V0000C1",
         "pmid": "30005851",
-        "biomarkerSetId": "S0000C1",
+        "biomarkerId": "B0000C1",
         "sourceIds": [
             "Tissue"
         ],
@@ -12893,9 +12893,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C2",
+        "_id": "V0000C2",
         "pmid": "29984907",
-        "biomarkerSetId": "S0000C2",
+        "biomarkerId": "B0000C2",
         "sourceIds": [
             "Tissue",
             "Imaging"
@@ -12960,9 +12960,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C3",
+        "_id": "V0000C3",
         "pmid": "29959764",
-        "biomarkerSetId": "S0000C3",
+        "biomarkerId": "B0000C3",
         "sourceIds": [
             "Tissue"
         ],
@@ -13022,9 +13022,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C4",
+        "_id": "V0000C4",
         "pmid": "29781781",
-        "biomarkerSetId": "S0000C4",
+        "biomarkerId": "B0000C4",
         "sourceIds": [
             "Tissue"
         ],
@@ -13081,9 +13081,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C5",
+        "_id": "V0000C5",
         "pmid": "29753008",
-        "biomarkerSetId": "S0000C5",
+        "biomarkerId": "B0000C5",
         "sourceIds": [
             "Tissue"
         ],
@@ -13146,9 +13146,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C6",
+        "_id": "V0000C6",
         "pmid": "29721393",
-        "biomarkerSetId": "S0000C6",
+        "biomarkerId": "B0000C6",
         "sourceIds": [
             "Tissue"
         ],
@@ -13213,9 +13213,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C7",
+        "_id": "V0000C7",
         "pmid": "29625108",
-        "biomarkerSetId": "S0000C7",
+        "biomarkerId": "B0000C7",
         "sourceIds": [
             "Tissue"
         ],
@@ -13276,9 +13276,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C8",
+        "_id": "V0000C8",
         "pmid": "29614978",
-        "biomarkerSetId": "S0001D4",
+        "biomarkerId": "B0001D4",
         "sourceIds": [
             "Tissue"
         ],
@@ -13337,9 +13337,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000C9",
+        "_id": "V0000C9",
         "pmid": "29476046",
-        "biomarkerSetId": "S0000C9",
+        "biomarkerId": "B0000C9",
         "sourceIds": [
             "Tissue"
         ],
@@ -13398,9 +13398,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000CA",
+        "_id": "V0000CA",
         "pmid": "29473166",
-        "biomarkerSetId": "S0000CA",
+        "biomarkerId": "B0000CA",
         "sourceIds": [
             "Tissue"
         ],
@@ -13461,9 +13461,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000CB",
+        "_id": "V0000CB",
         "pmid": "29291003",
-        "biomarkerSetId": "S0000CB",
+        "biomarkerId": "B0000CB",
         "sourceIds": [
             "Tissue"
         ],
@@ -13524,9 +13524,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000CC",
+        "_id": "V0000CC",
         "pmid": "29228611",
-        "biomarkerSetId": "S0000CC",
+        "biomarkerId": "B0000CC",
         "sourceIds": [
             "Tissue"
         ],
@@ -13585,9 +13585,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000CD",
+        "_id": "V0000CD",
         "pmid": "29169920",
-        "biomarkerSetId": "S0000CD",
+        "biomarkerId": "B0000CD",
         "sourceIds": [
             "Tissue"
         ],
@@ -13648,9 +13648,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0000CE",
+        "_id": "V0000CE",
         "pmid": "29168083",
-        "biomarkerSetId": "S0000CE",
+        "biomarkerId": "B0000CE",
         "sourceIds": [
             "Tissue"
         ],
@@ -13715,9 +13715,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000CF",
+        "_id": "V0000CF",
         "pmid": "28978068",
-        "biomarkerSetId": "S0000CF",
+        "biomarkerId": "B0000CF",
         "sourceIds": [
             "Tissue"
         ],
@@ -13787,9 +13787,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D0",
+        "_id": "V0000D0",
         "pmid": "28938564",
-        "biomarkerSetId": "S0000D0",
+        "biomarkerId": "B0000D0",
         "sourceIds": [
             "Tissue"
         ],
@@ -13856,9 +13856,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D1",
+        "_id": "V0000D1",
         "pmid": "28778566",
-        "biomarkerSetId": "S0000D1",
+        "biomarkerId": "B0000D1",
         "sourceIds": [
             "Tissue"
         ],
@@ -13922,9 +13922,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D2",
+        "_id": "V0000D2",
         "pmid": "28602620",
-        "biomarkerSetId": "S0000D2",
+        "biomarkerId": "B0000D2",
         "sourceIds": [
             "Tissue"
         ],
@@ -13980,9 +13980,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D3",
+        "_id": "V0000D3",
         "pmid": "28531325",
-        "biomarkerSetId": "S0000D3",
+        "biomarkerId": "B0000D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -14047,9 +14047,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D4",
+        "_id": "V0000D4",
         "pmid": "28484518",
-        "biomarkerSetId": "S00019F",
+        "biomarkerId": "B00019F",
         "sourceIds": [
             "Tissue"
         ],
@@ -14123,9 +14123,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D5",
+        "_id": "V0000D5",
         "pmid": "28445977",
-        "biomarkerSetId": "S0000D5",
+        "biomarkerId": "B0000D5",
         "sourceIds": [
             "Tissue"
         ],
@@ -14195,9 +14195,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D6",
+        "_id": "V0000D6",
         "pmid": "28430038",
-        "biomarkerSetId": "S0000D6",
+        "biomarkerId": "B0000D6",
         "sourceIds": [
             "Tissue"
         ],
@@ -14256,9 +14256,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D7",
+        "_id": "V0000D7",
         "pmid": "28371892",
-        "biomarkerSetId": "S0000D7",
+        "biomarkerId": "B0000D7",
         "sourceIds": [
             "Tissue"
         ],
@@ -14321,9 +14321,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D8",
+        "_id": "V0000D8",
         "pmid": "28351300",
-        "biomarkerSetId": "S0000D8",
+        "biomarkerId": "B0000D8",
         "sourceIds": [
             "Tissue"
         ],
@@ -14382,9 +14382,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000D9",
+        "_id": "V0000D9",
         "pmid": "28255664",
-        "biomarkerSetId": "S0000D9",
+        "biomarkerId": "B0000D9",
         "sourceIds": [
             "Tissue"
         ],
@@ -14451,9 +14451,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DA",
+        "_id": "V0000DA",
         "pmid": "28160566",
-        "biomarkerSetId": "S0000DA",
+        "biomarkerId": "B0000DA",
         "sourceIds": [
             "Tissue"
         ],
@@ -14524,9 +14524,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DB",
+        "_id": "V0000DB",
         "pmid": "28097442",
-        "biomarkerSetId": "S0000DB",
+        "biomarkerId": "B0000DB",
         "sourceIds": [
             "TIssue"
         ],
@@ -14592,9 +14592,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DC",
+        "_id": "V0000DC",
         "pmid": "27981247",
-        "biomarkerSetId": "S0000DC",
+        "biomarkerId": "B0000DC",
         "sourceIds": [
             "Tissue"
         ],
@@ -14657,9 +14657,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DD",
+        "_id": "V0000DD",
         "pmid": "27926792",
-        "biomarkerSetId": "S0000DD",
+        "biomarkerId": "B0000DD",
         "sourceIds": [
             "Tissue"
         ],
@@ -14724,9 +14724,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DE",
+        "_id": "V0000DE",
         "pmid": "26614510",
-        "biomarkerSetId": "S0000DE",
+        "biomarkerId": "B0000DE",
         "sourceIds": [
             "Tissue"
         ],
@@ -14787,9 +14787,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000DF",
+        "_id": "V0000DF",
         "pmid": "27705947",
-        "biomarkerSetId": "S0000DF",
+        "biomarkerId": "B0000DF",
         "sourceIds": [
             "Tissue"
         ],
@@ -14850,9 +14850,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E0",
+        "_id": "V0000E0",
         "pmid": "27637748",
-        "biomarkerSetId": "S0000E0",
+        "biomarkerId": "B0000E0",
         "sourceIds": [
             "Tissue"
         ],
@@ -14917,9 +14917,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E1",
+        "_id": "V0000E1",
         "pmid": "27510663",
-        "biomarkerSetId": "S0000E1",
+        "biomarkerId": "B0000E1",
         "sourceIds": [
             "Tissue"
         ],
@@ -14982,9 +14982,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E2",
+        "_id": "V0000E2",
         "pmid": "27506939",
-        "biomarkerSetId": "S0000E2",
+        "biomarkerId": "B0000E2",
         "sourceIds": [
             "Tissue"
         ],
@@ -15041,9 +15041,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E3",
+        "_id": "V0000E3",
         "pmid": "27440383",
-        "biomarkerSetId": "S0000E3",
+        "biomarkerId": "B0000E3",
         "sourceIds": [
             "Tissue"
         ],
@@ -15115,9 +15115,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E4",
+        "_id": "V0000E4",
         "pmid": "27438144",
-        "biomarkerSetId": "S0000E4",
+        "biomarkerId": "B0000E4",
         "sourceIds": [
             "Tissue"
         ],
@@ -15176,9 +15176,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0000E5",
+        "_id": "V0000E5",
         "pmid": "27347488",
-        "biomarkerSetId": "S0000E5",
+        "biomarkerId": "B0000E5",
         "sourceIds": [
             "Cell line"
         ],
@@ -15245,9 +15245,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000E6",
+        "_id": "V0000E6",
         "pmid": "27158412",
-        "biomarkerSetId": "S0000E6",
+        "biomarkerId": "B0000E6",
         "sourceIds": [
             "Tissue"
         ],
@@ -15311,9 +15311,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000E7",
+        "_id": "V0000E7",
         "pmid": "27136105",
-        "biomarkerSetId": "S0000E7",
+        "biomarkerId": "B0000E7",
         "sourceIds": [
             "Tissue"
         ],
@@ -15378,9 +15378,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000E8",
+        "_id": "V0000E8",
         "pmid": "27119233",
-        "biomarkerSetId": "S0000E8",
+        "biomarkerId": "B0000E8",
         "sourceIds": [
             "Tissue"
         ],
@@ -15448,9 +15448,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000E9",
+        "_id": "V0000E9",
         "pmid": "26945349",
-        "biomarkerSetId": "S0000E9",
+        "biomarkerId": "B0000E9",
         "sourceIds": [
             "Tissue"
         ],
@@ -15518,9 +15518,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000EA",
+        "_id": "V0000EA",
         "pmid": "26828136",
-        "biomarkerSetId": "S0000EA",
+        "biomarkerId": "B0000EA",
         "sourceIds": [
             "Tissue"
         ],
@@ -15593,9 +15593,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000EB",
+        "_id": "V0000EB",
         "pmid": "26765760",
-        "biomarkerSetId": "S0000EB",
+        "biomarkerId": "B0000EB",
         "sourceIds": [
             "Tissue"
         ],
@@ -15662,9 +15662,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000EC",
+        "_id": "V0000EC",
         "pmid": "26682928",
-        "biomarkerSetId": "S0001AE",
+        "biomarkerId": "B0001AE",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -15733,9 +15733,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000ED",
+        "_id": "V0000ED",
         "pmid": "26616112",
-        "biomarkerSetId": "S0000ED",
+        "biomarkerId": "B0000ED",
         "sourceIds": [
             "Tissue"
         ],
@@ -15804,9 +15804,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000EE",
+        "_id": "V0000EE",
         "pmid": "26506879",
-        "biomarkerSetId": "S0000EE",
+        "biomarkerId": "B0000EE",
         "sourceIds": [
             "Tissue"
         ],
@@ -15869,9 +15869,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000EF",
+        "_id": "V0000EF",
         "pmid": "26506620",
-        "biomarkerSetId": "S0000EF",
+        "biomarkerId": "B0000EF",
         "sourceIds": [
             "Tissue"
         ],
@@ -15935,9 +15935,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000F0",
+        "_id": "V0000F0",
         "pmid": "26493598",
-        "biomarkerSetId": "S0000F0",
+        "biomarkerId": "B0000F0",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -16000,9 +16000,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0000F1",
+        "_id": "V0000F1",
         "pmid": "26456023",
-        "biomarkerSetId": "S0000F1",
+        "biomarkerId": "B0000F1",
         "sourceIds": [
             "Tissue"
         ],
@@ -16065,9 +16065,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F2",
+        "_id": "V0000F2",
         "pmid": "26421425",
-        "biomarkerSetId": "S0000F2",
+        "biomarkerId": "B0000F2",
         "sourceIds": [
             "Tissue"
         ],
@@ -16129,9 +16129,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F3",
+        "_id": "V0000F3",
         "pmid": "26379879",
-        "biomarkerSetId": "S0000F3",
+        "biomarkerId": "B0000F3",
         "sourceIds": [
             "TIssue"
         ],
@@ -16192,9 +16192,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F4",
+        "_id": "V0000F4",
         "pmid": "\u00a026377974",
-        "biomarkerSetId": "S0000F4",
+        "biomarkerId": "B0000F4",
         "sourceIds": [
             "Tissue"
         ],
@@ -16257,9 +16257,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F5",
+        "_id": "V0000F5",
         "pmid": "26190195",
-        "biomarkerSetId": "S0000F5",
+        "biomarkerId": "B0000F5",
         "sourceIds": [
             "Tissue"
         ],
@@ -16319,9 +16319,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F6",
+        "_id": "V0000F6",
         "pmid": "26189368",
-        "biomarkerSetId": "S0000F6",
+        "biomarkerId": "B0000F6",
         "sourceIds": [
             "Tissue"
         ],
@@ -16383,9 +16383,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F7",
+        "_id": "V0000F7",
         "pmid": "26165699",
-        "biomarkerSetId": "S0000F7",
+        "biomarkerId": "B0000F7",
         "sourceIds": [
             "Tissue"
         ],
@@ -16446,9 +16446,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F8",
+        "_id": "V0000F8",
         "pmid": "26143636",
-        "biomarkerSetId": "S0000F8",
+        "biomarkerId": "B0000F8",
         "sourceIds": [
             "Tissue",
             "Blood"
@@ -16507,9 +16507,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000F9",
+        "_id": "V0000F9",
         "pmid": "26122847",
-        "biomarkerSetId": "S0000F9",
+        "biomarkerId": "B0000F9",
         "sourceIds": [
             "Tissue"
         ],
@@ -16571,9 +16571,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FA",
+        "_id": "V0000FA",
         "pmid": "26115094",
-        "biomarkerSetId": "S000130",
+        "biomarkerId": "B000130",
         "sourceIds": [
             "Tissue"
         ],
@@ -16632,9 +16632,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FB",
+        "_id": "V0000FB",
         "pmid": "26108996",
-        "biomarkerSetId": "S0000FB",
+        "biomarkerId": "B0000FB",
         "sourceIds": [
             "Tissue"
         ],
@@ -16697,9 +16697,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FC",
+        "_id": "V0000FC",
         "pmid": "26108672",
-        "biomarkerSetId": "S0000FC",
+        "biomarkerId": "B0000FC",
         "sourceIds": [
             "Tissue"
         ],
@@ -16763,9 +16763,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FD",
+        "_id": "V0000FD",
         "pmid": "26101711",
-        "biomarkerSetId": "S0000FD",
+        "biomarkerId": "B0000FD",
         "sourceIds": [
             "Tissue"
         ],
@@ -16831,9 +16831,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FE",
+        "_id": "V0000FE",
         "pmid": "26032848",
-        "biomarkerSetId": "S0000FE",
+        "biomarkerId": "B0000FE",
         "sourceIds": [
             "Tissue"
         ],
@@ -16893,9 +16893,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0000FF",
+        "_id": "V0000FF",
         "pmid": "26023083",
-        "biomarkerSetId": "S0000FF",
+        "biomarkerId": "B0000FF",
         "sourceIds": [
             "Tissue"
         ],
@@ -16953,9 +16953,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000100",
+        "_id": "V000100",
         "pmid": "26014517",
-        "biomarkerSetId": "S000100",
+        "biomarkerId": "B000100",
         "sourceIds": [
             "Tissue"
         ],
@@ -17016,9 +17016,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000101",
+        "_id": "V000101",
         "pmid": "25939439",
-        "biomarkerSetId": "S000101",
+        "biomarkerId": "B000101",
         "sourceIds": [
             "Tissue"
         ],
@@ -17077,9 +17077,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000102",
+        "_id": "V000102",
         "pmid": "25869098",
-        "biomarkerSetId": "S000102",
+        "biomarkerId": "B000102",
         "sourceIds": [
             "Tissue"
         ],
@@ -17138,9 +17138,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000103",
+        "_id": "V000103",
         "pmid": "25833697",
-        "biomarkerSetId": "S000103",
+        "biomarkerId": "B000103",
         "sourceIds": [
             "Tissue"
         ],
@@ -17200,9 +17200,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000104",
+        "_id": "V000104",
         "pmid": "25821789",
-        "biomarkerSetId": "S000104",
+        "biomarkerId": "B000104",
         "sourceIds": [
             "Tissue",
             "Blood"
@@ -17263,9 +17263,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000105",
+        "_id": "V000105",
         "pmid": "25817794",
-        "biomarkerSetId": "S000105",
+        "biomarkerId": "B000105",
         "sourceIds": [
             "Tissue"
         ],
@@ -17330,9 +17330,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000106",
+        "_id": "V000106",
         "pmid": "25813152",
-        "biomarkerSetId": "S000106",
+        "biomarkerId": "B000106",
         "sourceIds": [
             "Blood"
         ],
@@ -17394,9 +17394,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000107",
+        "_id": "V000107",
         "pmid": "25762646",
-        "biomarkerSetId": "S000107",
+        "biomarkerId": "B000107",
         "sourceIds": [
             "Tissue"
         ],
@@ -17455,9 +17455,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000108",
+        "_id": "V000108",
         "pmid": "25755767",
-        "biomarkerSetId": "S000108",
+        "biomarkerId": "B000108",
         "sourceIds": [
             "Tissue"
         ],
@@ -17518,9 +17518,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000109",
+        "_id": "V000109",
         "pmid": "25749043",
-        "biomarkerSetId": "S000109",
+        "biomarkerId": "B000109",
         "sourceIds": [
             "Tissue"
         ],
@@ -17575,9 +17575,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E00010A",
+        "_id": "V00010A",
         "pmid": "25572712",
-        "biomarkerSetId": "S00010A",
+        "biomarkerId": "B00010A",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -17649,9 +17649,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00010B",
+        "_id": "V00010B",
         "pmid": "25514975",
-        "biomarkerSetId": "S00010B",
+        "biomarkerId": "B00010B",
         "sourceIds": [
             "Tissue"
         ],
@@ -17717,9 +17717,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00010C",
+        "_id": "V00010C",
         "pmid": "25498217",
-        "biomarkerSetId": "S00010C",
+        "biomarkerId": "B00010C",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -17787,9 +17787,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00010D",
+        "_id": "V00010D",
         "pmid": "25444902",
-        "biomarkerSetId": "S00010D",
+        "biomarkerId": "B00010D",
         "sourceIds": [
             "Tissue"
         ],
@@ -17860,9 +17860,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00010E",
+        "_id": "V00010E",
         "pmid": "25325876",
-        "biomarkerSetId": "S00010E",
+        "biomarkerId": "B00010E",
         "sourceIds": [
             "Cell line",
             "Tissue"
@@ -17938,9 +17938,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00010F",
+        "_id": "V00010F",
         "pmid": "25084773",
-        "biomarkerSetId": "S00010F",
+        "biomarkerId": "B00010F",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -18015,9 +18015,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000110",
+        "_id": "V000110",
         "pmid": "25038272",
-        "biomarkerSetId": "S000110",
+        "biomarkerId": "B000110",
         "sourceIds": [
             "Tissue"
         ],
@@ -18086,9 +18086,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000111",
+        "_id": "V000111",
         "pmid": "24927751",
-        "biomarkerSetId": "S000111",
+        "biomarkerId": "B000111",
         "sourceIds": [
             "Tissue"
         ],
@@ -18154,9 +18154,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000112",
+        "_id": "V000112",
         "pmid": "26207187",
-        "biomarkerSetId": "S000112",
+        "biomarkerId": "B000112",
         "sourceIds": [
             "Cell line"
         ],
@@ -18218,9 +18218,9 @@
         "curator": null
     },
     {
-        "_id": "E000113",
+        "_id": "V000113",
         "pmid": "24472318",
-        "biomarkerSetId": "S000113",
+        "biomarkerId": "B000113",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -18289,9 +18289,9 @@
         "curator": null
     },
     {
-        "_id": "E000114",
+        "_id": "V000114",
         "pmid": "24438238",
-        "biomarkerSetId": "S000114",
+        "biomarkerId": "B000114",
         "sourceIds": [
             "Tissue"
         ],
@@ -18355,9 +18355,9 @@
         "curator": null
     },
     {
-        "_id": "E000115",
+        "_id": "V000115",
         "pmid": "24158112",
-        "biomarkerSetId": "S000115",
+        "biomarkerId": "B000115",
         "sourceIds": [
             "Tissue"
         ],
@@ -18424,9 +18424,9 @@
         "curator": null
     },
     {
-        "_id": "E000116",
+        "_id": "V000116",
         "pmid": "24146797",
-        "biomarkerSetId": "S000116",
+        "biomarkerId": "B000116",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -18504,9 +18504,9 @@
         "curator": null
     },
     {
-        "_id": "E000117",
+        "_id": "V000117",
         "pmid": "23826410",
-        "biomarkerSetId": "S000117",
+        "biomarkerId": "B000117",
         "sourceIds": [
             "Tissue"
         ],
@@ -18576,9 +18576,9 @@
         "curator": null
     },
     {
-        "_id": "E000118",
+        "_id": "V000118",
         "pmid": "23726844",
-        "biomarkerSetId": "S000118",
+        "biomarkerId": "B000118",
         "sourceIds": [
             "Tissue"
         ],
@@ -18637,9 +18637,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000119",
+        "_id": "V000119",
         "pmid": "23663361",
-        "biomarkerSetId": "S000119",
+        "biomarkerId": "B000119",
         "sourceIds": [
             "Tissue"
         ],
@@ -18697,9 +18697,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011A",
+        "_id": "V00011A",
         "pmid": "23658650",
-        "biomarkerSetId": "S00011A",
+        "biomarkerId": "B00011A",
         "sourceIds": [
             "Tissue"
         ],
@@ -18758,9 +18758,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011B",
+        "_id": "V00011B",
         "pmid": "23658323",
-        "biomarkerSetId": "S0001CF",
+        "biomarkerId": "B0001CF",
         "sourceIds": [
             "Tissue"
         ],
@@ -18819,9 +18819,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011C",
+        "_id": "V00011C",
         "pmid": "23644658",
-        "biomarkerSetId": "S00011C",
+        "biomarkerId": "B00011C",
         "sourceIds": [
             "Tissue"
         ],
@@ -18884,9 +18884,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011D",
+        "_id": "V00011D",
         "pmid": "23643983",
-        "biomarkerSetId": "S000133",
+        "biomarkerId": "B000133",
         "sourceIds": [
             "Tissue"
         ],
@@ -18946,9 +18946,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011E",
+        "_id": "V00011E",
         "pmid": "23593382",
-        "biomarkerSetId": "S00011E",
+        "biomarkerId": "B00011E",
         "sourceIds": [
             "Tissue"
         ],
@@ -19009,9 +19009,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E00011F",
+        "_id": "V00011F",
         "pmid": "23592437",
-        "biomarkerSetId": "S00011F",
+        "biomarkerId": "B00011F",
         "sourceIds": [
             "Tissue"
         ],
@@ -19072,9 +19072,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000120",
+        "_id": "V000120",
         "pmid": "23544166",
-        "biomarkerSetId": "S0001AC",
+        "biomarkerId": "B0001AC",
         "sourceIds": [
             "Tissue"
         ],
@@ -19135,9 +19135,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000121",
+        "_id": "V000121",
         "pmid": "23504125",
-        "biomarkerSetId": "S000121",
+        "biomarkerId": "B000121",
         "sourceIds": [
             "Tissue"
         ],
@@ -19197,9 +19197,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000122",
+        "_id": "V000122",
         "pmid": "23467707",
-        "biomarkerSetId": "S000122",
+        "biomarkerId": "B000122",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -19261,9 +19261,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000123",
+        "_id": "V000123",
         "pmid": "23426156",
-        "biomarkerSetId": "S000123",
+        "biomarkerId": "B000123",
         "sourceIds": [
             "Tissue"
         ],
@@ -19332,9 +19332,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000124",
+        "_id": "V000124",
         "pmid": "23377983",
-        "biomarkerSetId": "S000124",
+        "biomarkerId": "B000124",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -19403,9 +19403,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000125",
+        "_id": "V000125",
         "pmid": "23338717",
-        "biomarkerSetId": "S000125",
+        "biomarkerId": "B000125",
         "sourceIds": [
             "Tissue"
         ],
@@ -19466,9 +19466,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E000126",
+        "_id": "V000126",
         "pmid": "23216891",
-        "biomarkerSetId": "S000126",
+        "biomarkerId": "B000126",
         "sourceIds": [
             "Tissue"
         ],
@@ -19536,9 +19536,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000127",
+        "_id": "V000127",
         "pmid": "23205130",
-        "biomarkerSetId": "S000127",
+        "biomarkerId": "B000127",
         "sourceIds": [
             "Tissue",
             "Serum"
@@ -19608,9 +19608,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000128",
+        "_id": "V000128",
         "pmid": "23104517",
-        "biomarkerSetId": "S000128",
+        "biomarkerId": "B000128",
         "sourceIds": [
             "Tissue"
         ],
@@ -19676,9 +19676,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000129",
+        "_id": "V000129",
         "pmid": "23097141",
-        "biomarkerSetId": "S000129",
+        "biomarkerId": "B000129",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -19752,9 +19752,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012A",
+        "_id": "V00012A",
         "pmid": "23077581",
-        "biomarkerSetId": "S00012A",
+        "biomarkerId": "B00012A",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -19826,9 +19826,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012B",
+        "_id": "V00012B",
         "pmid": "23065374",
-        "biomarkerSetId": "S00012B",
+        "biomarkerId": "B00012B",
         "sourceIds": [
             "Tissue"
         ],
@@ -19890,9 +19890,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012C",
+        "_id": "V00012C",
         "pmid": "23041832",
-        "biomarkerSetId": "S00012C",
+        "biomarkerId": "B00012C",
         "sourceIds": [
             "Tissue"
         ],
@@ -19957,9 +19957,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012D",
+        "_id": "V00012D",
         "pmid": "22960273",
-        "biomarkerSetId": "S00012D",
+        "biomarkerId": "B00012D",
         "sourceIds": [
             "Tissue"
         ],
@@ -20028,9 +20028,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012E",
+        "_id": "V00012E",
         "pmid": "22922887",
-        "biomarkerSetId": "S00012E",
+        "biomarkerId": "B00012E",
         "sourceIds": [
             "Tissue"
         ],
@@ -20096,9 +20096,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E00012F",
+        "_id": "V00012F",
         "pmid": "22825389",
-        "biomarkerSetId": "S00012F",
+        "biomarkerId": "B00012F",
         "sourceIds": [
             "Tissue"
         ],
@@ -20168,9 +20168,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000130",
+        "_id": "V000130",
         "pmid": "22752663",
-        "biomarkerSetId": "S000130",
+        "biomarkerId": "B000130",
         "sourceIds": [
             "Tissue"
         ],
@@ -20234,9 +20234,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000131",
+        "_id": "V000131",
         "pmid": "22725988",
-        "biomarkerSetId": "S000131",
+        "biomarkerId": "B000131",
         "sourceIds": [
             "Tissue"
         ],
@@ -20304,9 +20304,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000132",
+        "_id": "V000132",
         "pmid": "22350668",
-        "biomarkerSetId": "S000132",
+        "biomarkerId": "B000132",
         "sourceIds": [
             "Tissue"
         ],
@@ -20374,9 +20374,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000133",
+        "_id": "V000133",
         "pmid": "22040407",
-        "biomarkerSetId": "S000133",
+        "biomarkerId": "B000133",
         "sourceIds": [
             "Tissue"
         ],
@@ -20444,9 +20444,9 @@
         "curator": null
     },
     {
-        "_id": "E000134",
+        "_id": "V000134",
         "pmid": "20838435",
-        "biomarkerSetId": "S000134",
+        "biomarkerId": "B000134",
         "sourceIds": [
             "Tissue"
         ],
@@ -20507,9 +20507,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000135",
+        "_id": "V000135",
         "pmid": "20827226",
-        "biomarkerSetId": "S000135",
+        "biomarkerId": "B000135",
         "sourceIds": [
             "Tissue"
         ],
@@ -20568,9 +20568,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000136",
+        "_id": "V000136",
         "pmid": "20730317",
-        "biomarkerSetId": "S000136",
+        "biomarkerId": "B000136",
         "sourceIds": [
             "Tissue"
         ],
@@ -20629,9 +20629,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000137",
+        "_id": "V000137",
         "pmid": "20667016",
-        "biomarkerSetId": "S000137",
+        "biomarkerId": "B000137",
         "sourceIds": [
             "Tissue"
         ],
@@ -20690,9 +20690,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000138",
+        "_id": "V000138",
         "pmid": "20601442",
-        "biomarkerSetId": "S000138",
+        "biomarkerId": "B000138",
         "sourceIds": [
             "Tissue"
         ],
@@ -20752,9 +20752,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000139",
+        "_id": "V000139",
         "pmid": "20501753",
-        "biomarkerSetId": "S000139",
+        "biomarkerId": "B000139",
         "sourceIds": [
             "Tissue"
         ],
@@ -20817,9 +20817,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013A",
+        "_id": "V00013A",
         "pmid": "20395120",
-        "biomarkerSetId": "S00013A",
+        "biomarkerId": "B00013A",
         "sourceIds": [
             "Tissue"
         ],
@@ -20880,9 +20880,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013B",
+        "_id": "V00013B",
         "pmid": "20331867",
-        "biomarkerSetId": "S00013B",
+        "biomarkerId": "B00013B",
         "sourceIds": [
             "Imaging"
         ],
@@ -20944,9 +20944,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013C",
+        "_id": "V00013C",
         "pmid": "20210242",
-        "biomarkerSetId": "S00013C",
+        "biomarkerId": "B00013C",
         "sourceIds": [
             "Tissue"
         ],
@@ -21007,9 +21007,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013D",
+        "_id": "V00013D",
         "pmid": "20175962",
-        "biomarkerSetId": "S00013D",
+        "biomarkerId": "B00013D",
         "sourceIds": [
             "Tissue"
         ],
@@ -21070,9 +21070,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013E",
+        "_id": "V00013E",
         "pmid": "20084020",
-        "biomarkerSetId": "S00013E",
+        "biomarkerId": "B00013E",
         "sourceIds": [
             "Tissue"
         ],
@@ -21136,9 +21136,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00013F",
+        "_id": "V00013F",
         "pmid": "19912360",
-        "biomarkerSetId": "S00013F",
+        "biomarkerId": "B00013F",
         "sourceIds": [
             "Tissue"
         ],
@@ -21197,9 +21197,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000140",
+        "_id": "V000140",
         "pmid": "19775291",
-        "biomarkerSetId": "S000140",
+        "biomarkerId": "B000140",
         "sourceIds": [
             "Tissue"
         ],
@@ -21260,9 +21260,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000141",
+        "_id": "V000141",
         "pmid": "19774387",
-        "biomarkerSetId": "S000141",
+        "biomarkerId": "B000141",
         "sourceIds": [
             "Tissue"
         ],
@@ -21321,9 +21321,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000142",
+        "_id": "V000142",
         "pmid": "19716156",
-        "biomarkerSetId": "S000142",
+        "biomarkerId": "B000142",
         "sourceIds": [
             "Tissue"
         ],
@@ -21384,9 +21384,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000143",
+        "_id": "V000143",
         "pmid": "19616898",
-        "biomarkerSetId": "S000143",
+        "biomarkerId": "B000143",
         "sourceIds": [
             "Tissue"
         ],
@@ -21443,9 +21443,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000144",
+        "_id": "V000144",
         "pmid": "19545791",
-        "biomarkerSetId": "S000144",
+        "biomarkerId": "B000144",
         "sourceIds": [
             "Tissue"
         ],
@@ -21505,9 +21505,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000145",
+        "_id": "V000145",
         "pmid": "19536818",
-        "biomarkerSetId": "S000145",
+        "biomarkerId": "B000145",
         "sourceIds": [
             "Tissue"
         ],
@@ -21568,9 +21568,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000146",
+        "_id": "V000146",
         "pmid": "19435942",
-        "biomarkerSetId": "S0001DA",
+        "biomarkerId": "B0001DA",
         "sourceIds": [
             "Tissue"
         ],
@@ -21633,9 +21633,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000147",
+        "_id": "V000147",
         "pmid": "19127042",
-        "biomarkerSetId": "S000170",
+        "biomarkerId": "B000170",
         "sourceIds": [
             "Tissue"
         ],
@@ -21697,9 +21697,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000148",
+        "_id": "V000148",
         "pmid": "19019178",
-        "biomarkerSetId": "S000148",
+        "biomarkerId": "B000148",
         "sourceIds": [
             "Tissue"
         ],
@@ -21761,9 +21761,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E000149",
+        "_id": "V000149",
         "pmid": "18812968",
-        "biomarkerSetId": "S000149",
+        "biomarkerId": "B000149",
         "sourceIds": [
             "Tissue"
         ],
@@ -21822,9 +21822,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00014A",
+        "_id": "V00014A",
         "pmid": "18639524",
-        "biomarkerSetId": "S00014A",
+        "biomarkerId": "B00014A",
         "sourceIds": [
             "Tissue"
         ],
@@ -21885,9 +21885,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E00014B",
+        "_id": "V00014B",
         "pmid": "18483363",
-        "biomarkerSetId": "S00014B",
+        "biomarkerId": "B00014B",
         "sourceIds": [
             "Tissue"
         ],
@@ -21953,9 +21953,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00014C",
+        "_id": "V00014C",
         "pmid": "18403493",
-        "biomarkerSetId": "S00014C",
+        "biomarkerId": "B00014C",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -22023,9 +22023,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00014D",
+        "_id": "V00014D",
         "pmid": "18172271",
-        "biomarkerSetId": "S00014D",
+        "biomarkerId": "B00014D",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -22095,9 +22095,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00014E",
+        "_id": "V00014E",
         "pmid": "17016233",
-        "biomarkerSetId": "S00014E",
+        "biomarkerId": "B00014E",
         "sourceIds": [
             "Tissue",
             "Fluid",
@@ -22165,9 +22165,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00014F",
+        "_id": "V00014F",
         "pmid": "16866986",
-        "biomarkerSetId": "S00014F",
+        "biomarkerId": "B00014F",
         "sourceIds": [
             "Tissue"
         ],
@@ -22235,9 +22235,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000150",
+        "_id": "V000150",
         "pmid": "16803948",
-        "biomarkerSetId": "S000150",
+        "biomarkerId": "B000150",
         "sourceIds": [
             "Tissue"
         ],
@@ -22304,9 +22304,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000151",
+        "_id": "V000151",
         "pmid": "16326273",
-        "biomarkerSetId": "S000151",
+        "biomarkerId": "B000151",
         "sourceIds": [
             "Cell line"
         ],
@@ -22370,9 +22370,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000152",
+        "_id": "V000152",
         "pmid": "16254489",
-        "biomarkerSetId": "S000152",
+        "biomarkerId": "B000152",
         "sourceIds": [
             "Tissue"
         ],
@@ -22436,9 +22436,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000153",
+        "_id": "V000153",
         "pmid": "15958563",
-        "biomarkerSetId": "S000153",
+        "biomarkerId": "B000153",
         "sourceIds": [
             "Sera",
             "Tissue"
@@ -22509,9 +22509,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000154",
+        "_id": "V000154",
         "pmid": "15788675",
-        "biomarkerSetId": "S000154",
+        "biomarkerId": "B000154",
         "sourceIds": [
             "Tissue"
         ],
@@ -22577,9 +22577,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000155",
+        "_id": "V000155",
         "pmid": "15696971",
-        "biomarkerSetId": "S000155",
+        "biomarkerId": "B000155",
         "sourceIds": [
             "Tissue"
         ],
@@ -22637,9 +22637,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000156",
+        "_id": "V000156",
         "pmid": "15696967",
-        "biomarkerSetId": "S000156",
+        "biomarkerId": "B000156",
         "sourceIds": [
             "Tissue"
         ],
@@ -22703,9 +22703,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000157",
+        "_id": "V000157",
         "pmid": "15671555",
-        "biomarkerSetId": "S000157",
+        "biomarkerId": "B000157",
         "sourceIds": [
             "Tissue"
         ],
@@ -22762,9 +22762,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000158",
+        "_id": "V000158",
         "pmid": "15274074",
-        "biomarkerSetId": "S000158",
+        "biomarkerId": "B000158",
         "sourceIds": [
             "Tissue"
         ],
@@ -22822,9 +22822,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000159",
+        "_id": "V000159",
         "pmid": "15143086",
-        "biomarkerSetId": "S000159",
+        "biomarkerId": "B000159",
         "sourceIds": [
             "Tissue"
         ],
@@ -22881,9 +22881,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015A",
+        "_id": "V00015A",
         "pmid": "15134623",
-        "biomarkerSetId": "S00015A",
+        "biomarkerId": "B00015A",
         "sourceIds": [
             "Tissue"
         ],
@@ -22940,9 +22940,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015B",
+        "_id": "V00015B",
         "pmid": "15115103",
-        "biomarkerSetId": "S00016F",
+        "biomarkerId": "B00016F",
         "sourceIds": [
             "Tissue"
         ],
@@ -22999,9 +22999,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015C",
+        "_id": "V00015C",
         "pmid": "15094455",
-        "biomarkerSetId": "S00015C",
+        "biomarkerId": "B00015C",
         "sourceIds": [
             "Tissue"
         ],
@@ -23058,9 +23058,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015D",
+        "_id": "V00015D",
         "pmid": "14609169",
-        "biomarkerSetId": "S00015D",
+        "biomarkerId": "B00015D",
         "sourceIds": [
             "Tissue"
         ],
@@ -23117,9 +23117,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015E",
+        "_id": "V00015E",
         "pmid": "12845671",
-        "biomarkerSetId": "S00015E",
+        "biomarkerId": "B00015E",
         "sourceIds": [
             "Tissue"
         ],
@@ -23178,9 +23178,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00015F",
+        "_id": "V00015F",
         "pmid": "12760291",
-        "biomarkerSetId": "S00015F",
+        "biomarkerId": "B00015F",
         "sourceIds": [
             "Tissue"
         ],
@@ -23237,9 +23237,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000160",
+        "_id": "V000160",
         "pmid": "12187957",
-        "biomarkerSetId": "S000160",
+        "biomarkerId": "B000160",
         "sourceIds": [
             "Tissue"
         ],
@@ -23296,9 +23296,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000161",
+        "_id": "V000161",
         "pmid": "12066196",
-        "biomarkerSetId": "S00016D",
+        "biomarkerId": "B00016D",
         "sourceIds": [
             "Tissue"
         ],
@@ -23355,9 +23355,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000162",
+        "_id": "V000162",
         "pmid": "11918088",
-        "biomarkerSetId": "S000162",
+        "biomarkerId": "B000162",
         "sourceIds": [
             "Tissue"
         ],
@@ -23414,9 +23414,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000163",
+        "_id": "V000163",
         "pmid": "11844831",
-        "biomarkerSetId": "S0001DF",
+        "biomarkerId": "B0001DF",
         "sourceIds": [
             "Tissue"
         ],
@@ -23473,9 +23473,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000164",
+        "_id": "V000164",
         "pmid": "11550311",
-        "biomarkerSetId": "S000164",
+        "biomarkerId": "B000164",
         "sourceIds": [
             "Tissue"
         ],
@@ -23532,9 +23532,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000165",
+        "_id": "V000165",
         "pmid": "11389063",
-        "biomarkerSetId": "S000165",
+        "biomarkerId": "B000165",
         "sourceIds": [
             "Tissue"
         ],
@@ -23591,9 +23591,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000166",
+        "_id": "V000166",
         "pmid": "11014540",
-        "biomarkerSetId": "S00016F",
+        "biomarkerId": "B00016F",
         "sourceIds": [
             "Tissue"
         ],
@@ -23650,9 +23650,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000167",
+        "_id": "V000167",
         "pmid": "10984457",
-        "biomarkerSetId": "S000167",
+        "biomarkerId": "B000167",
         "sourceIds": [
             "Tissue"
         ],
@@ -23709,9 +23709,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000168",
+        "_id": "V000168",
         "pmid": "10645226",
-        "biomarkerSetId": "S000168",
+        "biomarkerId": "B000168",
         "sourceIds": [
             "Tissue"
         ],
@@ -23768,9 +23768,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000169",
+        "_id": "V000169",
         "pmid": "10213484",
-        "biomarkerSetId": "S000169",
+        "biomarkerId": "B000169",
         "sourceIds": [
             "Tissue"
         ],
@@ -23828,9 +23828,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016A",
+        "_id": "V00016A",
         "pmid": "10066096",
-        "biomarkerSetId": "S00016A",
+        "biomarkerId": "B00016A",
         "sourceIds": [
             "Tissue"
         ],
@@ -23892,9 +23892,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016B",
+        "_id": "V00016B",
         "pmid": "10063359",
-        "biomarkerSetId": "S00016B",
+        "biomarkerId": "B00016B",
         "sourceIds": [
             "Tissue"
         ],
@@ -23951,9 +23951,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016C",
+        "_id": "V00016C",
         "pmid": "9821169",
-        "biomarkerSetId": "S00016C",
+        "biomarkerId": "B00016C",
         "sourceIds": [
             "Tissue"
         ],
@@ -24010,9 +24010,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016D",
+        "_id": "V00016D",
         "pmid": "9581814",
-        "biomarkerSetId": "S00016D",
+        "biomarkerId": "B00016D",
         "sourceIds": [
             "Tissue"
         ],
@@ -24069,9 +24069,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016E",
+        "_id": "V00016E",
         "pmid": "9264362",
-        "biomarkerSetId": "S00016E",
+        "biomarkerId": "B00016E",
         "sourceIds": [
             "Tissue"
         ],
@@ -24132,9 +24132,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E00016F",
+        "_id": "V00016F",
         "pmid": "9241081",
-        "biomarkerSetId": "S00016F",
+        "biomarkerId": "B00016F",
         "sourceIds": [
             "Tissue"
         ],
@@ -24195,9 +24195,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000170",
+        "_id": "V000170",
         "pmid": "8598357",
-        "biomarkerSetId": "S000170",
+        "biomarkerId": "B000170",
         "sourceIds": [
             "Tissue"
         ],
@@ -24254,9 +24254,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000171",
+        "_id": "V000171",
         "pmid": "7561922",
-        "biomarkerSetId": "S000171",
+        "biomarkerId": "B000171",
         "sourceIds": [
             "Tissue"
         ],
@@ -24313,9 +24313,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000172",
+        "_id": "V000172",
         "pmid": "8313368",
-        "biomarkerSetId": "S000172",
+        "biomarkerId": "B000172",
         "sourceIds": [
             "Tissue"
         ],
@@ -24372,9 +24372,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000173",
+        "_id": "V000173",
         "pmid": "7681617",
-        "biomarkerSetId": "S000175",
+        "biomarkerId": "B000175",
         "sourceIds": [
             "Tissue"
         ],
@@ -24431,9 +24431,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000174",
+        "_id": "V000174",
         "pmid": "1414519",
-        "biomarkerSetId": "S000174",
+        "biomarkerId": "B000174",
         "sourceIds": [
             "Tissue"
         ],
@@ -24490,9 +24490,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000175",
+        "_id": "V000175",
         "pmid": "1374410",
-        "biomarkerSetId": "S000175",
+        "biomarkerId": "B000175",
         "sourceIds": [
             "Tissue"
         ],
@@ -24549,9 +24549,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000176",
+        "_id": "V000176",
         "pmid": "1850599",
-        "biomarkerSetId": "S000176",
+        "biomarkerId": "B000176",
         "sourceIds": [
             "Tissue"
         ],
@@ -24608,9 +24608,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000177",
+        "_id": "V000177",
         "pmid": "65176",
-        "biomarkerSetId": "S000177",
+        "biomarkerId": "B000177",
         "sourceIds": [
             "Tissue"
         ],
@@ -24667,9 +24667,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E000178",
+        "_id": "V000178",
         "pmid": "26895104",
-        "biomarkerSetId": "S000178",
+        "biomarkerId": "B000178",
         "sourceIds": [
             "Tissue"
         ],
@@ -24734,9 +24734,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E000179",
+        "_id": "V000179",
         "pmid": "26573230",
-        "biomarkerSetId": "S000179",
+        "biomarkerId": "B000179",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -24808,9 +24808,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00017A",
+        "_id": "V00017A",
         "pmid": "26558781",
-        "biomarkerSetId": "S00017A",
+        "biomarkerId": "B00017A",
         "sourceIds": [
             "Tissue"
         ],
@@ -24879,9 +24879,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00017B",
+        "_id": "V00017B",
         "pmid": "25628952",
-        "biomarkerSetId": "S00017B",
+        "biomarkerId": "B00017B",
         "sourceIds": [
             "Tissue"
         ],
@@ -24949,9 +24949,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00017C",
+        "_id": "V00017C",
         "pmid": "25204555",
-        "biomarkerSetId": "S00017C",
+        "biomarkerId": "B00017C",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25027,9 +25027,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00017D",
+        "_id": "V00017D",
         "pmid": "25155356",
-        "biomarkerSetId": "S00017D",
+        "biomarkerId": "B00017D",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25095,9 +25095,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00017E",
+        "_id": "V00017E",
         "pmid": "24203894",
-        "biomarkerSetId": "S00017E",
+        "biomarkerId": "B00017E",
         "sourceIds": [
             "Tissue"
         ],
@@ -25168,9 +25168,9 @@
         "curator": null
     },
     {
-        "_id": "E00017F",
+        "_id": "V00017F",
         "pmid": "24002581",
-        "biomarkerSetId": "S00017F",
+        "biomarkerId": "B00017F",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25244,9 +25244,9 @@
         "curator": null
     },
     {
-        "_id": "E000180",
+        "_id": "V000180",
         "pmid": "23096411",
-        "biomarkerSetId": "S000180",
+        "biomarkerId": "B000180",
         "sourceIds": [
             "Tissue"
         ],
@@ -25316,9 +25316,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000181",
+        "_id": "V000181",
         "pmid": "23010083",
-        "biomarkerSetId": "S000181",
+        "biomarkerId": "B000181",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25388,9 +25388,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000182",
+        "_id": "V000182",
         "pmid": "22750848",
-        "biomarkerSetId": "S000182",
+        "biomarkerId": "B000182",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25459,9 +25459,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000183",
+        "_id": "V000183",
         "pmid": "22619307",
-        "biomarkerSetId": "S000183",
+        "biomarkerId": "B000183",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25528,9 +25528,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E000184",
+        "_id": "V000184",
         "pmid": "26337803",
-        "biomarkerSetId": "S000184",
+        "biomarkerId": "B000184",
         "sourceIds": [
             "Tissue"
         ],
@@ -25587,9 +25587,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000185",
+        "_id": "V000185",
         "pmid": "25710480",
-        "biomarkerSetId": "S000185",
+        "biomarkerId": "B000185",
         "sourceIds": [
             "Tissue"
         ],
@@ -25646,9 +25646,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E000186",
+        "_id": "V000186",
         "pmid": "30069164",
-        "biomarkerSetId": "S000186",
+        "biomarkerId": "B000186",
         "sourceIds": [
             "Tissue"
         ],
@@ -25715,9 +25715,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000187",
+        "_id": "V000187",
         "pmid": "30015879",
-        "biomarkerSetId": "S000187",
+        "biomarkerId": "B000187",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -25797,9 +25797,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000188",
+        "_id": "V000188",
         "pmid": "29995176",
-        "biomarkerSetId": "S000188",
+        "biomarkerId": "B000188",
         "sourceIds": [
             "Tissue"
         ],
@@ -25860,9 +25860,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000189",
+        "_id": "V000189",
         "pmid": "29642043",
-        "biomarkerSetId": "S000189",
+        "biomarkerId": "B000189",
         "sourceIds": [
             "Tissue"
         ],
@@ -25919,9 +25919,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018A",
+        "_id": "V00018A",
         "pmid": "29631594",
-        "biomarkerSetId": "S00018A",
+        "biomarkerId": "B00018A",
         "sourceIds": [
             "Tissue"
         ],
@@ -25982,9 +25982,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018B",
+        "_id": "V00018B",
         "pmid": "29483008",
-        "biomarkerSetId": "S00018B",
+        "biomarkerId": "B00018B",
         "sourceIds": [
             "Tissue"
         ],
@@ -26044,9 +26044,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018C",
+        "_id": "V00018C",
         "pmid": "29399702",
-        "biomarkerSetId": "S00018C",
+        "biomarkerId": "B00018C",
         "sourceIds": [
             "Tissue"
         ],
@@ -26109,9 +26109,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018D",
+        "_id": "V00018D",
         "pmid": "29393370",
-        "biomarkerSetId": "S0001D4",
+        "biomarkerId": "B0001D4",
         "sourceIds": [
             "Tissue"
         ],
@@ -26170,9 +26170,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018E",
+        "_id": "V00018E",
         "pmid": "29383189",
-        "biomarkerSetId": "S00018E",
+        "biomarkerId": "B00018E",
         "sourceIds": [
             "Tissue"
         ],
@@ -26233,9 +26233,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E00018F",
+        "_id": "V00018F",
         "pmid": "29378529",
-        "biomarkerSetId": "S00018F",
+        "biomarkerId": "B00018F",
         "sourceIds": [
             "Tissue"
         ],
@@ -26297,9 +26297,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000190",
+        "_id": "V000190",
         "pmid": "29337169",
-        "biomarkerSetId": "S000190",
+        "biomarkerId": "B000190",
         "sourceIds": [
             "Tissue"
         ],
@@ -26366,9 +26366,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000191",
+        "_id": "V000191",
         "pmid": "29305787",
-        "biomarkerSetId": "S000191",
+        "biomarkerId": "B000191",
         "sourceIds": [
             "Tissue"
         ],
@@ -26427,9 +26427,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E000192",
+        "_id": "V000192",
         "pmid": "28943957",
-        "biomarkerSetId": "S000192",
+        "biomarkerId": "B000192",
         "sourceIds": [
             "Tissue"
         ],
@@ -26495,9 +26495,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000193",
+        "_id": "V000193",
         "pmid": "28926524",
-        "biomarkerSetId": "S000193",
+        "biomarkerId": "B000193",
         "sourceIds": [
             "Tissue"
         ],
@@ -26560,9 +26560,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000194",
+        "_id": "V000194",
         "pmid": "28887715",
-        "biomarkerSetId": "S000194",
+        "biomarkerId": "B000194",
         "sourceIds": [
             "Tissue"
         ],
@@ -26633,9 +26633,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000195",
+        "_id": "V000195",
         "pmid": "28869437",
-        "biomarkerSetId": "S000195",
+        "biomarkerId": "B000195",
         "sourceIds": [
             "Tissue"
         ],
@@ -26698,9 +26698,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000196",
+        "_id": "V000196",
         "pmid": "28789454",
-        "biomarkerSetId": "S000196",
+        "biomarkerId": "B000196",
         "sourceIds": [
             "Tissue"
         ],
@@ -26758,9 +26758,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000197",
+        "_id": "V000197",
         "pmid": "28780604",
-        "biomarkerSetId": "S000197",
+        "biomarkerId": "B000197",
         "sourceIds": [
             "Tissue"
         ],
@@ -26824,9 +26824,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000198",
+        "_id": "V000198",
         "pmid": "28759950",
-        "biomarkerSetId": "S000198",
+        "biomarkerId": "B000198",
         "sourceIds": [
             "TIssue"
         ],
@@ -26889,9 +26889,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E000199",
+        "_id": "V000199",
         "pmid": "28458560",
-        "biomarkerSetId": "S000199",
+        "biomarkerId": "B000199",
         "sourceIds": [
             "Tissue"
         ],
@@ -26959,9 +26959,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00019A",
+        "_id": "V00019A",
         "pmid": "28236760",
-        "biomarkerSetId": "S00019A",
+        "biomarkerId": "B00019A",
         "sourceIds": [
             "Tissue"
         ],
@@ -27027,9 +27027,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00019B",
+        "_id": "V00019B",
         "pmid": "28103511",
-        "biomarkerSetId": "S00019B",
+        "biomarkerId": "B00019B",
         "sourceIds": [
             "Tissue"
         ],
@@ -27095,9 +27095,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00019C",
+        "_id": "V00019C",
         "pmid": "28079349",
-        "biomarkerSetId": "S00019C",
+        "biomarkerId": "B00019C",
         "sourceIds": [
             "Tissue"
         ],
@@ -27166,9 +27166,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00019D",
+        "_id": "V00019D",
         "pmid": "27655637",
-        "biomarkerSetId": "S00019D",
+        "biomarkerId": "B00019D",
         "sourceIds": [
             "Tissue"
         ],
@@ -27237,9 +27237,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E00019E",
+        "_id": "V00019E",
         "pmid": "27090900",
-        "biomarkerSetId": "S00019E",
+        "biomarkerId": "B00019E",
         "sourceIds": [
             "Tissue"
         ],
@@ -27288,9 +27288,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E00019F",
+        "_id": "V00019F",
         "pmid": "27029617",
-        "biomarkerSetId": "S00019F",
+        "biomarkerId": "B00019F",
         "sourceIds": [
             "Tissue"
         ],
@@ -27349,9 +27349,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A0",
+        "_id": "V0001A0",
         "pmid": "27000226",
-        "biomarkerSetId": "S0001A0",
+        "biomarkerId": "B0001A0",
         "sourceIds": [
             "Tissue"
         ],
@@ -27419,9 +27419,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A1",
+        "_id": "V0001A1",
         "pmid": "26998166",
-        "biomarkerSetId": "S0001A1",
+        "biomarkerId": "B0001A1",
         "sourceIds": [
             "Tissue"
         ],
@@ -27485,9 +27485,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A2",
+        "_id": "V0001A2",
         "pmid": "26980050",
-        "biomarkerSetId": "S0001A2",
+        "biomarkerId": "B0001A2",
         "sourceIds": [
             "Tissue"
         ],
@@ -27556,9 +27556,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A3",
+        "_id": "V0001A3",
         "pmid": "26885283",
-        "biomarkerSetId": "S0001A3",
+        "biomarkerId": "B0001A3",
         "sourceIds": [
             "Tissue"
         ],
@@ -27620,9 +27620,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A4",
+        "_id": "V0001A4",
         "pmid": "26740175",
-        "biomarkerSetId": "S0001A4",
+        "biomarkerId": "B0001A4",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -27690,9 +27690,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A5",
+        "_id": "V0001A5",
         "pmid": "26738845",
-        "biomarkerSetId": "S0001A5",
+        "biomarkerId": "B0001A5",
         "sourceIds": [
             "Tissue"
         ],
@@ -27757,9 +27757,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A6",
+        "_id": "V0001A6",
         "pmid": "26699864",
-        "biomarkerSetId": "S0001A6",
+        "biomarkerId": "B0001A6",
         "sourceIds": [
             "Tissue"
         ],
@@ -27825,9 +27825,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A7",
+        "_id": "V0001A7",
         "pmid": "26690524",
-        "biomarkerSetId": "S0001A7",
+        "biomarkerId": "B0001A7",
         "sourceIds": [
             "Tissue"
         ],
@@ -27892,9 +27892,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A8",
+        "_id": "V0001A8",
         "pmid": "26682634",
-        "biomarkerSetId": "S0001A8",
+        "biomarkerId": "B0001A8",
         "sourceIds": [
             "Tissue"
         ],
@@ -27961,9 +27961,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001A9",
+        "_id": "V0001A9",
         "pmid": "26662803",
-        "biomarkerSetId": "S0001A9",
+        "biomarkerId": "B0001A9",
         "sourceIds": [
             "Tissue"
         ],
@@ -28025,9 +28025,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001AA",
+        "_id": "V0001AA",
         "pmid": "26646311",
-        "biomarkerSetId": "S0001AA",
+        "biomarkerId": "B0001AA",
         "sourceIds": [
             "Tissue"
         ],
@@ -28088,9 +28088,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001AB",
+        "_id": "V0001AB",
         "pmid": "26473374",
-        "biomarkerSetId": "S0001AB",
+        "biomarkerId": "B0001AB",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -28160,9 +28160,9 @@
         "curator": "RF"
     },
     {
-        "_id": "E0001AC",
+        "_id": "V0001AC",
         "pmid": "25681309",
-        "biomarkerSetId": "S0001AC",
+        "biomarkerId": "B0001AC",
         "sourceIds": [
             "Tissue"
         ],
@@ -28229,9 +28229,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001AD",
+        "_id": "V0001AD",
         "pmid": "25665548",
-        "biomarkerSetId": "S0001AD",
+        "biomarkerId": "B0001AD",
         "sourceIds": [
             "Tissue"
         ],
@@ -28290,9 +28290,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001AE",
+        "_id": "V0001AE",
         "pmid": "25494473",
-        "biomarkerSetId": "S0001AE",
+        "biomarkerId": "B0001AE",
         "sourceIds": [
             "Tissue"
         ],
@@ -28358,9 +28358,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001AF",
+        "_id": "V0001AF",
         "pmid": "25141189",
-        "biomarkerSetId": "S0001AF",
+        "biomarkerId": "B0001AF",
         "sourceIds": [
             "Tissue"
         ],
@@ -28429,9 +28429,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001B0",
+        "_id": "V0001B0",
         "pmid": "24958096",
-        "biomarkerSetId": "S0001B0",
+        "biomarkerId": "B0001B0",
         "sourceIds": [
             "Tissue"
         ],
@@ -28502,9 +28502,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B1",
+        "_id": "V0001B1",
         "pmid": "24935062",
-        "biomarkerSetId": "S0001B1",
+        "biomarkerId": "B0001B1",
         "sourceIds": [
             "Tissue"
         ],
@@ -28573,9 +28573,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B2",
+        "_id": "V0001B2",
         "pmid": "24900981",
-        "biomarkerSetId": "S0001B2",
+        "biomarkerId": "B0001B2",
         "sourceIds": [
             "Tissue"
         ],
@@ -28642,9 +28642,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B3",
+        "_id": "V0001B3",
         "pmid": "24847385",
-        "biomarkerSetId": "S0001B3",
+        "biomarkerId": "B0001B3",
         "sourceIds": [
             "Tissue"
         ],
@@ -28712,9 +28712,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B4",
+        "_id": "V0001B4",
         "pmid": "24729345",
-        "biomarkerSetId": "S0001B4",
+        "biomarkerId": "B0001B4",
         "sourceIds": [
             "Tissue"
         ],
@@ -28780,9 +28780,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B5",
+        "_id": "V0001B5",
         "pmid": "24691539",
-        "biomarkerSetId": "S0001B5",
+        "biomarkerId": "B0001B5",
         "sourceIds": [
             "Tissue"
         ],
@@ -28845,9 +28845,9 @@
         "curator": "Vanessa"
     },
     {
-        "_id": "E0001B6",
+        "_id": "V0001B6",
         "pmid": "24122417",
-        "biomarkerSetId": "S0001B6",
+        "biomarkerId": "B0001B6",
         "sourceIds": [
             "Tissue"
         ],
@@ -28907,9 +28907,9 @@
         "curator": null
     },
     {
-        "_id": "E0001B7",
+        "_id": "V0001B7",
         "pmid": "24057325",
-        "biomarkerSetId": "S0001B7",
+        "biomarkerId": "B0001B7",
         "sourceIds": [
             "Tissue"
         ],
@@ -28967,9 +28967,9 @@
         "curator": null
     },
     {
-        "_id": "E0001B8",
+        "_id": "V0001B8",
         "pmid": "24039914",
-        "biomarkerSetId": "S0001B8",
+        "biomarkerId": "B0001B8",
         "sourceIds": [
             "Tissue"
         ],
@@ -29039,9 +29039,9 @@
         "curator": null
     },
     {
-        "_id": "E0001B9",
+        "_id": "V0001B9",
         "pmid": "23955565",
-        "biomarkerSetId": "S0001B9",
+        "biomarkerId": "B0001B9",
         "sourceIds": [
             "Tissue"
         ],
@@ -29106,9 +29106,9 @@
         "curator": null
     },
     {
-        "_id": "E0001BA",
+        "_id": "V0001BA",
         "pmid": "23828241",
-        "biomarkerSetId": "S0001BA",
+        "biomarkerId": "B0001BA",
         "sourceIds": [
             "Cell line",
             "Tissue"
@@ -29180,9 +29180,9 @@
         "curator": null
     },
     {
-        "_id": "E0001BB",
+        "_id": "V0001BB",
         "pmid": "23664694",
-        "biomarkerSetId": "S0001BB",
+        "biomarkerId": "B0001BB",
         "sourceIds": [
             "Tissue"
         ],
@@ -29242,9 +29242,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001BC",
+        "_id": "V0001BC",
         "pmid": "23477614",
-        "biomarkerSetId": "S0001BC",
+        "biomarkerId": "B0001BC",
         "sourceIds": [
             "Tissue"
         ],
@@ -29301,9 +29301,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001BD",
+        "_id": "V0001BD",
         "pmid": "23410662",
-        "biomarkerSetId": "S0001BD",
+        "biomarkerId": "B0001BD",
         "sourceIds": [
             "Tissue"
         ],
@@ -29368,9 +29368,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001BE",
+        "_id": "V0001BE",
         "pmid": "23408368",
-        "biomarkerSetId": "S0001BE",
+        "biomarkerId": "B0001BE",
         "sourceIds": [
             "Tissue"
         ],
@@ -29434,9 +29434,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001BF",
+        "_id": "V0001BF",
         "pmid": "23331016",
-        "biomarkerSetId": "S0001BF",
+        "biomarkerId": "B0001BF",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -29497,9 +29497,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001C0",
+        "_id": "V0001C0",
         "pmid": "23292865",
-        "biomarkerSetId": "S0001C0",
+        "biomarkerId": "B0001C0",
         "sourceIds": [
             "Tissue"
         ],
@@ -29550,9 +29550,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001C1",
+        "_id": "V0001C1",
         "pmid": "23282970",
-        "biomarkerSetId": "S0001C1",
+        "biomarkerId": "B0001C1",
         "sourceIds": [
             "Tissue"
         ],
@@ -29613,9 +29613,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001C2",
+        "_id": "V0001C2",
         "pmid": "23276796",
-        "biomarkerSetId": "S0001C2",
+        "biomarkerId": "B0001C2",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -29693,9 +29693,9 @@
         "curator": "ANA"
     },
     {
-        "_id": "E0001C3",
+        "_id": "V0001C3",
         "pmid": "23142225",
-        "biomarkerSetId": "S0001C3",
+        "biomarkerId": "B0001C3",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -29756,9 +29756,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0001C4",
+        "_id": "V0001C4",
         "pmid": "23132408",
-        "biomarkerSetId": "S0001C4",
+        "biomarkerId": "B0001C4",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -29822,9 +29822,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0001C5",
+        "_id": "V0001C5",
         "pmid": "23074200",
-        "biomarkerSetId": "S0001C5",
+        "biomarkerId": "B0001C5",
         "sourceIds": [
             "Tissue"
         ],
@@ -29897,9 +29897,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0001C6",
+        "_id": "V0001C6",
         "pmid": "22726066",
-        "biomarkerSetId": "S0001C6",
+        "biomarkerId": "B0001C6",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -29972,9 +29972,9 @@
         "curator": "Ahmed"
     },
     {
-        "_id": "E0001C7",
+        "_id": "V0001C7",
         "pmid": "22046342",
-        "biomarkerSetId": "S0001C7",
+        "biomarkerId": "B0001C7",
         "sourceIds": [
             "Tissue"
         ],
@@ -30046,9 +30046,9 @@
         "curator": null
     },
     {
-        "_id": "E0001C8",
+        "_id": "V0001C8",
         "pmid": "21984063",
-        "biomarkerSetId": "S0001C8",
+        "biomarkerId": "B0001C8",
         "sourceIds": [
             "Tissue"
         ],
@@ -30114,9 +30114,9 @@
         "curator": null
     },
     {
-        "_id": "E0001C9",
+        "_id": "V0001C9",
         "pmid": "21947269",
-        "biomarkerSetId": "S0001C9",
+        "biomarkerId": "B0001C9",
         "sourceIds": [
             "Tissue"
         ],
@@ -30179,9 +30179,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CA",
+        "_id": "V0001CA",
         "pmid": "21479688",
-        "biomarkerSetId": "S0001CA",
+        "biomarkerId": "B0001CA",
         "sourceIds": [
             "Tissue"
         ],
@@ -30243,9 +30243,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CB",
+        "_id": "V0001CB",
         "pmid": "21331613",
-        "biomarkerSetId": "S0001CB",
+        "biomarkerId": "B0001CB",
         "sourceIds": [
             "Tissue"
         ],
@@ -30307,9 +30307,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CC",
+        "_id": "V0001CC",
         "pmid": "21321483",
-        "biomarkerSetId": "S0001CC",
+        "biomarkerId": "B0001CC",
         "sourceIds": [
             "Tissue"
         ],
@@ -30371,9 +30371,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CD",
+        "_id": "V0001CD",
         "pmid": "21302000",
-        "biomarkerSetId": "S0001CD",
+        "biomarkerId": "B0001CD",
         "sourceIds": [
             "Tissue"
         ],
@@ -30434,9 +30434,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CE",
+        "_id": "V0001CE",
         "pmid": "21157891",
-        "biomarkerSetId": "S0001CE",
+        "biomarkerId": "B0001CE",
         "sourceIds": [
             "Tissue"
         ],
@@ -30502,9 +30502,9 @@
         "curator": null
     },
     {
-        "_id": "E0001CF",
+        "_id": "V0001CF",
         "pmid": "20806346",
-        "biomarkerSetId": "S0001CF",
+        "biomarkerId": "B0001CF",
         "sourceIds": [
             "Tissue"
         ],
@@ -30563,9 +30563,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D0",
+        "_id": "V0001D0",
         "pmid": "20661133",
-        "biomarkerSetId": "S0001D0",
+        "biomarkerId": "B0001D0",
         "sourceIds": [
             "Tissue"
         ],
@@ -30624,9 +30624,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D1",
+        "_id": "V0001D1",
         "pmid": "20437865",
-        "biomarkerSetId": "S0001D1",
+        "biomarkerId": "B0001D1",
         "sourceIds": [
             "Tissue"
         ],
@@ -30685,9 +30685,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D2",
+        "_id": "V0001D2",
         "pmid": "20425043",
-        "biomarkerSetId": "S0001D2",
+        "biomarkerId": "B0001D2",
         "sourceIds": [
             "Tissue"
         ],
@@ -30748,9 +30748,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D3",
+        "_id": "V0001D3",
         "pmid": "20150378",
-        "biomarkerSetId": "S0001D3",
+        "biomarkerId": "B0001D3",
         "sourceIds": [
             "Tissue"
         ],
@@ -30809,9 +30809,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D4",
+        "_id": "V0001D4",
         "pmid": "20150367",
-        "biomarkerSetId": "S0001D4",
+        "biomarkerId": "B0001D4",
         "sourceIds": [
             "Tissue"
         ],
@@ -30870,9 +30870,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D5",
+        "_id": "V0001D5",
         "pmid": "20150365",
-        "biomarkerSetId": "S0001D5",
+        "biomarkerId": "B0001D5",
         "sourceIds": [
             "Tissue"
         ],
@@ -30934,9 +30934,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D6",
+        "_id": "V0001D6",
         "pmid": "20081802",
-        "biomarkerSetId": "S0001D6",
+        "biomarkerId": "B0001D6",
         "sourceIds": [
             "Tissue"
         ],
@@ -30997,9 +30997,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D7",
+        "_id": "V0001D7",
         "pmid": "19948061",
-        "biomarkerSetId": "S0001D7",
+        "biomarkerId": "B0001D7",
         "sourceIds": [
             "Tissue"
         ],
@@ -31060,9 +31060,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D8",
+        "_id": "V0001D8",
         "pmid": "19767728",
-        "biomarkerSetId": "S0001D8",
+        "biomarkerId": "B0001D8",
         "sourceIds": [
             "Tissue"
         ],
@@ -31124,9 +31124,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001D9",
+        "_id": "V0001D9",
         "pmid": "19765000",
-        "biomarkerSetId": "S0001D9",
+        "biomarkerId": "B0001D9",
         "sourceIds": [
             "Tissue"
         ],
@@ -31187,9 +31187,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DA",
+        "_id": "V0001DA",
         "pmid": "19755387",
-        "biomarkerSetId": "S0001DA",
+        "biomarkerId": "B0001DA",
         "sourceIds": [
             "Tissue"
         ],
@@ -31251,9 +31251,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DB",
+        "_id": "V0001DB",
         "pmid": "19331209",
-        "biomarkerSetId": "S0001DB",
+        "biomarkerId": "B0001DB",
         "sourceIds": [
             "Tissue"
         ],
@@ -31312,9 +31312,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DC",
+        "_id": "V0001DC",
         "pmid": "19264916",
-        "biomarkerSetId": "S0001DC",
+        "biomarkerId": "B0001DC",
         "sourceIds": [
             "Tissue"
         ],
@@ -31376,9 +31376,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DD",
+        "_id": "V0001DD",
         "pmid": "19141386",
-        "biomarkerSetId": "S0001DD",
+        "biomarkerId": "B0001DD",
         "sourceIds": [
             "Tissue"
         ],
@@ -31437,9 +31437,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DE",
+        "_id": "V0001DE",
         "pmid": "18991494",
-        "biomarkerSetId": "S0001DE",
+        "biomarkerId": "B0001DE",
         "sourceIds": [
             "Tissue"
         ],
@@ -31498,9 +31498,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001DF",
+        "_id": "V0001DF",
         "pmid": "18953492",
-        "biomarkerSetId": "S0001DF",
+        "biomarkerId": "B0001DF",
         "sourceIds": [
             "Tissue"
         ],
@@ -31559,9 +31559,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001E0",
+        "_id": "V0001E0",
         "pmid": "18552083",
-        "biomarkerSetId": "S0001E0",
+        "biomarkerId": "B0001E0",
         "sourceIds": [
             "Tissue"
         ],
@@ -31623,9 +31623,9 @@
         "curator": "Erik Samelsson"
     },
     {
-        "_id": "E0001E1",
+        "_id": "V0001E1",
         "pmid": "18493866",
-        "biomarkerSetId": "S0001E1",
+        "biomarkerId": "B0001E1",
         "sourceIds": [
             "Tissue"
         ],
@@ -31691,9 +31691,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E2",
+        "_id": "V0001E2",
         "pmid": "17571214",
-        "biomarkerSetId": "S0001E2",
+        "biomarkerId": "B0001E2",
         "sourceIds": [
             "Tissue"
         ],
@@ -31760,9 +31760,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E3",
+        "_id": "V0001E3",
         "pmid": "17415524",
-        "biomarkerSetId": "S0001E3",
+        "biomarkerId": "B0001E3",
         "sourceIds": [
             "Tissue"
         ],
@@ -31821,9 +31821,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E4",
+        "_id": "V0001E4",
         "pmid": "17219056",
-        "biomarkerSetId": "S0001E4",
+        "biomarkerId": "B0001E4",
         "sourceIds": [
             "Tissue"
         ],
@@ -31883,9 +31883,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E5",
+        "_id": "V0001E5",
         "pmid": "17048097",
-        "biomarkerSetId": "S0001E5",
+        "biomarkerId": "B0001E5",
         "sourceIds": [
             "Tissue"
         ],
@@ -31947,9 +31947,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E6",
+        "_id": "V0001E6",
         "pmid": "16849758",
-        "biomarkerSetId": "S0001E6",
+        "biomarkerId": "B0001E6",
         "sourceIds": [
             "Tissue"
         ],
@@ -32014,9 +32014,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E7",
+        "_id": "V0001E7",
         "pmid": "16550604",
-        "biomarkerSetId": "S0001E7",
+        "biomarkerId": "B0001E7",
         "sourceIds": [
             "Tissue"
         ],
@@ -32083,9 +32083,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E8",
+        "_id": "V0001E8",
         "pmid": "16320026",
-        "biomarkerSetId": "S0001E8",
+        "biomarkerId": "B0001E8",
         "sourceIds": [
             "Tissue"
         ],
@@ -32148,9 +32148,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001E9",
+        "_id": "V0001E9",
         "pmid": "12582944",
-        "biomarkerSetId": "S0001E9",
+        "biomarkerId": "B0001E9",
         "sourceIds": [
             "Tissue"
         ],
@@ -32209,9 +32209,9 @@
         "curator": "Cristian"
     },
     {
-        "_id": "E0001EA",
+        "_id": "V0001EA",
         "pmid": "29991124",
-        "biomarkerSetId": "S0001EA",
+        "biomarkerId": "B0001EA",
         "sourceIds": [
             "Tissue"
         ],
@@ -32271,9 +32271,9 @@
         "curator": "Erik Samuelsson"
     },
     {
-        "_id": "E0001EB",
+        "_id": "V0001EB",
         "pmid": "26515590",
-        "biomarkerSetId": "S0001EB",
+        "biomarkerId": "B0001EB",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -32346,9 +32346,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001EC",
+        "_id": "V0001EC",
         "pmid": "25669971",
-        "biomarkerSetId": "S0001EC",
+        "biomarkerId": "B0001EC",
         "sourceIds": [
             "Tissue",
             "Cell lines"
@@ -32422,9 +32422,9 @@
         "curator": "BP"
     },
     {
-        "_id": "E0001ED",
+        "_id": "V0001ED",
         "pmid": "22287159",
-        "biomarkerSetId": "S0001ED",
+        "biomarkerId": "B0001ED",
         "sourceIds": [
             "Tissue",
             "Cell line"

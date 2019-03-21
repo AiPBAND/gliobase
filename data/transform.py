@@ -68,34 +68,34 @@ seed.append({
 	"documents": clist
 })
 
-# Biomarkers ***************************************************************************************
-biomarkers = []
+# Entities ***************************************************************************************
+entities = []
 bioids = {}
 counter = 0
 for item in extractUnique(df['name']):
-	hexid = "B"+hex(counter).split('x')[-1].upper().zfill(6)
+	hexid = "E"+hex(counter).split('x')[-1].upper().zfill(6)
 	abbs = [hex(random.randint(0,9999)).split('x')[-1].upper() for x in range(random.randint(0,5))]
 	counter += 1
 	bioids[item] = hexid
-	biomarkers.append({
+	entities.append({
 		"_id": hexid,
 		"name": item,
 		"abreviations": abbs,
 		"categoryId": random.choice(clist)["_id"],
 		"description": lorem.paragraph()
 	})
-writeJsonArray(biomarkers, output+"biomarkers.json")
+writeJsonArray(entities, output+"entities.json")
 seed.append({
-	"model": "Biomarker",
-	"documents": biomarkers
+	"model": "Entity",
+	"documents": entities
 })
 
-# Biomarker sets ***********************************************************************************
+# Biomarkers ***********************************************************************************
 biosets = []
 setids = {}
 counter = 0
 for item in extractSets(df['name']):
-	hexid = "S"+hex(counter).split('x')[-1].upper().zfill(6)
+	hexid = "B"+hex(counter).split('x')[-1].upper().zfill(6)
 	counter += 1
 	s = []
 	for i in item:
@@ -103,11 +103,11 @@ for item in extractSets(df['name']):
 	setids[tuple(s)] = hexid
 	biosets.append({
 		"_id": hexid,
-		"biomarkerIds": s
+		"entityIds": s
 	})
-writeJsonArray(biosets, output+"biomarkerSets.json")
+writeJsonArray(biosets, output+"biomarkers.json")
 seed.append({
-	"model": "BiomarkerSet",
+	"model": "Biomarker",
 	"documents": biosets
 })
 
@@ -122,13 +122,13 @@ def strNan(num):
 	return num if not pd.isna(num) else None
 
 for i,item in df.iterrows():
-	hexid = "E"+hex(counter).split('x')[-1].upper().zfill(6)
+	hexid = "V"+hex(counter).split('x')[-1].upper().zfill(6)
 	counter += 1
 	bids = tuple(bioids[x] for x in sortedSet(item["name"]))
 	evidence.append({
 		"_id": hexid,
 		"pmid": item["pmid"] if not pd.isna(item["pmid"]) else 0,
-		"biomarkerSetId": setids[bids],
+		"biomarkerId": setids[bids],
 		"sourceIds": stripSplit(item["source"]),
 		"samples": "TODO",
 		"species": stripSplit(item['species']),

@@ -1,0 +1,12 @@
+{
+	entities {
+		id
+		name
+		abreviations
+		description
+		category {
+			id
+			reflink
+		}
+	} 
+}

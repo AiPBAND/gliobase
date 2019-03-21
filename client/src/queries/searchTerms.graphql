@@ -1,5 +1,5 @@
 query searchTerms($text: String){
-	biomarkersSearch(text: $text) {
+	entitiesSearch(text: $text) {
 		id
 		name
 		abreviations
@@ -8,8 +8,8 @@ query searchTerms($text: String){
 			id
 		}
 	},
-	biomarkerSetSearch(text: $text) {
+	biomarkerSearch(text: $text) {
 		id
-		biomarkerIds
+		entityIds
 	} 
 }

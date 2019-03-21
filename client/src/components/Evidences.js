@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Icon, Table, Popover} from 'antd';
 import BioID from './BioID';
+
 const getIcon = (mess) => {
 	if (mess === "Yes" || mess === "YES") return "check-circle"
 	if (mess === "No" || mess === "NO") return "stop"

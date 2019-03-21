@@ -1,12 +1,6 @@
 {
 	biomarkers {
 		id
-		name
-		abreviations
-		description
-		category {
-			id
-			reflink
-		}
-	} 
+		entityIds
+	}
 }

@@ -1,14 +1,6 @@
 [
     {
-        "_id": "RNA",
-        "description": ""
-    },
-    {
         "_id": "Others",
-        "description": ""
-    },
-    {
-        "_id": "Aminopeptidase",
         "description": ""
     },
     {
@@ -16,11 +8,11 @@
         "description": ""
     },
     {
-        "_id": "Enzyme",
+        "_id": "RNA",
         "description": ""
     },
     {
-        "_id": "Metabolite",
+        "_id": "Aminopeptidase",
         "description": ""
     },
     {
@@ -28,7 +20,11 @@
         "description": ""
     },
     {
-        "_id": "DNA",
+        "_id": "Stem cells",
+        "description": ""
+    },
+    {
+        "_id": "Enzyme",
         "description": ""
     },
     {
@@ -36,7 +32,7 @@
         "description": ""
     },
     {
-        "_id": "Stem cells",
+        "_id": "Protein",
         "description": ""
     },
     {
@@ -44,7 +40,11 @@
         "description": ""
     },
     {
-        "_id": "Protein",
+        "_id": "Metabolite",
+        "description": ""
+    },
+    {
+        "_id": "DNA",
         "description": ""
     }
 ]

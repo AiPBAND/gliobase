@@ -5,14 +5,14 @@ const schema = new mongoose.Schema({
 		type: String,
 		validate: {
 			validator: function(v) {
-			  return /E([A-Z0-9]){6}/.test(v);
+			  return /V([A-Z0-9]){6}/.test(v);
 			},
-			message: props => `${props.value} is not a valid evidence ID of the form EXXXXXX.`
+			message: props => `${props.value} is not a valid evidence ID of the form VXXXXXX.`
 		  }
 	},
-	biomarkerSetId: {
+	biomarkerId: {
 		type: String,
-		ref: 'Source',
+		ref: 'Biomarker',
 		required: true
 	},
 	pmid: String,
