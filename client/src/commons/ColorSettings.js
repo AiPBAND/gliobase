@@ -22,11 +22,10 @@ export const SpeciesColors = {
 }
 
 export const StageColors = {
-	"I": "blue",
-	"II": "green",
-	"III": "yellow",
-	"IV": "orange",
-	"V": "red"
+	"I": "green",
+	"II": "yellow",
+	"III": "orange",
+	"IV": "red"
 }
 
 export default {
