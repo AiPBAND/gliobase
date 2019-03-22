@@ -6,6 +6,7 @@ import Entities from '../components/Entities';
 import Biomarkers from '../components/Biomarkers';
 import Evidences from '../components/Evidences';
 import PieChart from '../components/PieChart';
+import BarChart from '../components/BarChart';
 import {CategoryColors} from '../commons/ColorSettings';
 import './Exploration.css'
 
@@ -44,8 +45,7 @@ class Exploration extends Component {
               const inputDataCatagory = keys.map(el => ({ item: el, count: tally[el]}));
               return (
                 <div className='exploration-statistics'>
-                  <h3>Catagory</h3>
-                  <PieChart data={inputDataCatagory} intervalWidth={2} colorSet= {entityColorSet}/>
+                  <PieChart data={inputDataCatagory} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Catagory"}/>
                   <Entities data={entityData.entities}/>
                 </div>
               );
@@ -92,8 +92,7 @@ class Exploration extends Component {
 
               return (
                 <div className='exploration-statistics'>
-                  <h3>Source</h3>
-                  <PieChart data={inputDataSource} intervalWidth={0.5}/>
+                  <BarChart data={inputDataSource} chartTitle={"Source"}/>
                   <Evidences data={evidenceData.evidences}/>
                 </div>
               );
