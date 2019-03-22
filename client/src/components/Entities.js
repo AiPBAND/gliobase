@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 import Table from 'antd/lib/table';
-import {Tag} from 'antd';
-import BioID from './BioID';
- 
-const colors = {
-	DNA: "green",
-	protein: "cyan",
-	RNA: "magenta"
-}
+import BioID from './tags/BioID';
+import Category from './tags/Category';
 
 const columns = [{
 	title: 'ID',
@@ -25,9 +19,7 @@ const columns = [{
 	dataIndex: 'category',
 	key: 'category.id',
 	render: category => (
-		<span>
-		  	<Tag color={colors[category.id]} key={category.id}> <a href = {category.reflink}>{category.id}</a></Tag>
-		</span>
+		<Category name={category.id}/>
 	)
   }];
   

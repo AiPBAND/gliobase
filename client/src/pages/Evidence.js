@@ -3,9 +3,19 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
-import BioID from './../components/BioID';
+
+import BioID from './../components/tags/BioID';
+import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
+<<<<<<< HEAD
 import Age from './../components/Age'
+=======
+import Species from '../components/tags/Species';
+import Stage from '../components/tags/Stage';
+import EntityList from '../components/lists/EntityList';
+
+
+>>>>>>> bade8f0606cb0378e9afad6e519440d7f8ed0842
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -23,16 +33,16 @@ class Evidence extends Component {
 					return <BioID id={id}>{id+" "}</BioID>;
 				})
 
-				const sourceIds = data.evidence.sourceIds.map(id => {
-					return <Tag>{id+" "}</Tag>;
+				const sources = data.evidence.sourceIds.map(id => {
+					return <Source name={id}/>;
 				})
 
 				const species = data.evidence.species.map(id => {
-					return <Tag>{id+" "}</Tag>;
+					return <Species name={id}/>
 				})
 
 				const stage = data.evidence.stage.map(id => {
-					return <Tag>{id+" "}</Tag>;
+					return <Stage name={id}/>
 				})
 				
 				//TODO: Clean this mess
@@ -120,13 +130,13 @@ class Evidence extends Component {
 							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
 						</Title>
 					</Title>
-					<span>{listIds}</span>
+					<EntityList data={data.evidence.biomarker.entities}></EntityList>
 
 					<Row gutter={15}>
 						<Col span={12}>
 							<Card title="Samples" size="small">
 								<b>Sources</b>
-								<div>{sourceIds}</div>
+								<div>{sources}</div>
 								<b>Species</b>
 								<div>{species}</div>
 								<b>Gender</b>
