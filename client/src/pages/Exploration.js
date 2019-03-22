@@ -17,11 +17,9 @@ const TabPane = Tabs.TabPane;
 
 class Exploration extends Component {
 	render(){
-
-    const entityColorSet = ['item', [CategoryColors['Protein'], CategoryColors['Others'], CategoryColors['RNA'], CategoryColors['DNA']]];
+    const entityColorSet = ['item', [CategoryColors['DNA'], CategoryColors['Others'], CategoryColors['Protein'], CategoryColors['RNA']]];
 		return (
       <Tabs type="card">
-        
         <TabPane tab={<span><Icon type="experiment" />Entities</span>} key="1">
           <Query query={entitiesQuery}>
             {({ loading, error, data: entityData }) => {
@@ -41,7 +39,9 @@ class Exploration extends Component {
                 }
                 return accumulator;
               }, {});
-              const inputDataCatagory = Object.entries(tally).map(el => ({ item: el[0], count: el[1]}));
+              const keys = Object.keys(tally);
+              keys.sort();
+              const inputDataCatagory = keys.map(el => ({ item: el, count: tally[el]}));
               return (
                 <div className='exploration-statistics'>
                   <h3>Catagory</h3>
