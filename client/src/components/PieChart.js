@@ -9,6 +9,12 @@ import {
 } from "bizcharts";
 
 const styles = {
+  wrapper: {
+    width: 500,
+    textAlign: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+  },
   mainTitle: {
     fontSize: 16,
     fontWeight: 500,
@@ -21,7 +27,7 @@ const styles = {
 class PieChart extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.wrapper}>
         <Chart
           height={250}
           data={this.props.data}

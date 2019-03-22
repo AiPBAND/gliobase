@@ -88,26 +88,13 @@ class Exploration extends Component {
               if (error) return <p>Error</p>;
               const evidenceSource = evidenceData.evidences.map(el => el.sourceIds).flat();
               const evidenceSourceChart = ShapeDataForCharts(evidenceSource, false)
-
-              //Get statistics of region
               const evidenceRegion = evidenceData.evidences.map(el => el.region).flat();
-              const regionTally = evidenceRegion.reduce((accumulator, el) => {
-                if (el === null) {
-                  ;
-                } else if (accumulator[el] === undefined) {
-                  accumulator[el] = 1;
-                } else {
-                  accumulator[el]++;
-                }
-                return accumulator;
-              }, {});
-              const regionKeys = Object.keys(regionTally);
-              regionKeys.sort();
-              const inputEvidenceRegion = regionKeys.map(el => ({ item: el, count: regionTally[el]}));
-
+              const evidenceRegionChart = ShapeDataForCharts(evidenceRegion, true)
+              console.log(evidenceRegionChart);
               return (
                 <div className='exploration-statistics'>
                   <BarChart data={evidenceSourceChart} chartTitle={"Source"}/>
+                  <PieChart data={evidenceRegionChart} chartTitle={"Region"} intervalWidth={0.5}/>
                   <Evidences data={evidenceData.evidences}/>
                 </div>
               );
