@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Tabs, Icon, Skeleton, Spin, Row, Col } from 'antd';
+import { Tabs, Icon, Skeleton, Spin, Row, Col, Card } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Entities from '../components/Entities';
@@ -76,8 +76,10 @@ class Exploration extends Component {
               const entityCategoryChart = ShapeDataForCharts(entityCategory, 1);
               return (
                 <div className='exploration-statistics'>
-                  <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Catagory"}/>
-                  <Entities data={entityData.entities}/>
+                  <Card>
+                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Catagory"}/>  
+                  </Card>    
+                  <Entities data={entityData.entities}/> 
                 </div>
               );
             }}
@@ -116,10 +118,14 @@ class Exploration extends Component {
                 <div className='exploration-statistics'>
                   <Row>
                     <Col span={12}>
-                      <BarChart data={evidenceSourceChart} chartTitle={"Source"}/>
+                      <Card>
+                        <BarChart data={evidenceSourceChart} chartTitle={"Source"}/>
+                      </Card>
                     </Col>
                     <Col span={12}>
-                      <PieChart data={evidenceRegionChart} chartTitle={"Region"} intervalWidth={0.5}/>
+                      <Card>
+                        <PieChart data={evidenceRegionChart} chartTitle={"Region"} intervalWidth={0.5}/>
+                      </Card>                 
                     </Col>
                   </Row>
                   <Evidences data={evidenceData.evidences}/>
