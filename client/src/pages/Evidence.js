@@ -3,19 +3,14 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
-
 import BioID from './../components/tags/BioID';
 import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
-<<<<<<< HEAD
-import Age from './../components/Age'
-=======
 import Species from '../components/tags/Species';
 import Stage from '../components/tags/Stage';
 import EntityList from '../components/lists/EntityList';
+import Age from './../components/Age'
 
-
->>>>>>> bade8f0606cb0378e9afad6e519440d7f8ed0842
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -141,7 +136,7 @@ class Evidence extends Component {
 								<div>{species}</div>
 								<b>Gender</b>
 								<Gender male={data.evidence.gender.male} female={data.evidence.gender.female} ></Gender>
-							    <b>Age</b>
+							    <b>Age (Years)</b>
 								<Age min={data.evidence.age.min} max={data.evidence.age.max}
 								     mean={data.evidence.age.mean} sd={data.evidence.age.sd}
 									 med={data.evidence.age.med} under={data.evidence.age.range.under}
@@ -153,7 +148,7 @@ class Evidence extends Component {
 							<Card title="Classification" size="small">
 								<b>WHO Classification</b>
 								<p>{data.evidence.whoclass}</p>
-								<b>Stage</b>
+								<b>Grade (Samples)</b>
 								<p>{stage}</p>
 							</Card>
 						</Col>
