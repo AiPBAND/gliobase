@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Tabs, Icon, Skeleton, Spin } from 'antd';
+import { Tabs, Icon, Skeleton, Spin, Row, Col } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import Entities from '../components/Entities';
@@ -16,7 +16,7 @@ const evidencesQuery = loader('../queries/evidencesConcise.graphql');
 
 const TabPane = Tabs.TabPane;
 
-function ShapeDataForCharts(inputData, sortKeys = false) {
+function ShapeDataForCharts(inputData, sortMethod = 0) {
   const tally = inputData.reduce((accumulator, el) => {
     if (el === null) {
       ;
@@ -27,12 +27,34 @@ function ShapeDataForCharts(inputData, sortKeys = false) {
     }
     return accumulator;
   }, {});
+  
   const keys = Object.keys(tally);
-  if (sortKeys) {
-    keys.sort();
+  const entries = Object.entries(tally);
+
+  switch (sortMethod) {
+    //Do not sort
+    case 0:
+      return keys.map(el => ({ item: el, count: tally[el]}));
+    //Sort by name
+    case 1:
+      keys.sort();
+      return keys.map(el => ({ item: el, count: tally[el]}));
+    //Sort by count
+    case 2:
+      entries.sort((a, b) => {
+        if (a[1] > b[1]) {
+          return -1;
+        }
+        if (a[1] < b[1]) {
+          return 1;
+        }
+        return 0;
+      })
+      return entries.map(el => ({ item: el[0], count: el[1]}));
+    default: 
+      return keys.map(el => ({ item: el, count: tally[el]}));
   }
-  const outputData = keys.map(el => ({ item: el, count: tally[el]}));
-  return outputData
+  
 }
 
 class Exploration extends Component {
@@ -51,7 +73,7 @@ class Exploration extends Component {
               );
               if (error) return <p>Error</p>;
               const entityCategory = entityData.entities.map(el => el.category.id);
-              const entityCategoryChart = ShapeDataForCharts(entityCategory, true);
+              const entityCategoryChart = ShapeDataForCharts(entityCategory, 1);
               return (
                 <div className='exploration-statistics'>
                   <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Catagory"}/>
@@ -87,14 +109,19 @@ class Exploration extends Component {
               );
               if (error) return <p>Error</p>;
               const evidenceSource = evidenceData.evidences.map(el => el.sourceIds).flat();
-              const evidenceSourceChart = ShapeDataForCharts(evidenceSource, false)
+              const evidenceSourceChart = ShapeDataForCharts(evidenceSource, 0)
               const evidenceRegion = evidenceData.evidences.map(el => el.region).flat();
-              const evidenceRegionChart = ShapeDataForCharts(evidenceRegion, true)
-              console.log(evidenceRegionChart);
+              const evidenceRegionChart = ShapeDataForCharts(evidenceRegion, 2)
               return (
                 <div className='exploration-statistics'>
-                  <BarChart data={evidenceSourceChart} chartTitle={"Source"}/>
-                  <PieChart data={evidenceRegionChart} chartTitle={"Region"} intervalWidth={0.5}/>
+                  <Row>
+                    <Col span={12}>
+                      <BarChart data={evidenceSourceChart} chartTitle={"Source"}/>
+                    </Col>
+                    <Col span={12}>
+                      <PieChart data={evidenceRegionChart} chartTitle={"Region"} intervalWidth={0.5}/>
+                    </Col>
+                  </Row>
                   <Evidences data={evidenceData.evidences}/>
                 </div>
               );

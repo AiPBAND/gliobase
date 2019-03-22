@@ -29,10 +29,10 @@ class PieChart extends Component {
     return (
       <div style={styles.wrapper}>
         <Chart
-          height={250}
+          width={450}
+          height={330}
           data={this.props.data}
-          padding={[0, 0, 60, 0]}
-          forceFit
+          padding={[10, 50, 130, 50]}
         >
           <span className='main-title' style={styles.mainTitle}>
             {this.props.chartTitle}
