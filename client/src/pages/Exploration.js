@@ -78,7 +78,8 @@ class Exploration extends Component {
               );
               if (error) return <p>Error</p>;
 
-              const evidenceSource = evidenceData.evidences.map(el => el.sourceIds);
+              const evidenceSource = evidenceData.evidences.map(el => el.sourceIds).flat();
+              console.log(evidenceSource);
               const tally = evidenceSource.reduce((accumulator, el) => {
                 if (accumulator[el] === undefined) {
                   accumulator[el] = 1;
