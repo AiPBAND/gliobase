@@ -5,20 +5,38 @@ import {
   Axis,
   Tooltip,
   Coord,
-  Label,
   Legend,
 } from "bizcharts";
+
+const styles = {
+  wrapper: {
+    width: 500,
+    textAlign: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+  },
+  mainTitle: {
+    fontSize: 16,
+    fontWeight: 500,
+    color: '#333',
+    display: 'block',
+    padding: 10
+  },
+}
 
 class PieChart extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.wrapper}>
         <Chart
-          height={250}
+          width={450}
+          height={330}
           data={this.props.data}
-          padding={[0, 0, 60, 0]}
-          forceFit
+          padding={[10, 50, 130, 50]}
         >
+          <span className='main-title' style={styles.mainTitle}>
+            {this.props.chartTitle}
+          </span>
           <Coord type="theta" radius={0.9} />
           <Axis name="count" />
           <Legend
@@ -55,7 +73,8 @@ class PieChart extends Component {
 
 PieChart.defaultProps={
   intervalWidth: 2,
-  colorSet: 'item'
+  colorSet: 'item',
+  chartTitle: 'Pie Chart',
 }
 
 export default PieChart
