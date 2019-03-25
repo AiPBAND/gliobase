@@ -1,0 +1,24 @@
+a.bio-id {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+div.bio-id {
+	font-size: 10px;
+}
+
+.bio-id-name {
+	color: rgba(0, 0, 0, 0.65);
+}
+
+.evidence-id {
+	color: green
+}
+
+.biomarker-id {
+	color: orange
+}
+
+.entity-id {
+	color: blue
+}

@@ -37,8 +37,8 @@ const columns = [{
 	title: 'ID',
 	dataIndex: 'id',
 	key: 'id',
-	render: id => (
-		<BioID id={id}></BioID>
+	render: (id, record) => (
+		<BioID id={id} name={record.pmid}></BioID>
 	)
 },{
 	title: 'Validated',

@@ -1,6 +1,7 @@
 type Entity {
 	id: String!
     name: String!
+	shortName: String!
     abreviations: [String]
     description: String
 	category: Category

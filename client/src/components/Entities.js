@@ -7,8 +7,8 @@ const columns = [{
 	title: 'ID',
 	dataIndex: 'id',
 	key: 'id',
-	render: id => (
-		<BioID id={id}/>
+	render: (id, record) => (
+		<BioID id={id} name={record.shortName}/>
 	)
   }, {
 	title: 'Name',
@@ -26,7 +26,8 @@ const columns = [{
 
 class Entities extends Component {
 	render() {
-		console.log(this.props.data)
+		
+		
 		return <Table dataSource={this.props.data} rowKey="id" columns={columns}></Table>
 	}
 }
