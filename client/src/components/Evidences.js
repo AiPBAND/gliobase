@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Icon, Table, Popover} from 'antd';
+import {Table} from 'antd';
 import BioID from './tags/BioID';
-import Marker from './../Utilities/Marker';
+import Marker from './utilities/Marker';
 const columns = [{
 	title: 'PMID - ID',
 	dataIndex: 'id',
