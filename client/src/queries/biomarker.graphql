@@ -15,6 +15,7 @@ query Biomarker($id: String!){
 			pmid
 			stage
 			whoclass
+			biomarkerId
 			application {
 				validated
 				diagnosis

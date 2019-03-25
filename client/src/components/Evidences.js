@@ -34,12 +34,19 @@ const renderIcon = (val) => {
 }
 
 const columns = [{
-	title: 'ID',
+	title: 'PMID - ID',
 	dataIndex: 'id',
 	key: 'id',
 	render: (id, record) => (
 		<BioID id={id} name={record.pmid}></BioID>
 	)
+},{
+	title: 'Biomarker',
+	dataIndex: 'biomarkerId',
+	key: 'biomarkerId',
+	render: val => {
+		return <BioID id={val} name="Biomarker"/>
+	}
 },{
 	title: 'Validated',
 	dataIndex: 'application.validated',
@@ -69,6 +76,7 @@ const columns = [{
 
 class Evidences extends Component {
 	render() {
+		console.log(this.props.data)
 		return <Table columns={columns} dataSource={this.props.data} />
 	}
 }
