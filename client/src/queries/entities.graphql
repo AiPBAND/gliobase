@@ -2,6 +2,7 @@
 	entities {
 		id
 		name
+		shortName
 		abreviations
 		description
 		category {

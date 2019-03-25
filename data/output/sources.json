@@ -1,6 +1,10 @@
 [
     {
-        "_id": "Cell line",
+        "_id": "Serum",
+        "description": ""
+    },
+    {
+        "_id": "TIssue",
         "description": ""
     },
     {
@@ -8,7 +12,7 @@
         "description": ""
     },
     {
-        "_id": "TIssue",
+        "_id": "Imaging",
         "description": ""
     },
     {
@@ -20,11 +24,11 @@
         "description": ""
     },
     {
-        "_id": "Cell lines",
+        "_id": "Cell line",
         "description": ""
     },
     {
-        "_id": "Imaging",
+        "_id": "Cell lines",
         "description": ""
     },
     {
@@ -33,10 +37,6 @@
     },
     {
         "_id": "Blood",
-        "description": ""
-    },
-    {
-        "_id": "Serum",
         "description": ""
     }
 ]

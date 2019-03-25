@@ -80,6 +80,7 @@ for item in extractUnique(df['name']):
 	entities.append({
 		"_id": hexid,
 		"name": item,
+		"shortName": hex(random.randint(0,9999)).split('x')[-1].upper(),
 		"abreviations": abbs,
 		"categoryId": random.choice(clist)["_id"],
 		"description": lorem.paragraph()

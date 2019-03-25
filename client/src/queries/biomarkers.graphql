@@ -2,5 +2,9 @@
 	biomarkers {
 		id
 		entityIds
+		entities {
+			id
+			shortName
+		}
 	}
 }

@@ -7,15 +7,15 @@ const columns = [{
 	dataIndex: 'id',
 	key: 'id',
 	render: id => (
-		<BioID id={id}/>
+		<BioID id={id} name="Biomarker"/>
 	)
   },{
 	title: 'Entities',
-	dataIndex: 'entityIds',
-	key: 'entityIds',
-	render: (ids) => {
-		const listIds = ids.map(id => {
-		return <BioID id={id}>{id+" "}</BioID>;
+	dataIndex: 'entities',
+	key: 'entities',
+	render: (entities) => {
+		const listIds = entities.map(en => {
+			return <BioID id={en.id} name={en.shortName}></BioID>;
 		})
 		return <span>{listIds}</span>
 	}

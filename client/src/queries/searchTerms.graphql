@@ -2,6 +2,7 @@ query searchTerms($text: String){
 	entitiesSearch(text: $text) {
 		id
 		name
+		shortName
 		abreviations
 		description
 		category {

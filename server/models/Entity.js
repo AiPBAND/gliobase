@@ -14,7 +14,12 @@ const schema = new mongoose.Schema({
     	type: String,
     	required: true,
     	unique: true
-  	},
+	},
+	shortName: {
+		type: String,
+		required: true,
+		unique: true
+	},
   	abreviations: [String],
 	description: String,
 	categoryId: {
@@ -27,6 +32,7 @@ const schema = new mongoose.Schema({
 schema.index({
 	_id: "text",
 	name: "text",
+	shortName: "text",
 	abreviations: "text",
 	description: "text"
 })

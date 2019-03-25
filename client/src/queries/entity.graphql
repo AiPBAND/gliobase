@@ -2,6 +2,7 @@ query Entity($id: String!){
 	entity(id: $id){
 		id
 		name
+		shortName
 		abreviations
 		description
 		category {

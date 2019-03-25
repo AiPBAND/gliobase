@@ -11,7 +11,7 @@ class EntityList extends Component {
 			dataSource={this.props.data}
 			renderItem={item => (
 				<List.Item>
-					<BioID id={item.id}>{item.id}</BioID>
+					<BioID id={item.id} name={item.shortName}></BioID>
 					{" "+item.name}
 					<div className="floatright"><Category name={item.category.id}/></div>
 				</List.Item>
