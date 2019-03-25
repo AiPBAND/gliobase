@@ -15,10 +15,20 @@ class Age extends Component {
             return (min+" "+"-"+" "+max)
         }
         function cutu(cut){
-            return ("<"+ageData(cut))
+            if (cut === -1){
+                return("<")
+            }
+            else {
+                return ("<"+ageData(cut))
+            }
         }
         function cuto(cut){
-            return (">"+ageData(cut))
+            if (cut === -1){
+                return(">")
+            }
+            else {
+                return (">"+ageData(cut))
+            }
         }
         return (
             <div>

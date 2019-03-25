@@ -1,3 +1,4 @@
-.ant-statistic-content-value-int {
-    font-size: 12px;
+.ant-statistic-content-value-string {
+    font-size: 0.7em;
+    font-weight:  300;
 }
