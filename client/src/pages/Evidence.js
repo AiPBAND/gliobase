@@ -116,7 +116,7 @@ class Evidence extends Component {
 					if(value === -1) return 0;
 					else return value;
 				}
-					
+				console.log(data.evidence)	
 				return (<div>
 
 					<Title>
@@ -140,7 +140,7 @@ class Evidence extends Component {
 								<Age min={data.evidence.age.min} max={data.evidence.age.max}
 								     mean={data.evidence.age.mean} sd={data.evidence.age.sd}
 									 med={data.evidence.age.med} under={data.evidence.age.range.under}
-									 cut={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
+									 cutoff={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
 								></Age>
 							</Card>
 						</Col>
