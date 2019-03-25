@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './BioID.css';
-import { Tag } from 'antd';
 class BioID extends Component {
 	render() {
         function refLink(ref) {
@@ -15,12 +14,12 @@ class BioID extends Component {
 			if (name.charAt(0) === "B") return " biomarker-id";
 			else return "";
 		}
-		return <a href={"/"+refLink(this.props.id)+"/"+this.props.id} className="bio-id">
-			
+		return (
+    <a href={"/"+refLink(this.props.id)+"/"+this.props.id} className="bio-id">
 			<div className="bio-id-name">{this.props.name}</div>
 			<div className={"bio-id"+getColor(this.props.id)}>{this.props.id}</div>
-			
 		</a>
+    )
 	}
 }
 export default BioID

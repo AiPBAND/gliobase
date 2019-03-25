@@ -11,7 +11,7 @@ import Species from './../components/tags/Species';
 import Stage from './../components/tags/Stage';
 import EntityList from './../components/lists/EntityList';
 import Region from './../components/Region';
-import Marker from './../Utilities/Marker';
+import Marker from './../components/utilities/Marker';
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');

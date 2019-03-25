@@ -36,11 +36,11 @@ class NormalLoginForm extends Component {
             })(
             <Checkbox>Remember me</Checkbox>
             )}
-            <a className="login-form-forgot" href="" style={{float: "right"}}>Forgot password</a>
+            <a className="login-form-forgot" href="/login" style={{float: "right"}}>Forgot password</a>
             <Button type="primary" htmlType="submit" style={{width: "100%"}}>
             Log in
             </Button>
-            Or <a href="">register now!</a>
+            Or <a href="/login">register now!</a>
           </Form.Item>
         </Form>
       );
