@@ -1,22 +1,16 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Tag, Alert, List, Row, Col, Typography} from 'antd';
+import { Card, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
 import BioID from './../components/tags/BioID';
 import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
-<<<<<<< HEAD
-import Species from '../components/tags/Species';
-import Stage from '../components/tags/Stage';
-import EntityList from '../components/lists/EntityList';
 import Age from './../components/Age'
-=======
-import Age from './../components/Age'
-import Species from '../components/tags/Species';
-import Stage from '../components/tags/Stage';
->>>>>>> e1448c497eed13283218f05d453652d4d540beb0
-
+import Species from './../components/tags/Species';
+import Stage from './../components/tags/Stage';
+import EntityList from './../components/lists/EntityList';
+import Region from './../components/Region';
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -156,6 +150,9 @@ class Evidence extends Component {
 								<p>{data.evidence.whoclass}</p>
 								<b>Grade (Samples)</b>
 								<p>{stage}</p>
+							</Card>
+							<Card title="Region" size="small">
+								 <Region region={data.evidence.region}></Region>
 							</Card>
 						</Col>
 					</Row>

@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 class Gender extends Component {
 	render() {
         function genData(gen){
-            if (gen != -1){
+            if (gen !== -1){
               return (gen)
             }
             else {

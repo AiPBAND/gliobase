@@ -4,7 +4,7 @@ import './Age.css';
 class Age extends Component {
 	render() {
         function ageData(gen){
-            if (gen != -1){
+            if (gen !== -1){
               return (gen)
             }
             else {
