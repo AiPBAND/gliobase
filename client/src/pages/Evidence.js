@@ -11,6 +11,7 @@ import Species from './../components/tags/Species';
 import Stage from './../components/tags/Stage';
 import EntityList from './../components/lists/EntityList';
 import Region from './../components/Region';
+import Marker from './../Utilities/Marker';
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../queries/evidence.graphql');
@@ -41,20 +42,6 @@ class Evidence extends Component {
 				})
 				
 				//TODO: Clean this mess
-
-				const validatedMessage = () =>{
-					if(data.evidence.application.validated === "Yes") return "Validated"
-					if(data.evidence.application.validated === "No") return "Not validated"
-					if(data.evidence.application.validated === "Potential") return "Potential"
-					return "This information is unavailable";
-				}
-
-				const validatedType = () =>{
-					if(data.evidence.application.validated === "Yes") return "success"
-					if(data.evidence.application.validated === "No") return "error"
-					if(data.evidence.application.validated === "Potential") return "info"
-					return "warning";
-				}
 
 				const diagnosisMessage = () =>{
 					if(data.evidence.application.diagnosis === "YES") return "Yes"
@@ -111,16 +98,13 @@ class Evidence extends Component {
 					if(data.evidence.application.therapeutic === "Potential") return "info"
 					return "warning";
 				}
-
-				const showZero = (value) => {
-					if(value === -1) return 0;
-					else return value;
-				}
+				
 				console.log(data.evidence)	
 				return (<div>
 
 					<Title>
 						{data.evidence.id}
+		                    <Marker val={data.evidence.application.validated}></Marker> 
 						<Title level={2}>
 							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
 						</Title>
@@ -188,12 +172,6 @@ class Evidence extends Component {
 					</Card>
 
 					<Card title="Application" size="small">
-						<b>Validation</b>
-						<Alert
-							message={validatedMessage()}
-							type={validatedType()}
-							showIcon
-						/>
 						<b>Diagnostic application</b>
 						<Alert
 							message={diagnosisMessage()}
