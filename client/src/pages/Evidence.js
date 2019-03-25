@@ -6,10 +6,16 @@ import './Evidence.css';
 import BioID from './../components/tags/BioID';
 import Source from './../components/tags/Source';
 import Gender from './../components/Gender'
+<<<<<<< HEAD
 import Species from '../components/tags/Species';
 import Stage from '../components/tags/Stage';
 import EntityList from '../components/lists/EntityList';
 import Age from './../components/Age'
+=======
+import Age from './../components/Age'
+import Species from '../components/tags/Species';
+import Stage from '../components/tags/Stage';
+>>>>>>> e1448c497eed13283218f05d453652d4d540beb0
 
 const { Title, Text } = Typography;
 
