@@ -63,13 +63,10 @@ SERVER.applyMiddleware({
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === "production") {
-	APP.get('/*', function(req, res) {
-		res.sendFile('client/build/index.html', function(err) {
-		  if (err) {
-			res.status(500).send(err)
-		  }
-		})
-	})
+	// Handles any requests that don't match the ones above
+	APP.get('*', (req,res) =>{
+		res.sendFile(path.join(__dirname+'/client/build/index.html'));
+	});
 }
 
 APP.listen(PORT, () => {
