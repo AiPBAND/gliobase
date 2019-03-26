@@ -10,7 +10,7 @@ import {
 
 const styles = {
   wrapper: {
-    width: 500,
+    width: 400,
     textAlign: 'center',
     marginLeft: 'auto',
     marginRight: 'auto'
@@ -29,10 +29,10 @@ class PieChart extends Component {
     return (
       <div style={styles.wrapper}>
         <Chart
-          width={450}
-          height={330}
+          width={400}
+          height={300}
           data={this.props.data}
-          padding={[10, 50, 130, 50]}
+          padding={[10, 0, 105, 0]}
         >
           <span className='main-title' style={styles.mainTitle}>
             {this.props.chartTitle}

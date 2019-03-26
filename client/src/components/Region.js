@@ -1,23 +1,17 @@
 import React, {Component} from 'react';
 
-function regData(reg){
-    if (reg !== -1){
-      return (reg)
-    }
-    else {
-        return("NA")
-    }
-}
 function reg(region){
-    const regIds = region.map(id => {
+    const regIds = region ?
+    region.map(id => {
         return <p id={region}>{id+" "}</p>;
-     })
+    }) : 'N/A';
 	  return <span>{regIds}</span>
-  }
+}
+
 class Region extends Component { 
     render(){
         return(      
-            <p>{reg(regData(this.props.region))}</p>
+            <p>{reg(this.props.region)}</p>
          )
     } 
     

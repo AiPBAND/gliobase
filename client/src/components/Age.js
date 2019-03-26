@@ -12,7 +12,7 @@ class Age extends Component {
             }
         }
         function range(min, max){
-            return (min+" "+"-"+" "+max)
+            return (min+" - "+max)
         }
         function cutu(cut){
             if (cut === -1){

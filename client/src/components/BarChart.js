@@ -3,7 +3,7 @@ import { Chart, Geom, Axis, Legend, Tooltip } from 'bizcharts'
 
 const styles = {
   wrapper: {
-    width: 500,
+    width: 400,
     textAlign: 'center',
     marginLeft: 'auto',
     marginRight: 'auto'
@@ -23,10 +23,10 @@ class BarChart extends React.Component {
       <div style={styles.wrapper}>
         <Chart
           renderer='canvas'
-          width={450}
-          height={330}
+          width={400}
+          height={300}
           data={this.props.data}
-          padding={[10, 50, 130, 50]}
+          padding={[10, 30, 110, 30]}
         >
           <span className='main-title' style={styles.mainTitle}>
             {this.props.chartTitle}
