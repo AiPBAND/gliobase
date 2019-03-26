@@ -3,12 +3,12 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Typography, Skeleton} from 'antd';
 import './Evidence.css';
-import Evidences from '../components/Evidences';
-import EntityList from '../components/lists/EntityList';
+import Evidences from '../../components/tables/Evidences';
+import EntityList from '../../components/lists/EntityList';
 
 const { Title} = Typography;
 
-const biomarkerQuery = loader('../queries/biomarker.graphql');
+const biomarkerQuery = loader('../../queries/biomarker.graphql');
 
 class Biomarker extends Component {
 	render() {

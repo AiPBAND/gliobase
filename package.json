@@ -47,6 +47,9 @@
     "client": "node client/start-client.js",
     "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
     "lint": "eslint .",
-    "postinstall": "cd client && npm install"
+    "postinstall": "cd client && npm install && npm run build"
+  },
+  "engines": {
+	  "node": "8.12.x"
   }
 }

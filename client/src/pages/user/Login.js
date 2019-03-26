@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import LoginForm from '../components/LoginForm'
+import LoginForm from '../../components/LoginForm'
 import './Login.css'
-import aipbandlogo from '../assets/AiPBAND-logo.webp'
+import aipbandlogo from '../../assets/AiPBAND-logo.webp'
 
 class Login extends Component {
 	render(){

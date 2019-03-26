@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Icon, Popover} from 'antd';
+import './Marker.css';
 
 const getIcon = (mess) => {
 	if (mess === "Yes" || mess === "YES") return "check-circle"
@@ -25,12 +26,13 @@ const getPopover = (mess) => {
 class Marker extends Component {
 	render() {
 		return <Popover content={getPopover(this.props.val)}>
-		<Icon 
-		type={getIcon(this.props.val)}
-		theme="twoTone"
-		twoToneColor={getColor(this.props.val)}
-		style={{ fontSize: '16px' }} />
-  	</Popover>
+			<Icon 
+			type={getIcon(this.props.val)}
+			className="marker-margin"
+			theme="twoTone"
+			twoToneColor={getColor(this.props.val)}
+			style={{ fontSize: '16px' }}/>
+  		</Popover>
 	}
 }
 

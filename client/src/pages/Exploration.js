@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import { Tabs, Icon, Skeleton, Spin, Row, Col, Card } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import Entities from '../components/Entities';
-import Biomarkers from '../components/Biomarkers';
-import Evidences from '../components/Evidences';
-import PieChart from '../components/PieChart';
-import BarChart from '../components/BarChart';
+import Entities from '../components/tables/Entities';
+import Biomarkers from '../components/tables/Biomarkers';
+import Evidences from '../components/tables/Evidences';
+import PieChart from '../components/charts/PieChart';
+import BarChart from '../components/charts/BarChart';
 import {CategoryColors} from '../commons/ColorSettings';
 import './Exploration.css'
 

@@ -3,8 +3,8 @@ import { Input, AutoComplete, Divider } from 'antd';
 import { loader } from 'graphql.macro';
 import { ApolloConsumer } from 'react-apollo';
 import './Search.css'
-import Entities from '../components/Entities';
-import Biomarkers from '../components/Biomarkers';
+import Entities from '../components/tables/Entities';
+import Biomarkers from '../components/tables/Biomarkers';
 
 const entitiesQuery = loader('../queries/searchTerms.graphql');
 
