@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import schema from './server/graphql';
 import seeder from 'mongoose-seed';
 import fs from 'fs';
+import path from 'path';
 
 dotenv.config()
 
