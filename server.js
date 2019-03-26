@@ -13,13 +13,13 @@ const APP = express();
 const PORT = process.env.PORT || 3001;
 
 // Express only serves static assets in production
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "production") {
     APP.use(express.static("client/build"));
 }
 
 console.log(process.env.NODE_ENV)
 
-if(process.env.NODE_ENV === "development"){
+if(true || process.env.NODE_ENV === "development"){
 	const jsonData = JSON.parse(fs.readFileSync('data/output/seed.json', 'utf8'));
 	seeder.connect(process.env.DB_CONNECTION, () => {
 		seeder.loadModels([
