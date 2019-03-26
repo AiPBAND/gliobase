@@ -3,10 +3,10 @@ import { Button, Divider, Skeleton } from 'antd';
 import './Home.css'
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import Entities from '../components/Entities';
+import Entities from '../components/tables/Entities';
 import DataSummary from '../components/DataSummary';
-import Biomarkers from '../components/Biomarkers';
-import Evidences from '../components/Evidences';
+import Biomarkers from '../components/tables/Biomarkers';
+import Evidences from '../components/tables/Evidences';
 
 const entitiesQuery = loader('../queries/entities.graphql');
 const biomarkersQuery = loader('../queries/biomarkers.graphql');

@@ -12,5 +12,9 @@ query searchTerms($text: String){
 	biomarkerSearch(text: $text) {
 		id
 		entityIds
+		entities {
+			id
+			shortName
+		}
 	} 
 }

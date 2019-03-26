@@ -3,18 +3,18 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Card, Alert, List, Row, Col, Typography} from 'antd';
 import './Evidence.css';
-import BioID from './../components/tags/BioID';
-import Source from './../components/tags/Source';
-import Gender from './../components/Gender'
-import Age from './../components/Age'
-import Species from './../components/tags/Species';
-import Stage from './../components/tags/Stage';
-import EntityList from './../components/lists/EntityList';
-import Region from './../components/Region';
-import Marker from './../components/utilities/Marker';
+import BioID from '../../components/tags/BioID';
+import Source from '../../components/tags/Source';
+import Gender from '../../components/utilities/Gender'
+import Age from '../../components/utilities/Age'
+import Species from '../../components/tags/Species';
+import Stage from '../../components/tags/Stage';
+import EntityList from '../../components/lists/EntityList';
+import Region from '../../components/utilities/Region';
+import Marker from '../../components/utilities/Marker';
 const { Title, Text } = Typography;
 
-const evidenceQuery = loader('../queries/evidence.graphql');
+const evidenceQuery = loader('../../queries/evidence.graphql');
 
 class Evidence extends Component {
 	render() {

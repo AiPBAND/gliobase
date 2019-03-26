@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Empty, Button, Typography, Tag, Skeleton } from 'antd';
-import Category from '../components/tags/Category';
+import Category from '../../components/tags/Category';
 
 const { Title, Text } = Typography;
-const entityQuery = loader('../queries/entity.graphql');
+const entityQuery = loader('../../queries/entity.graphql');
 
 class Entity extends Component {
 	render() {
