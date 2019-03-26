@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === "production") {
-    APP.use(express.static("client/build"));
+	APP.use(express.static("client/build"));
 }
 
 console.log(process.env.NODE_ENV)
@@ -60,6 +60,17 @@ const SERVER = new ApolloServer({
 SERVER.applyMiddleware({
     app: APP
 });
+
+// Express only serves static assets in production
+if (process.env.NODE_ENV === "production") {
+	APP.get('/*', function(req, res) {
+		res.sendFile(path.join(__dirname, 'client/build/index.html'), function(err) {
+		  if (err) {
+			res.status(500).send(err)
+		  }
+		})
+	})
+}
 
 APP.listen(PORT, () => {
   console.log(`The server has started on port: ${PORT}`);
