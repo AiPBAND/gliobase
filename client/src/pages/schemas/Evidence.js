@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Alert, List, Row, Col, Typography} from 'antd';
+import { Card, Alert, List, Row, Col, Typography, Divider} from 'antd';
 import './Evidence.css';
 import BioID from '../../components/tags/BioID';
 import Source from '../../components/tags/Source';
@@ -108,7 +108,7 @@ class Evidence extends Component {
 
 					<Title>
 						{data.evidence.id}
-		                    <Marker val={data.evidence.application.validated}></Marker> 
+		                <Marker val={data.evidence.application.validated}></Marker> 
 						<Title level={2}>
 							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
 						</Title>
@@ -118,18 +118,27 @@ class Evidence extends Component {
 					<Row gutter={15}>
 						<Col span={12}>
 							<Card title="Samples" size="small">
-								<b>Sources</b>
-								<div>{sources}</div>
-								<b>Species</b>
-								<div>{species}</div>
+								<Row gutter={15}>
+									<Col span={12}>
+										<b>Sources</b>
+										<div>{sources}</div>
+									</Col>
+									<Col span={12}>
+										<b>Species</b>
+										<div>{species}</div>
+									</Col>
+								</Row>
+								<Divider dashed/>
 								<b>Gender</b>
-								<Gender male={data.evidence.gender.male} female={data.evidence.gender.female} ></Gender>
-							    <b>Age (Years)</b>
+								<Gender male={data.evidence.gender.male} female={data.evidence.gender.female}/>	
+								<Divider dashed/>
+								<b>Age (Years)</b>
 								<Age min={data.evidence.age.min} max={data.evidence.age.max}
-								     mean={data.evidence.age.mean} sd={data.evidence.age.sd}
-									 med={data.evidence.age.med} under={data.evidence.age.range.under}
-									 cutoff={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
+									mean={data.evidence.age.mean} sd={data.evidence.age.sd}
+									med={data.evidence.age.med} under={data.evidence.age.range.under}
+									cutoff={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
 								></Age>
+						
 							</Card>
 						</Col>
 						<Col span={12}>

@@ -6,7 +6,7 @@ export const CategoryColors = {
 }
 
 export const SourceColors = {
-  "Tissue": "#871400",
+  	"Tissue": "#871400",
 	"CSF": "#fa541c",
 	"Blood": "#f5222d",
 	"Serum": "#820014",
@@ -28,9 +28,14 @@ export const StageColors = {
 	"IV": "red"
 }
 
+export const GeneralColors = {
+	"faded": "#d9d9d9"
+}
+
 export default {
-  CategoryColors,
-  SourceColors,
-  SpeciesColors,
-  StageColors
+	CategoryColors,
+  	SourceColors,
+  	SpeciesColors,
+	StageColors,
+	GeneralColors  
 };
