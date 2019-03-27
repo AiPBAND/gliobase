@@ -55,8 +55,12 @@ class MainLayout extends Component {
                <img src={aiplogo} width="150" alt="Logo">
                </img>
             </div>
-            <div>
-            AiPBAND ©2019
+            <div className="main-layout-acknowledgement">
+              This project has received funding from the European Union’s Horizon 2020 research 
+              and innovation programme under the Marie Skłodowska-Curie grant agreement 764281.
+            </div>
+            <div className="main-layout-copyright">
+              AiPBAND ©2019
             </div>
           </Footer>
         </Layout>
