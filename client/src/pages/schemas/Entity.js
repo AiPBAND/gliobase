@@ -21,9 +21,6 @@ class Entity extends Component {
 						<Button>{bioid}&nbsp; could not be found...</Button>
 					</Empty>;
 				}
-				const listAbs = data.entity.abreviations.map(abreviations => {
-					return <Tag>{abreviations+" "}</Tag>;
-				})
 				return <div>
 					<Title>
 						{data.entity.name}
@@ -31,8 +28,8 @@ class Entity extends Component {
 							<Text type="secondary">{data.entity.id}</Text>
 						</Title>
 					</Title>
-					<b>Abreviations</b>
-				   	<p>{listAbs}</p>
+					<b>Abreviation</b>
+				   	<p>{data.entity.shortName}</p>
 					<b>Biological category</b>
 					<p><Category name={data.entity.category.id}/></p>
 					<b>Description</b>
