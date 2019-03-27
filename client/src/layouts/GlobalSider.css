@@ -1,0 +1,13 @@
+.logo {
+	height: 64px;
+	background: #022141;
+	text-align: center;
+	font-size: 34px;
+	color: white;
+	line-height: 64px;
+}
+
+.logo-small {
+	font-size: 18px;
+	color: #1890ff;
+}
