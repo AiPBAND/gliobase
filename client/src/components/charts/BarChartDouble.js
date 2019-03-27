@@ -51,10 +51,10 @@ class BarChart extends React.Component {
           <Geom 
             type='interval' 
             position='item*count' 
-            color={'name'} 
+            color={"name"} 
             adjust={[
               {
-                type: 'dodge',
+                type: "dodge",
                 marginRatio: 1 / 32
               }
             ]}

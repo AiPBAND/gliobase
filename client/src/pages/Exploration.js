@@ -7,7 +7,7 @@ import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 import PieChart from '../components/charts/PieChart';
 import BarChart from '../components/charts/BarChart';
-import BarChartDouble from '../components/charts/BarChartDouble';
+import BarChartDouble from "../components/charts/BarChartDouble";
 import {CategoryColors} from '../commons/ColorSettings';
 import './Exploration.css'
 
