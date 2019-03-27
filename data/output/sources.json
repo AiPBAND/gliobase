@@ -1,42 +1,34 @@
 [
     {
-        "_id": "Serum",
-        "description": ""
-    },
-    {
-        "_id": "TIssue",
-        "description": ""
-    },
-    {
-        "_id": "Fluid",
-        "description": ""
-    },
-    {
-        "_id": "Imaging",
-        "description": ""
-    },
-    {
-        "_id": "Sera",
-        "description": ""
-    },
-    {
-        "_id": "Glioma Stem Cells",
-        "description": ""
-    },
-    {
-        "_id": "Cell line",
-        "description": ""
-    },
-    {
-        "_id": "Cell lines",
-        "description": ""
-    },
-    {
         "_id": "Tissue",
-        "description": ""
+        "description": null
+    },
+    {
+        "_id": "CSF",
+        "description": null
     },
     {
         "_id": "Blood",
-        "description": ""
+        "description": null
+    },
+    {
+        "_id": "Serum",
+        "description": null
+    },
+    {
+        "_id": "Cell line",
+        "description": null
+    },
+    {
+        "_id": "Cells",
+        "description": null
+    },
+    {
+        "_id": "Imaging",
+        "description": null
+    },
+    {
+        "_id": "Others",
+        "description": null
     }
 ]

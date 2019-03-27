@@ -49,6 +49,7 @@ const schema = new mongoose.Schema({
 	},
 	application: {
 		validated: String,
+		valcom: String,
 		diagnosis: String,
 		prognosis: String,
 		predictive: String,

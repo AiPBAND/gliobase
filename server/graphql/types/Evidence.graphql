@@ -28,6 +28,7 @@ type Research {
 
 type Application {
 	validated: String
+	valcom: String
 	diagnosis: String
 	prognosis: String
 	predictive: String

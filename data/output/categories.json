@@ -1,18 +1,18 @@
 [
     {
         "_id": "DNA",
-        "description": ""
+        "description": null
     },
     {
         "_id": "RNA",
-        "description": ""
+        "description": null
     },
     {
         "_id": "Protein",
-        "description": ""
+        "description": null
     },
     {
         "_id": "Others",
-        "description": ""
+        "description": null
     }
 ]

@@ -1,0 +1,98 @@
+id	abb	name	category
+1	CAVIN1	Caveolae-associated protein 1	Protein
+2	miR-139	microRNA-139	RNA
+3	WNT6	Wingless-type MMTV integration site family member 6	DNA
+4	MGMT(Me)	O6-methylguanine O6-methylatransferase promoter methylation	DNA
+5	LDHA	Lactate dehydrogenase A	DNA
+6	ERP29	Endoplasmic reticulum protein 29	Protein
+7	NCK1	Non-catalytic region of tyrosine kinase 1	DNA
+8	RANBP17	RAN binding protein 17	DNA
+9	ZNF734	Zinc finger protein 734	DNA
+10	NLRP2	NLR family pyrin domain containing 2 	DNA
+11	GPR1	G protein-coupled receptor 1 	DNA
+12	CCDC81	Coiled-coil domain containing 81	DNA
+13	SH3RF1	SH3 domain containing ring finger 1 	DNA
+14	TM7SF4	Dendrocyte expressed seven transmembrane protein	Protein
+15	PRAS40(Phos)	PRAS40 phosphorylation	Protein
+16	RPS6(Phos)	Ribosomal protein S6 phosphorylation	RNA
+17	lncRNA H19	Long non-coding RNA H19	Protein
+18	ACD	Adrenocortical dysplasia expression	RNA
+19	WDFY3-AS2	Antisense long non-coding RNA WDFY3-AS2	DNA
+20	TP53(Mu)	Tumor protein p53mutation	DNA
+21	PIK3R1/PCLO	PIK3R1/PCLO mutation	DNA
+22	6p-10q	6p and 10q loss	DNA
+23	miR‑500a‑5p	microRNA‑500a‑5p	RNA
+24	YAP1 	Yes-associated protein 1 expression	RNA
+25	NUSAP1	Nuclear and spindle-associated protein 1	Protein
+26	LINC00152/CYTOR	LINC00152/CYTOR	RNA
+27	GBP1	Guanylate binding protein 1	Protein
+28	TERT(Mu)	TERT promoter mutation	DNA
+29	MRI(features)	Dichotomized MRI-derived clinical features	Others
+30	15-HPGD	15-hydroxyprostaglandin dehydrogenase	Protein
+31	PTGR1	Prostaglandin reductase 1	Protein
+32	TP73-AS1	Long non-coding RNAs TP73-AS1	RNA
+33	AC078883.3	Long non-coding RNAs AC078883.3	RNA
+34	RP11-944L7.4	Long non-coding RNAs RP11-944L7.4	RNA
+35	HAR1B	Long non-coding RNAs HAR1B	RNA
+36	RP4-635E18.7	Long non-coding RNAs RP4-635E18.7	RNA
+37	HOTAIR	Long non-coding RNAs HOTAIR	RNA
+38	SAPCD1-AS1	Long non-coding RNAs SAPCD1-AS1	RNA
+39	AC104653.1	Long non-coding RNAs AC104653.1	RNA
+40	RP5-1172N10.2	Long non-coding RNAs RP5-1172N10.2	RNA
+41	CA-IX	Carbonic anhydrase IX	Protein
+42	CLEC18B	C-type lectin domain family 18 member B	Protein
+43	miRNA-574	microRNA-574	RNA
+44	HDAC1	Histone deacetylase 1 expression	Protein
+45	CHEK1	Checkpoint kinase 1	DNA
+46	MCM6	Minichromosome maintenance protein 6 expression	Protein
+47	HMGA2	High‐mobility group AT‐hook 2 overexpression	Protein
+48	MMP2	Matrix metalloproteinase 2	DNA
+49	CDH2	Cadherin 2 expression	RNA
+50	IGFBP2	IGFBP2 expression	Protein
+51	GPR158	G protein coupled receptor 158 expression	Protein
+52	IDH1(Mu)	Isocitrate dehydrogenase 1mutation	DNA
+53	CD105	CD105/endoglin	Protein
+54	CD31	CD31	Protein
+55	PLOD3	Procollagen-lysine, 2-oxoglutarate 5-dioxygenase 3	Protein
+56	TGF-β	Transforming growth factor-beta	DNA
+57	CPEB4	Cytoplasmic polyadenylation element binding protein 4	Protein
+58	TERT+β	Telomerase reverse transcriptase+β	Protein
+59	miRNA-20a	Oncogenic microRNA-20a	RNA
+60	ABL1	ABL proto-oncogene 1, non-receptor tyrosine kinase	DNA
+61	CCNA1	Cyclin A1	DNA
+62	CCND1	Cyclin D1 	DNA
+63	CCNE1	Cyclin E1 	DNA
+64	CDC6	Cell division cycle 6	DNA
+65	CDK2	Cyclin dependent kinase 2	DNA
+66	CDKN1C	Cyclin dependent kinase inhibitor 1C 	DNA
+67	CDKN2A	Cyclin dependent kinase inhibitor 2A	DNA
+68	DKK1	Dickkopf WNT signaling pathway inhibitor 1	DNA
+69	FZD3	Frizzled class receptor 3	DNA
+70	FZD7	Frizzled class receptor 7	DNA
+71	GADD45G	Growth arrest and DNA damage inducible gamma 	DNA
+72	GHR	Growth Hormone receptor	DNA
+73	GSTT1	Glutathione S-transferase theta 1 	DNA
+74	HSPA1B	Heat shock protein family A (Hsp70) member 1B	DNA
+75	ID4	Inhibitor of DNA binding 4, HLH protein	DNA
+76	IGFBP3	Insulin-like growth factor-binding protein 3	DNA
+77	INHBB	Inhibin subunit beta B	DNA
+78	IRS2	Insulin receptor substrate 2	DNA
+79	LIFR	LIF receptor alpha	DNA
+80	PDGFRA	Platelet derived growth factor receptor alpha	DNA
+81	PIK3CA	Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha	DNA
+82	PLA2G5	Phospholipase A2 group V	DNA
+83	POLE3	DNA polymerase epsilon 3, accessory subunit	DNA
+84	PPARGC1A	PPARG coactivator 1 alpha 	DNA
+85	PRKAR2B	Protein kinase cAMP-dependent type II regulatory subunit beta 	DNA
+86	PYGB	Glycogen phosphorylase B	DNA
+87	SFRP1	Screted frizzled related protein 1	DNA
+88	SFRP4	Secreted frizzled related protein 4	DNA
+89	SH2B2	SH2B adaptor protein 2	DNA
+90	STAG3L4	Stromal antigen 3-like 4	DNA
+91	STMN1	Stathmin 1	DNA
+92	THBS2	Thrombospondin 2	DNA
+93	THBS3	Thrombospondin 3	DNA
+94	VEGFA	Vascular Endothelial Growth Factor A	DNA
+95	miRNA-615	microRNA-615	RNA
+96	Hsp27(Phos)	Heat shock protein 27 phosphorylation	Protein
+97	CD63	Cell surface protein CD63	Protein

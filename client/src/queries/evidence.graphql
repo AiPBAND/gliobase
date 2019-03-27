@@ -44,6 +44,7 @@ query Evidence($id: String!){
 		}
 		application {
 			validated
+			valcom
 			diagnosis
 			prognosis
 			predictive

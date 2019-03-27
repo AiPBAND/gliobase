@@ -18,6 +18,7 @@ query Biomarker($id: String!){
 			biomarkerId
 			application {
 				validated
+				valcom
 				diagnosis
 				prognosis
 				predictive
