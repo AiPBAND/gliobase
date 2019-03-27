@@ -28,7 +28,7 @@ class MainLayout extends Component {
           collapsible
           collapsed={this.state.collapsed}
         >
-          <GlobalSider />
+          <GlobalSider collapsed={this.state.collapsed}/>
         </Sider>
         <Layout>
           <Header style={{ padding: 0 }}>

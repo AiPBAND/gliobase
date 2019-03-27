@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
 import { Link } from "react-router-dom";
-
+import './GlobalSider.css';
 const SubMenu = Menu.SubMenu;
 
 class GlobalSider extends Component {
   	render() {
 		return (
 			<div>
-			<div className="logo" style={{ height: '64px', background: '#022141'}}/>
+			<div className="logo">
+				{this.props.collapsed ? "g" : "glio"}
+				<span className="logo-small">DB</span>
+			</div>
 			<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
 			<Menu.Item key="1">
 				<Link to="/">
