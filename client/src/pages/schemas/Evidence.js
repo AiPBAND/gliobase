@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Card, Alert, List, Row, Col, Typography, Divider} from 'antd';
+import { Card, Alert, List, Row, Col, Typography, Divider, Skeleton} from 'antd';
 import './Evidence.css';
 import Source from '../../components/tags/Source';
 import Gender from '../../components/utilities/Gender'
@@ -21,89 +21,44 @@ class Evidence extends Component {
 		return(
 			<Query query={evidenceQuery} variables={{id: bioid}}>
 			{({ loading, error, data }) => {
-				if (loading) return <p>Loading...</p>;
+				if (loading) return <Skeleton/>;
 				if (error) return <p>Error</p>;
 
         		//Watch out null value!
 				const sources = data.evidence.sourceIds ? data.evidence.sourceIds.map(id => {
-					return <Source name={id}/>;
+					return <Source name={id} key={id}/>;
 				}) : 'N/A';
 
 				const species = data.evidence.species ? data.evidence.species.map(id => {
-					return <Species name={id}/>
+					return <Species name={id} key={id}/>
 				}) : 'N/A';
 
 				const stage = data.evidence.stage ?  data.evidence.stage.map(id => {
-					return <Stage name={id}/>
+					return <Stage name={id} key={id}/>
 				}) : 'N/A';
-				
-				//TODO: Clean this mess
 
-				const diagnosisMessage = () =>{
-					if(data.evidence.application.diagnosis === "YES") return "Yes"
-					if(data.evidence.application.diagnosis === "NO") return "No"
-					if(data.evidence.application.diagnosis === "Potential") return "Potential"
+				const getMessage = (val) =>{
+					if(val === "YES") return "Yes"
+					if(val === "NO") return "No"
+					if(val === "Potential") return "Potential"
 					return "This information is unavailable";
 				}
 
-				const diagnosisType = () =>{
-					if(data.evidence.application.diagnosis === "YES") return "success"
-					if(data.evidence.application.diagnosis === "NO") return "error"
-					if(data.evidence.application.diagnosis === "Potential") return "info"
+				const getType = (val) =>{
+					if(val === "YES") return "success"
+					if(val === "NO") return "error"
+					if(val === "Potential") return "info"
 					return "warning";
 				}
 
-				const prognosisMessage = () =>{
-					if(data.evidence.application.prognosis === "YES") return "Yes"
-					if(data.evidence.application.prognosis === "NO") return "No"
-					if(data.evidence.application.prognosis === "Potential") return "Potential"
-					return "This information is unavailable";
-				}
-
-				const prognosisType = () =>{
-					if(data.evidence.application.prognosis === "YES") return "success"
-					if(data.evidence.application.prognosis === "NO") return "error"
-					if(data.evidence.application.prognosis === "Potential") return "info"
-					return "warning";
-				}
-
-				const predictiveMessage = () =>{
-					if(data.evidence.application.predictive === "YES") return "Yes"
-					if(data.evidence.application.predictive === "NO") return "No"
-					if(data.evidence.application.predictive === "Potential") return "Potential"
-					return "This information is unavailable";
-				}
-
-				const predictiveType = () =>{
-					if(data.evidence.application.predictive === "YES") return "success"
-					if(data.evidence.application.predictive === "NO") return "error"
-					if(data.evidence.application.predictive === "Potential") return "info"
-					return "warning";
-				}
-
-				const therapeuticMessage = () =>{
-					if(data.evidence.application.therapeutic === "YES") return "Yes"
-					if(data.evidence.application.therapeutic === "NO") return "No"
-					if(data.evidence.application.therapeutic === "Potential") return "Potential"
-					return "This information is unavailable";
-				}
-
-				const therapeuticType = () =>{
-					if(data.evidence.application.therapeutic === "YES") return "success"
-					if(data.evidence.application.therapeutic === "NO") return "error"
-					if(data.evidence.application.therapeutic === "Potential") return "info"
-					return "warning";
-				}
-				
-				console.log(data.evidence)	
 				return (<div>
 
 					<Title>
 						{data.evidence.id}
 		                <Marker val={data.evidence.application.validated}></Marker> 
-						<Title level={2}>
+					</Title>
+					<Title level={2}>
 							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
-						</Title>
 					</Title>
 					<EntityList data={data.evidence.biomarker.entities}></EntityList>
 
@@ -138,7 +93,7 @@ class Evidence extends Component {
 								<b>WHO Classification</b>
 								<p>{data.evidence.whoclass ? data.evidence.whoclass : 'N/A'}</p>
 								<b>Grade (Samples)</b>
-								<p>{stage}</p>
+								<br/>{stage}
 							</Card>
 							<Card title="Region" size="small">
 								 <Region region={data.evidence.region}></Region>
@@ -179,26 +134,26 @@ class Evidence extends Component {
 					<Card title="Application" size="small">
 						<b>Diagnostic application</b>
 						<Alert
-							message={diagnosisMessage()}
-							type={diagnosisType()}
+							message={getMessage(data.evidence.application.diagnosis)}
+							type={getType(data.evidence.application.diagnosis)}
 							showIcon
 						/>
 						<b>Prognostic application</b>
 						<Alert
-							message={prognosisMessage()}
-							type={prognosisType()}
+							message={getMessage(data.evidence.application.prognosis)}
+							type={getType(data.evidence.application.prognosis)}
 							showIcon
 						/>
 						<b>Predictive application</b>
 						<Alert
-							message={predictiveMessage()}
-							type={predictiveType()}
+							message={getMessage(data.evidence.application.predictive)}
+							type={getType(data.evidence.application.predictive)}
 							showIcon
 						/>
 						<b>Therapeutic application</b>
 						<Alert
-							message={therapeuticMessage()}
-							type={therapeuticType()}
+							message={getMessage(data.evidence.application.therapeutic)}
+							type={getType(data.evidence.application.therapeutic)}
 							showIcon
 						/>
 					</Card>
