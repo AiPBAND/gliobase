@@ -86,7 +86,7 @@ class Exploration extends Component {
           </Query>	
         </TabPane>
 
-        <TabPane tab={<span><Icon type="folder-open" />Biomarkers</span>} key="2">
+        <TabPane tab={<span><Icon type="tags" />Biomarkers</span>} key="2">
           <Query query={biomarkersQuery}>
             {({ loading, error, data }) => {
               if (loading) return (
@@ -100,7 +100,7 @@ class Exploration extends Component {
             }}
           </Query>
         </TabPane>
-        <TabPane tab={<span><Icon type="book" />Evidences</span>} key="3">
+        <TabPane tab={<span><Icon type="read" />Evidences</span>} key="3">
           <Query query={evidencesQuery}>
             {({ loading, error, data: evidenceData }) => {
               if (loading) return (
