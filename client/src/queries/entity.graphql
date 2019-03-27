@@ -9,5 +9,14 @@ query Entity($id: String!){
 			id
 			reflink
 		}
+		biomarkers {
+			id
+			entityIds
+			entities {
+				id
+				name
+				shortName
+			}
+		}
 	} 
 }

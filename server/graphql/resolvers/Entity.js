@@ -1,5 +1,6 @@
 import Entity from '../../models/Entity';
 import Category from '../../models/Category';
+import Biomarker from '../../models/Biomarker';
 import Fuse from 'fuse.js';
 
 export default {
@@ -47,6 +48,9 @@ export default {
 	Entity: {
 		category: async (entity) => {
 			return await Category.findOne({_id: entity.categoryId}).exec();
+		},
+		biomarkers: async (entity) => {
+			return await Biomarker.find({entityIds: entity.id}).exec();
 		}
 	}
 }

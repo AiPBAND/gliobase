@@ -5,4 +5,5 @@ type Entity {
     abreviations: [String]
     description: String
 	category: Category
+	biomarkers: [Biomarker]
 }

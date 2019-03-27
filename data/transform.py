@@ -128,12 +128,14 @@ for item in extractSets(evidencesDf['biomarker']):
 		s = []
 		for i in item:
 			s.append(entitiesDict[i])
-		hexid = "B"+hex(len(biomarkerList)).split('x')[-1].upper().zfill(6)
-		biomarkerDict[tuple(s)] = hexid
-		biomarkerList.append({
-			"_id": hexid,
-			"entityIds": s
-		})
+		s = tuple(s)
+		if s not in biomarkerDict:
+			hexid = "B"+hex(len(biomarkerList)).split('x')[-1].upper().zfill(6)
+			biomarkerDict[s] = hexid
+			biomarkerList.append({
+				"_id": hexid,
+				"entityIds": s
+			})
 	else:
 		print("Entity not found for biomarker: {}".format(item))
 writeJsonArray(biomarkerList, output+"biomarkers.json")

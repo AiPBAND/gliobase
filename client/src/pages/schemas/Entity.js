@@ -3,6 +3,7 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Empty, Button, Typography, Tag, Skeleton } from 'antd';
 import Category from '../../components/tags/Category';
+import Biomarkers from '../../components/tables/Biomarkers';
 
 const { Title, Text } = Typography;
 const entityQuery = loader('../../queries/entity.graphql');
@@ -34,6 +35,8 @@ class Entity extends Component {
 					<p><Category name={data.entity.category.id}/></p>
 					<b>Description</b>
 					<p>{data.entity.description}</p>
+					<b>Biomarkers</b>
+					<Biomarkers data={data.entity.biomarkers}/>
 				</div>;
 			}}
 			</Query>
