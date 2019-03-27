@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import { Statistic } from 'antd';
 import { Row, Col } from 'antd';
+import {GeneralColors} from '../../commons/ColorSettings'
 class Gender extends Component {
 	render() {
+        const getValueStyle = val => val === -1 || val === "NA" ? {color: GeneralColors.faded} : {}
+
         function genData(gen){
             if (gen !== -1){
               return (gen)
@@ -14,10 +17,14 @@ class Gender extends Component {
         return (
            <Row gutter={16}>
                 <Col span={12}>
-		          <Statistic title="Male" value={genData(this.props.male)}/>
+                  <Statistic title="Male" 
+                             valueStyle={getValueStyle(this.props.male)}
+                             value={genData(this.props.male) }/>
                 </Col>
                 <Col span={12}>
-		           <Statistic title="Female" value={genData(this.props.female)}/>
+                   <Statistic title="Female" 
+                              valueStyle={getValueStyle(this.props.female)}
+                              value={genData(this.props.female)}/>
                 </Col>
             </Row>
         )
