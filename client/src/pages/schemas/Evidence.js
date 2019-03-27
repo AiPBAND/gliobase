@@ -81,7 +81,7 @@ class Evidence extends Component {
 								<Divider dashed/>
 								<b>Age (Years)</b>
 								<Age min={data.evidence.age.min} max={data.evidence.age.max}
-									mean={data.evidence.age.mean} sd={data.evidence.age.sd}
+									avg={data.evidence.age.avg} sd={data.evidence.age.sd}
 									med={data.evidence.age.med} under={data.evidence.age.range.under}
 									cutoff={data.evidence.age.range.cutoff} over={data.evidence.age.range.over}
 								></Age>

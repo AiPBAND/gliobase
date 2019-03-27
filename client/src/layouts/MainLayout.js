@@ -3,7 +3,8 @@ import './MainLayout.css';
 import { Layout } from 'antd';
 import GlobalHeader from './GlobalHeader';
 import GlobalSider from './GlobalSider';
-
+import logo from './../assets/h2020.png';
+import aiplogo from './../assets/AiPBAND-logo.webp';
 const { Header, Content, Footer, Sider } = Layout;
 
 class MainLayout extends Component {
@@ -48,7 +49,15 @@ class MainLayout extends Component {
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}> 
-            AiPBAND ©2018
+            <div>
+               <img src={logo} width="325">
+               </img> 
+               <img src={aiplogo} width="150">
+               </img>
+            </div>
+            <div>
+            AiPBAND ©2019
+            </div>
           </Footer>
         </Layout>
       </Layout>
