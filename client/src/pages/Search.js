@@ -5,29 +5,19 @@ import { ApolloConsumer } from 'react-apollo';
 import './Search.css'
 import Entities from '../components/tables/Entities';
 import Biomarkers from '../components/tables/Biomarkers';
+import Evidences from '../components/tables/Evidences';
 
 const entitiesQuery = loader('../queries/searchTerms.graphql');
-
 
 const Option = AutoComplete.Option;
 const OptGroup = AutoComplete.OptGroup;
 
 function renderTitle(title) {
-  return (
-    <span>
-      {title}
-    </span>
-  );
+  	return <span>{title}</span>;
 }
 
 const processOptions = (options, value) => {
 	value = value?value:""
-	const terms = [
-		<Option key={value} value={value}>
-        	{value}
-        	<span className="certain-search-item-count">{value}</span>
-      	</Option>
-	]
 
 	const entities = options.entitiesSearch.map(bm => (
 		<Option key={bm.id} value={bm.id}>
@@ -41,15 +31,21 @@ const processOptions = (options, value) => {
         	<span className="certain-search-item-count">{bms.entityIds.join(" ")}</span>
       	</Option>
 	))
+	const evidences = options.evidencesSearch.map(e => (
+		<Option key={e.id} value={e.id}>
+        	{e.id+' - '+e.pmid}
+        	<span className="certain-search-item-count">{e.biomarkerId}</span>
+      	</Option>
+	))
 	return [
-		<OptGroup key="terms" label={renderTitle("Terms")}>
-			{terms}
-		</OptGroup>,
 		<OptGroup key="entities" label={renderTitle("Entities")}>
 			{entities}
 		</OptGroup>,
 		<OptGroup key="biomarkers" label={renderTitle("Biomarkers")}>
 			{biomarkers}
+		</OptGroup>,
+		<OptGroup key="evidences" label={renderTitle("Evidences")}>
+			{evidences}
 		</OptGroup>
 	];
 }
@@ -59,13 +55,13 @@ class Search extends Component {
 		data: [],
 		raw: {
 			entitiesSearch: [],
-			biomarkerSearch: []
+			biomarkerSearch: [],
+			evidencesSearch: []
 		}
 	};
   
 	render() {
-	  	return (
-			<ApolloConsumer>
+	  	return <ApolloConsumer key="apollo-search">
 				{client => {
 					const fetchData = async (value) => {
 						const { data } = await client.query({
@@ -81,7 +77,7 @@ class Search extends Component {
 						});
 						this.setState(() => ({raw: data}));
 					}
-					return [
+					return <div>
 						<AutoComplete 
 							className="certain-category-search"
 							dropdownClassName="certain-category-search-dropdown"
@@ -95,15 +91,16 @@ class Search extends Component {
 							placeholder="Enter a search term to get started.."
 							optionLabelProp="value">
 							<Input/>
-						</AutoComplete>,
-						<Divider orientation="left">Entities</Divider>,
-						<Entities data={this.state.raw.entitiesSearch}></Entities>,
-						<Divider orientation="left">Biomarkers</Divider>,
-						<Biomarkers data={this.state.raw.biomarkerSearch}></Biomarkers>
-					]
+						</AutoComplete>
+						<Divider orientation="left">Entities</Divider>
+						<Entities data={this.state.raw.entitiesSearch}/>
+						<Divider orientation="left">Biomarkers</Divider>
+						<Biomarkers data={this.state.raw.biomarkerSearch}/>
+						<Divider orientation="left">Evidences</Divider>
+						<Evidences data={this.state.raw.evidencesSearch}/>
+					</div>
 				}}
-			</ApolloConsumer>
-	  	);
+			</ApolloConsumer>;
 	}
 }
 

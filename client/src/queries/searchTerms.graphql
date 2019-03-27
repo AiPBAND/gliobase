@@ -16,5 +16,22 @@ query searchTerms($text: String){
 			id
 			shortName
 		}
+	},
+	evidencesSearch(text: $text) {
+		id
+		biomarkerId
+		biomarker {
+			entityIds
+		}
+		pmid
+		sourceIds
+		application {
+			validated
+			valcom
+			diagnosis
+			prognosis
+			predictive
+			therapeutic
+		}
 	} 
 }
