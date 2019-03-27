@@ -15,7 +15,7 @@ const columns = [{
 	key: 'entities',
 	render: (entities) => {
 		const listIds = entities.map(en => {
-			return <BioID id={en.id} name={en.shortName}></BioID>;
+			return <BioID id={en.id} name={en.shortName} key={en.id}></BioID>;
 		})
 		return <span>{listIds}</span>
 	}
@@ -24,7 +24,6 @@ const columns = [{
 
 class Biomarkers extends Component {
 	render() {
-		console.log(this.props.data)
 		return <Table dataSource={this.props.data} rowKey="id" columns={columns}></Table>
 	}
 }

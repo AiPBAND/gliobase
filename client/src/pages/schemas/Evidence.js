@@ -3,7 +3,6 @@ import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
 import { Card, Alert, List, Row, Col, Typography, Divider} from 'antd';
 import './Evidence.css';
-import BioID from '../../components/tags/BioID';
 import Source from '../../components/tags/Source';
 import Gender from '../../components/utilities/Gender'
 import Age from '../../components/utilities/Age'
@@ -25,23 +24,16 @@ class Evidence extends Component {
 				if (loading) return <p>Loading...</p>;
 				if (error) return <p>Error</p>;
 
-				const listIds = data.evidence.biomarker.entityIds.map(id => {
-					return <BioID id={id}>{id+" "}</BioID>;
-				})
-        
-        //Watch out null value!
-				const sources = data.evidence.sourceIds ?
-        data.evidence.sourceIds.map(id => {
+        		//Watch out null value!
+				const sources = data.evidence.sourceIds ? data.evidence.sourceIds.map(id => {
 					return <Source name={id}/>;
 				}) : 'N/A';
 
-				const species = data.evidence.species ?
-        data.evidence.species.map(id => {
+				const species = data.evidence.species ? data.evidence.species.map(id => {
 					return <Species name={id}/>
 				}) : 'N/A';
 
-				const stage = data.evidence.stage ? 
-        data.evidence.stage.map(id => {
+				const stage = data.evidence.stage ?  data.evidence.stage.map(id => {
 					return <Stage name={id}/>
 				}) : 'N/A';
 				

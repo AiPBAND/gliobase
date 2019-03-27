@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import { Empty, Button, Typography, Tag, Skeleton } from 'antd';
+import { Empty, Button, Typography, Skeleton } from 'antd';
 import Category from '../../components/tags/Category';
 import Biomarkers from '../../components/tables/Biomarkers';
 
@@ -23,16 +23,14 @@ class Entity extends Component {
 					</Empty>;
 				}
 				return <div>
-					<Title>
-						{data.entity.name}
-						<Title level={2}>
-							<Text type="secondary">{data.entity.id}</Text>
-						</Title>
-					</Title>
+					<Title>{data.entity.name}</Title>
+					<Title level={2}><Text type="secondary">{data.entity.id}</Text></Title>
 					<b>Abreviation</b>
 				   	<p>{data.entity.shortName}</p>
 					<b>Biological category</b>
-					<p><Category name={data.entity.category.id}/></p>
+					<br/>
+					<Category name={data.entity.category.id}/>
+					<br/>
 					<b>Description</b>
 					<p>{data.entity.description}</p>
 					<b>Biomarkers</b>
