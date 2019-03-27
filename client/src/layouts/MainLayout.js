@@ -50,9 +50,9 @@ class MainLayout extends Component {
           </Content>
           <Footer style={{ textAlign: 'center' }}> 
             <div>
-               <img src={logo} width="325">
+               <img src={logo} width="325" alt="EU Logo">
                </img> 
-               <img src={aiplogo} width="150">
+               <img src={aiplogo} width="150" alt="Logo">
                </img>
             </div>
             <div>
