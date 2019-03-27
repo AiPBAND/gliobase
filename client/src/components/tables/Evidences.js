@@ -7,7 +7,7 @@ const columns = [{
 	dataIndex: 'id',
 	key: 'id',
 	render: (id, record) => (
-		<BioID id={id} name={record.pmid}></BioID>
+		<BioID id={id} name={record.pmid} key={id}></BioID>
 	)
 },{
 	title: 'Biomarker',
@@ -55,8 +55,7 @@ const columns = [{
 
 class Evidences extends Component {
 	render() {
-		console.log(this.props.data)
-		return <Table columns={columns} dataSource={this.props.data} />
+		return <Table columns={columns} dataSource={this.props.data} rowKey="id"/>
 	}
 }
 
