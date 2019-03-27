@@ -52,6 +52,7 @@ class GlobalHeader extends Component{
           type={collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={onClickCollapseIcon}
         />
+		{/*
         <div className="toolbar">
           {this.state.currentUser.name ? (
             <Dropdown overlay={menu}>
@@ -67,7 +68,8 @@ class GlobalHeader extends Component{
               </Link>
             </Button>
           )}
-        </div>
+		</div>
+		*/}
       </div>
     )
   }

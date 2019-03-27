@@ -17,4 +17,5 @@ type Query {
 
 	evidence(id: String!): Evidence
 	evidences: [Evidence]
+	evidencesSearch(text: String): [Evidence]
 }

@@ -37,7 +37,6 @@ export default {
 				  ]
 				  };
 				  var fuse = new Fuse(list, options); // "list" is the item array
-				  console.log(fuse.search(text))
 				  return fuse.search(text);
 			}else{
 				return await Entity.find({}).exec();
