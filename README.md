@@ -1,4 +1,7 @@
 # gliobase
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0eb96de367784956930d3bd8ef7fcdbf)](https://app.codacy.com/app/jgeofil/gliobase?utm_source=github.com&utm_medium=referral&utm_content=thehyve/gliobase&utm_campaign=Badge_Grade_Settings)
+
 Glioblastoma multiforme (GBM) biomarker knowledge base
 
 ## Quickstart
