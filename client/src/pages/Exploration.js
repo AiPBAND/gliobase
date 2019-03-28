@@ -205,7 +205,7 @@ class Exploration extends Component {
               return (
                 <div className='exploration-statistics'>
                   <Card>
-                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Catagory"}/>  
+                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Category"}/>  
                   </Card>    
                   <Entities data={entityData.entities}/> 
                 </div>
