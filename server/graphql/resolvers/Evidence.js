@@ -12,7 +12,7 @@ export default {
 		},
 		evidencesSearch: async (parent, {text}, context, info) => {
 			if(text){
-				const list = await Evidence.find({}).exec();
+				const list = await Evidence.find({}).populate('biomarker').exec();
 				var options = {
 					shouldSort: true,
 					tokenize: true,
@@ -23,8 +23,9 @@ export default {
 					maxPatternLength: 32,
 					minMatchCharLength: 1,
 					keys: [
-					  	"id",
-					  	"biomarkerId",
+						"id",
+						"biomarkerId",  
+					  	"biomarker.entityIds",
 					  	"pmid",
 						"sourceIds",
 						"species",

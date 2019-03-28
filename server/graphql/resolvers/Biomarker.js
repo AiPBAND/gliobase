@@ -14,6 +14,7 @@ export default {
 		biomarkerSearch: async (parent, {text}, context, info) => {
 			if(text){
 				const list = await Biomarker.find({}).exec();
+				console.log(list)
 				var options = {
 					shouldSort: true,
 					tokenize: true,
@@ -41,6 +42,9 @@ export default {
 		},
 		evidences: async (biomarker) => {
 			return await Evidence.find({biomarkerId: biomarker.id}).exec();
+		},
+		evidenceCount: async (biomarker) => {
+			return await Evidence.countDocuments({biomarkerId: biomarker.id}).exec();
 		}
 	}
 }

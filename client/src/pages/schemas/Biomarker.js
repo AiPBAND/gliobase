@@ -19,6 +19,8 @@ class Biomarker extends Component {
 				if (loading) return <Skeleton/>;
 				if (error) return <p>Error</p>;
 
+				console.log(data.biomarker)
+
 				return <div>
 
 					<Title>{data.biomarker.id}</Title>

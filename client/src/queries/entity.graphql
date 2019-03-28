@@ -16,7 +16,11 @@ query Entity($id: String!){
 				id
 				name
 				shortName
+				category {
+					id
+				}
 			}
+			evidenceCount
 		}
 	} 
 }

@@ -21,14 +21,14 @@ const processOptions = (options, value) => {
 
 	const entities = options.entitiesSearch.map(bm => (
 		<Option key={bm.id} value={bm.id}>
-        	{bm.id}
-        	<span className="certain-search-item-count">{bm.name}</span>
+        	{bm.name}
+        	<span className="certain-search-item-count">{bm.id}</span>
       	</Option>
 	))
 	const biomarkers = options.biomarkerSearch.map(bms => (
 		<Option key={bms.id} value={bms.id}>
-        	{bms.id}
-        	<span className="certain-search-item-count">{bms.entityIds.join(" ")}</span>
+        	{bms.entities.map(en => en.shortName).join(" ")}
+        	<span className="certain-search-item-count">{bms.id}</span>
       	</Option>
 	))
 	const evidences = options.evidencesSearch.map(e => (
@@ -37,6 +37,9 @@ const processOptions = (options, value) => {
         	<span className="certain-search-item-count">{e.biomarkerId}</span>
       	</Option>
 	))
+	entities.length = Math.min(entities.length, 5)
+	biomarkers.length = Math.min(biomarkers.length, 5)
+	evidences.length = Math.min(evidences.length, 5)
 	return [
 		<OptGroup key="entities" label={renderTitle("Entities")}>
 			{entities}
@@ -89,6 +92,7 @@ class Search extends Component {
 							onSelect={fetchResult}
 							dataSource={this.state.data}
 							placeholder="Enter a search term to get started.."
+							allowClear={true}
 							optionLabelProp="value">
 							<Input/>
 						</AutoComplete>

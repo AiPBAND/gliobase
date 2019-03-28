@@ -4,7 +4,12 @@
 		entityIds
 		entities {
 			id
+			name
 			shortName
+			category {
+				id
+			}
 		}
+		evidenceCount
 	}
 }

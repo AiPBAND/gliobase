@@ -6,4 +6,5 @@ type Entity {
     description: String
 	category: Category
 	biomarkers: [Biomarker]
+	biomarkerCount: Int
 }

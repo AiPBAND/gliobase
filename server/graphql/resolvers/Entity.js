@@ -32,8 +32,7 @@ export default {
 					keys: [
 					  "id",
 					  "name",
-					  "abreviations",
-					  "description"
+					  "shortName"
 				  ]
 				  };
 				  var fuse = new Fuse(list, options); // "list" is the item array
@@ -50,6 +49,9 @@ export default {
 		},
 		biomarkers: async (entity) => {
 			return await Biomarker.find({entityIds: entity.id}).exec();
+		},
+		biomarkerCount: async (entity) => {
+			return await Biomarker.countDocuments({entityIds: entity.id}).exec();
 		}
 	}
 }
