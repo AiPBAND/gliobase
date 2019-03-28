@@ -7,7 +7,7 @@ import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 import PieChart from '../components/charts/PieChart';
 import BarChart from '../components/charts/BarChart';
-import BarChartDouble from "../components/charts/BarChartDouble";
+import BarChartMulti from "../components/charts/BarChartMulti";
 import {CategoryColors} from '../commons/ColorSettings';
 import './Exploration.css'
 
@@ -129,7 +129,7 @@ class Exploration extends Component {
               ];    
               let barChartDisplay = null;  
               if (this.state.evidenceBarChart === 0) {
-                barChartDisplay = <BarChartDouble data={evidenceApplicationChart}/>;  
+                barChartDisplay = <BarChartMulti data={evidenceApplicationChart}/>;  
               } else if (this.state.evidenceBarChart === 1) {
                 barChartDisplay = <BarChart data={evidenceSourceChart}/>
               }

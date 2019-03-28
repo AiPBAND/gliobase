@@ -19,7 +19,7 @@ const styles = {
 }
 
 
-class BarChart extends React.Component {
+class BarChartMulti extends React.Component {
   render () {
     const data = this.props.data;
     const ds = new DataSet();
@@ -65,8 +65,8 @@ class BarChart extends React.Component {
   }
 }
 
-BarChart.defaultProps={
+BarChartMulti.defaultProps={
   chartTitle: null,
 }
 
-export default BarChart
+export default BarChartMulti
