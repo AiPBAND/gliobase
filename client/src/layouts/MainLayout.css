@@ -3,3 +3,11 @@
 .sider {
   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
 }
+
+.main-layout-acknowledgement {
+  font-size: 11px;
+}
+
+.main-layout-copyright {
+  font-size: 11px;
+}

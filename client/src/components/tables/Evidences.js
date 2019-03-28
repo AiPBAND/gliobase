@@ -24,7 +24,7 @@ const columns = [{
 		<Marker val={val}></Marker> 
 	)	
 },{
-	title: 'Diagnosis',
+	title: 'Diagnostic',
 	dataIndex: 'application.diagnosis',
 	key: 'diagnosis',
 	render: val => (
@@ -38,7 +38,7 @@ const columns = [{
 		<Marker val={val}></Marker> 
 	)	
 },{
-	title: 'Prognostis',
+	title: 'Prognostic',
 	dataIndex: 'application.prognosis',
 	key: 'prognosis',
 	render: val => (

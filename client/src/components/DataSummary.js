@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { Card, Avatar } from 'antd';
 
 import entitieslogo from '../assets/experiment.svg';
-import biomarkerslogo from '../assets/folder-open.svg';
-import evidenceslogo from '../assets/book.svg'
+import biomarkerslogo from '../assets/tags.svg';
+import evidenceslogo from '../assets/read.svg'
 
 const { Meta } = Card;
 
