@@ -52,7 +52,27 @@ class GlobalHeader extends Component{
           type={collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={onClickCollapseIcon}
         />
-		{/*
+        {/*
+        <Link className="link" to="/AboutGbase">
+          <Icon
+            className="icons-list"
+            type={"info-circle"} 
+            theme="twoTone"
+            > 
+          </Icon> 
+          <span>About Gliobase</span>
+        </Link>
+        <Link className="link" to="/AboutGBM">
+          <Icon
+            className="icons-list"
+            type={"question-circle"} 
+            theme="twoTone"
+            > 
+          </Icon> 
+          <span>About GBM</span>
+        </Link>
+        */}
+		   {/*
         <div className="toolbar">
           {this.state.currentUser.name ? (
             <Dropdown overlay={menu}>
@@ -68,8 +88,8 @@ class GlobalHeader extends Component{
               </Link>
             </Button>
           )}
-		</div>
-		*/}
+		    </div>
+		   */}
       </div>
     )
   }

@@ -31,6 +31,17 @@
     transition: all 0.3s;
     height: 100%;
 }
+.link {
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.icons-list {
+    margin-right: 3px;
+}
 
 .header .toolbar .user-info:hover {
     background: #fafafa;
