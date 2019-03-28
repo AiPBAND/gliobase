@@ -8,27 +8,29 @@ class GlobalSider extends Component {
   	render() {
 		return (
 			<div>
-			<div className="logo">
-				{this.props.collapsed ? "g" : "glio"}
-				<span className="logo-small">DB</span>
+			<div className="global-sider-logo">
+        <Link to="/">
+          <span className="logo-big">{this.props.collapsed ? "g" : "glio"}</span>
+          <span className="logo-small">DB</span>
+        </Link>
 			</div>
 			<Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
 			<Menu.Item key="1">
 				<Link to="/">
-				<Icon type="home"/>
-				<span>Home</span>
+          <Icon type="home"/>
+          <span>Home</span>
 				</Link>
 			</Menu.Item>
 			<Menu.Item key="2">
 				<Link to="/search">
-				<Icon type="search"/>
-				<span>Search</span>
+          <Icon type="search"/>
+          <span>Search</span>
 				</Link>
 			</Menu.Item>
 			<Menu.Item key="3">
 				<Link to="/exploration">
-				<Icon type="pie-chart" />
-				<span>Exploration</span>
+          <Icon type="pie-chart" />
+          <span>Exploration</span>
 				</Link>            
 			</Menu.Item>
 			{/*
