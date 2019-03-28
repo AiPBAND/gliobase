@@ -4,6 +4,14 @@
 		biomarkerId
 		biomarker {
 			entityIds
+			entities {
+				id
+				name
+				shortName
+				category {
+					id
+				}
+			}
 		}
 		pmid
 		sourceIds

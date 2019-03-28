@@ -50,6 +50,9 @@ export default {
 		},
 		biomarkers: async (entity) => {
 			return await Biomarker.find({entityIds: entity.id}).exec();
+		},
+		biomarkerCount: async (entity) => {
+			return await Biomarker.countDocuments({entityIds: entity.id}).exec();
 		}
 	}
 }
