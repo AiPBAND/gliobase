@@ -7,8 +7,9 @@ import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 import PieChart from '../components/charts/PieChart';
 import BarChart from '../components/charts/BarChart';
-import BarChartMulti from "../components/charts/BarChartMulti";
+import BarChartMulti from '../components/charts/BarChartMulti';
 import {CategoryColors} from '../commons/ColorSettings';
+import {ApplicationColors} from '../commons/ColorSettings';
 import './Exploration.css'
 
 const Option = Select.Option;
@@ -80,7 +81,8 @@ class Exploration extends Component {
   };
   
 	render(){
-    const entityColorSet = ['item', [CategoryColors['DNA'], CategoryColors['Others'], CategoryColors['Protein'], CategoryColors['RNA']]];
+    const categoryColorSet = ['item', [CategoryColors['DNA'], CategoryColors['Others'], CategoryColors['Protein'], CategoryColors['RNA']]];
+    const applicationColorSet = ['name', [ApplicationColors['Yes'], ApplicationColors['Potential'], ApplicationColors['No']]];
 		return (
       <Tabs type="card">
       <TabPane tab={<span><Icon type="read" />Evidences</span>} key="1">
@@ -129,7 +131,7 @@ class Exploration extends Component {
               ];    
               let barChartDisplay = null;  
               if (this.state.evidenceBarChart === 0) {
-                barChartDisplay = <BarChartMulti data={evidenceApplicationChart}/>;  
+                barChartDisplay = <BarChartMulti data={evidenceApplicationChart} colorSet={applicationColorSet}/>;  
               } else if (this.state.evidenceBarChart === 1) {
                 barChartDisplay = <BarChart data={evidenceSourceChart}/>
               }
@@ -205,7 +207,7 @@ class Exploration extends Component {
               return (
                 <div className='exploration-statistics'>
                   <Card>
-                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={entityColorSet} chartTitle={"Category"}/>  
+                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={categoryColorSet} chartTitle={"Category"}/>  
                   </Card>    
                   <Entities data={entityData.entities}/> 
                 </div>
