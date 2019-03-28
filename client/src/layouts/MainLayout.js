@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 import GlobalHeader from './GlobalHeader';
 import GlobalSider from './GlobalSider';
 import logo from './../assets/h2020.png';
-import aiplogo from './../assets/AiPBAND-logo.webp';
+import aiplogo from './../assets/aipband.png';
 const { Header, Content, Footer, Sider } = Layout;
 
 class MainLayout extends Component {

@@ -11,6 +11,7 @@ import Stage from '../../components/tags/Stage';
 import EntityList from '../../components/lists/EntityList';
 import Region from '../../components/utilities/Region';
 import Marker from '../../components/utilities/Marker';
+import PubmedLink from '../../components/PubmedLink';
 const { Title, Text } = Typography;
 
 const evidenceQuery = loader('../../queries/evidence.graphql');
@@ -57,9 +58,8 @@ class Evidence extends Component {
 						{data.evidence.id}
 		                <Marker val={data.evidence.application.validated}></Marker> 
 					</Title>
-					<Title level={2}>
-							<Text type="secondary">PubMed ID: {data.evidence.pmid}</Text>
-					</Title>
+				    <PubmedLink pmid={data.evidence.pmid}></PubmedLink>
+					
 					<EntityList data={data.evidence.biomarker.entities}></EntityList>
 
 					<Row gutter={15}>
