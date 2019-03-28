@@ -32,8 +32,7 @@ export default {
 					keys: [
 					  "id",
 					  "name",
-					  "abreviations",
-					  "description"
+					  "shortName"
 				  ]
 				  };
 				  var fuse = new Fuse(list, options); // "list" is the item array
