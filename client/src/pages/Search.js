@@ -92,6 +92,7 @@ class Search extends Component {
 							onSelect={fetchResult}
 							dataSource={this.state.data}
 							placeholder="Enter a search term to get started.."
+							allowClear={true}
 							optionLabelProp="value">
 							<Input/>
 						</AutoComplete>

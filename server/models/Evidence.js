@@ -64,4 +64,10 @@ const schema = new mongoose.Schema({
 	curator: String
 });
 
+schema.virtual('biomarker', {
+	ref: 'Biomarker', // The model to use
+	localField: 'biomarkerId', // Find people where `localField`
+	foreignField: '_id', // is equal to `foreignField`
+});
+
 export default mongoose.model("Evidence", schema);

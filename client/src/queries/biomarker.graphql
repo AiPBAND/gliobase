@@ -12,6 +12,17 @@ query Biomarker($id: String!){
 		}
 		evidences {
 			id
+			biomarker {
+				entityIds
+				entities{
+					id
+					name
+					shortName
+					category {
+						id
+					}
+				}
+			}
 			pmid
 			stage
 			whoclass

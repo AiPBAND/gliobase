@@ -14,8 +14,13 @@ class BioID extends Component {
 			if (name.charAt(0) === "B") return " biomarker-id";
 			else return "";
 		}
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
 		return (
-    <a href={"/"+refLink(this.props.id)+"/"+this.props.id} className="bio-id">
+		<a id={this.props.id} 
+			href={"/"+refLink(this.props.id)+"/"+this.props.id} 
+			className="bio-id" draggable onDragStart={drag}>
 			<div className="bio-id-name">{this.props.name}</div>
 			<div className={"bio-id"+getColor(this.props.id)}>{this.props.id}</div>
 		</a>
