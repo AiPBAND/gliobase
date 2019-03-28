@@ -41,6 +41,9 @@ export default {
 		},
 		evidences: async (biomarker) => {
 			return await Evidence.find({biomarkerId: biomarker.id}).exec();
+		},
+		evidenceCount: async (biomarker) => {
+			return await Evidence.countDocuments({biomarkerId: biomarker.id}).exec();
 		}
 	}
 }
