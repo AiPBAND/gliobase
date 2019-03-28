@@ -8,20 +8,34 @@ query searchTerms($text: String){
 		category {
 			id
 		}
+		biomarkerCount
 	},
 	biomarkerSearch(text: $text) {
 		id
 		entityIds
 		entities {
 			id
+			name
 			shortName
+			category {
+				id
+			}
 		}
+		evidenceCount
 	},
 	evidencesSearch(text: $text) {
 		id
 		biomarkerId
 		biomarker {
 			entityIds
+			entities {
+				id
+				name
+				shortName
+				category {
+					id
+				}
+			}
 		}
 		pmid
 		sourceIds
