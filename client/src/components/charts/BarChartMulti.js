@@ -18,8 +18,7 @@ const styles = {
   },
 }
 
-
-class BarChart extends React.Component {
+class BarChartMulti extends React.Component {
   render () {
     const data = this.props.data;
     const ds = new DataSet();
@@ -51,10 +50,10 @@ class BarChart extends React.Component {
           <Geom 
             type='interval' 
             position='item*count' 
-            color={"name"} 
+            color={this.props.colorSet} 
             adjust={[
               {
-                type: "dodge",
+                type: 'dodge',
                 marginRatio: 1 / 32
               }
             ]}
@@ -65,8 +64,9 @@ class BarChart extends React.Component {
   }
 }
 
-BarChart.defaultProps={
+BarChartMulti.defaultProps={
   chartTitle: null,
+  colorSet: 'name'
 }
 
-export default BarChart
+export default BarChartMulti

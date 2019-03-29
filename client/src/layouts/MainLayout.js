@@ -50,10 +50,12 @@ class MainLayout extends Component {
           </Content>
           <Footer style={{ textAlign: 'center' }}> 
             <div>
-               <img src={logo} width="325" alt="EU Logo">
-               </img> 
-               <img src={aiplogo} width="150" alt="Logo">
-               </img>
+              <a href="https://ec.europa.eu/programmes/horizon2020/en">
+                <img src={logo} width="325" alt="EU Logo" />
+              </a> 
+              <a href="https://www.aipband-itn.eu">
+                <img src={aiplogo} width="150" alt="Logo"/>
+              </a>                             
             </div>
             <div className="main-layout-acknowledgement">
               This project has received funding from the European Union’s Horizon 2020 research 

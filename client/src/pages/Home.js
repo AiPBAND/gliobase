@@ -81,7 +81,7 @@ class Home extends Component {
 			<div className = "content">
 				<div className = "banner">
 					<h1>Gliobase</h1>
-					<p>A glioblastoma multiforme (GBM) biomarker knowledge base</p>
+					<p>Glioblastoma multiforme (GBM) biomarker knowledge base</p>
 					<Button icon="github" size="small" href="https://github.com/thehyve/gliobase">Github</Button>
 				</div>
 				<Divider dashed />
