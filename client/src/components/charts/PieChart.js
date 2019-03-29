@@ -74,7 +74,7 @@ class PieChart extends Component {
 PieChart.defaultProps={
   intervalWidth: 2,
   colorSet: 'item',
-  chartTitle: 'Pie Chart',
+  chartTitle: 'Pie Chart'
 }
 
 export default PieChart
