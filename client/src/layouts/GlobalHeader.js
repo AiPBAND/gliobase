@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Icon, Dropdown, Avatar, Button } from 'antd';
 import { Link } from "react-router-dom";
-import './GlobalHeader.css'
+import './GlobalHeader.css';
 
 class GlobalHeader extends Component{
   constructor(props) {
@@ -62,7 +62,8 @@ class GlobalHeader extends Component{
           </Icon> 
           <span>About Gliobase</span>
         </Link>
-        <Link className="link" to="/AboutGBM">
+        */}
+        <Link className="link" to="/about/gbm">
           <Icon
             className="icons-list"
             type={"question-circle"} 
@@ -71,7 +72,6 @@ class GlobalHeader extends Component{
           </Icon> 
           <span>About GBM</span>
         </Link>
-        */}
 		   {/*
         <div className="toolbar">
           {this.state.currentUser.name ? (
