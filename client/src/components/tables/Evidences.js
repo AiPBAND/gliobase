@@ -18,7 +18,7 @@ const columns = [{
 	key: 'biomarkerId',
 	width: 180,
 	render: val => {
-		return <BioID id={val} name="Biomarker"/>
+		return <BioID id={val}/>
 	}
 },{
 	title: 'Entities',
