@@ -95,7 +95,7 @@ class Evidence extends Component {
 								<b>Grade (Samples)</b>
 								<br/>{stage}
 							</Card>
-							<Card title="Region" size="small">
+							<Card title="Region (authorship)" size="small">
 								 <Region region={data.evidence.region}></Region>
 							</Card>
 						</Col>
