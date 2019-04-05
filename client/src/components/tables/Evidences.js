@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Table} from 'antd';
 import BioID from '../tags/BioID';
 import Marker from '../utilities/Marker';
-import EntityList from '../lists/EntityList';
+import BiomoleculeList from '../lists/BiomoleculeList';
 
 const columns = [{
 	title: 'PMID - ID',
@@ -18,14 +18,14 @@ const columns = [{
 	key: 'biomarkerId',
 	width: 180,
 	render: val => {
-		return <BioID id={val}/>
+		return <BioID id={val} name=""/>
 	}
 },{
-	title: 'Entities',
-	dataIndex: 'biomarker.entities',
-	key: 'entities',
-	render: (entities) => {
-		const listIds = entities.map(en => {
+	title: 'Biomolecules',
+	dataIndex: 'biomarker.biomolecules',
+	key: 'biomolecules',
+	render: (biomolecules) => {
+		const listIds = biomolecules.map(en => {
 			return <BioID id={en.id} name={en.shortName} key={en.id}></BioID>;
 		})
 		if(listIds.length > 5) {
@@ -82,7 +82,7 @@ const columns = [{
 }];
 
 const expanded = (record) => {
-	return <EntityList data={record.biomarker.entities}></EntityList>
+	return <BiomoleculeList data={record.biomarker.biomolecules}></BiomoleculeList>
 }
 
 class Evidences extends Component {

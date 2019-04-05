@@ -25,7 +25,7 @@ export default {
 					keys: [
 						"id",
 						"biomarkerId",  
-					  	"biomarker.entityIds",
+					  	"biomarker.biomoleculeIds",
 					  	"pmid",
 						"sourceIds",
 						"species",

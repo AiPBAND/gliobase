@@ -4,7 +4,7 @@ import { loader } from 'graphql.macro';
 import { Typography, Skeleton} from 'antd';
 import './Evidence.css';
 import Evidences from '../../components/tables/Evidences';
-import EntityList from '../../components/lists/EntityList';
+import BiomoleculeList from '../../components/lists/BiomoleculeList';
 
 const { Title} = Typography;
 
@@ -24,7 +24,7 @@ class Biomarker extends Component {
 				return <div>
 
 					<Title>{data.biomarker.id}</Title>
-					<EntityList data={data.biomarker.entities}/>
+					<BiomoleculeList data={data.biomarker.biomolecules}/>
 
 					<Title level={2}>Evidence</Title>
 					

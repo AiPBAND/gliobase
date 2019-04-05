@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Card, Avatar } from 'antd';
 
-import entitieslogo from '../assets/experiment.svg';
+import biomoleculeslogo from '../assets/experiment.svg';
 import biomarkerslogo from '../assets/tags.svg';
 import evidenceslogo from '../assets/read.svg'
 
@@ -16,11 +16,11 @@ class DataSummary extends Component{
     render(){
         return(
             <Card title="Data Summary">
-                <Card.Grid style={gridStyle} onClick={this.props.onClickEntities}>
+                <Card.Grid style={gridStyle} onClick={this.props.onClickBiomolecules}>
                     <Meta
-                        avatar={<Avatar src={entitieslogo} />}
-                        title="Entities"
-                        description={this.props.numberOfEntity}
+                        avatar={<Avatar src={biomoleculeslogo} />}
+                        title="Biomolecules"
+                        description={this.props.numberOfBiomolecule}
                     />
                 </Card.Grid>
                 <Card.Grid style={gridStyle} onClick={this.props.onClickBiomarkers}>

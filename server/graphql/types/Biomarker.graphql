@@ -1,8 +1,8 @@
 # import Biomarker from "./Biomarker.graphql";
 type Biomarker {
 	id: String!
-	entityIds: [String]
-	entities: [Entity]
+	biomoleculeIds: [String]
+	biomolecules: [Biomolecule]
 	evidences: [Evidence]
 	evidenceCount: Int
 }

@@ -8,7 +8,7 @@ import Gender from '../../components/utilities/Gender'
 import Age from '../../components/utilities/Age'
 import Species from '../../components/tags/Species';
 import Stage from '../../components/tags/Stage';
-import EntityList from '../../components/lists/EntityList';
+import BiomoleculeList from '../../components/lists/BiomoleculeList';
 import Region from '../../components/utilities/Region';
 import Marker from '../../components/utilities/Marker';
 import PubmedLink from '../../components/PubmedLink';
@@ -60,7 +60,7 @@ class Evidence extends Component {
 					</Title>
 				    <PubmedLink pmid={data.evidence.pmid}></PubmedLink>
 					
-					<EntityList data={data.evidence.biomarker.entities}></EntityList>
+					<BiomoleculeList data={data.evidence.biomarker.biomolecules}></BiomoleculeList>
 
 					<Row gutter={15}>
 						<Col span={12}>

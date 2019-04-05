@@ -5,19 +5,19 @@ const schema = new mongoose.Schema({
 		type: String,
 		validate: {
 			validator: function(v) {
-			  return /B([A-F0-9]){6}/.test(v);
+			  return /K([A-F0-9]){6}/.test(v);
 			},
-			message: props => `${props.value} is not a valid biomarker set ID of the form B-XXXXXX.`
+			message: props => `${props.value} is not a valid biomarker set ID of the form K-XXXXXX.`
 		  }
 	},
-	entityIds: {
-		type: [{ type: String, ref: 'Entity' }],
+	biomoleculeIds: {
+		type: [{ type: String, ref: 'Biomolecule' }],
 		required: true
 	}
 });
 
 schema.index({
-	"entityIds": "text"
+	"biomoleculeIds": "text"
 })
 
 export default mongoose.model("Biomarker", schema);

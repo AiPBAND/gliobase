@@ -1,5 +1,5 @@
 query dataSummary{
-	entities {
+	biomolecules {
 		id
 	},
 	biomarkers {

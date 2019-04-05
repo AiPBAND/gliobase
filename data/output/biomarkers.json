@@ -1,360 +1,360 @@
 [
     {
-        "_id": "B000000",
-        "entityIds": [
-            "E000001"
+        "_id": "K000000",
+        "biomoleculeIds": [
+            "M000001"
         ]
     },
     {
-        "_id": "B000001",
-        "entityIds": [
-            "E000002"
+        "_id": "K000001",
+        "biomoleculeIds": [
+            "M000002"
         ]
     },
     {
-        "_id": "B000002",
-        "entityIds": [
-            "E000003"
+        "_id": "K000002",
+        "biomoleculeIds": [
+            "M000003"
         ]
     },
     {
-        "_id": "B000003",
-        "entityIds": [
-            "E000004"
+        "_id": "K000003",
+        "biomoleculeIds": [
+            "M000004"
         ]
     },
     {
-        "_id": "B000004",
-        "entityIds": [
-            "E000006",
-            "E000005"
+        "_id": "K000004",
+        "biomoleculeIds": [
+            "M000006",
+            "M000005"
         ]
     },
     {
-        "_id": "B000005",
-        "entityIds": [
-            "E000007"
+        "_id": "K000005",
+        "biomoleculeIds": [
+            "M000007"
         ]
     },
     {
-        "_id": "B000006",
-        "entityIds": [
-            "E000008"
+        "_id": "K000006",
+        "biomoleculeIds": [
+            "M000008"
         ]
     },
     {
-        "_id": "B000007",
-        "entityIds": [
-            "E000009"
+        "_id": "K000007",
+        "biomoleculeIds": [
+            "M000009"
         ]
     },
     {
-        "_id": "B000008",
-        "entityIds": [
-            "E00000A"
+        "_id": "K000008",
+        "biomoleculeIds": [
+            "M00000A"
         ]
     },
     {
-        "_id": "B000009",
-        "entityIds": [
-            "E00000B"
+        "_id": "K000009",
+        "biomoleculeIds": [
+            "M00000B"
         ]
     },
     {
-        "_id": "B00000A",
-        "entityIds": [
-            "E00000C"
+        "_id": "K00000A",
+        "biomoleculeIds": [
+            "M00000C"
         ]
     },
     {
-        "_id": "B00000B",
-        "entityIds": [
-            "E00000D"
+        "_id": "K00000B",
+        "biomoleculeIds": [
+            "M00000D"
         ]
     },
     {
-        "_id": "B00000C",
-        "entityIds": [
-            "E00000E"
+        "_id": "K00000C",
+        "biomoleculeIds": [
+            "M00000E"
         ]
     },
     {
-        "_id": "B00000D",
-        "entityIds": [
-            "E00000F"
+        "_id": "K00000D",
+        "biomoleculeIds": [
+            "M00000F"
         ]
     },
     {
-        "_id": "B00000E",
-        "entityIds": [
-            "E000010"
+        "_id": "K00000E",
+        "biomoleculeIds": [
+            "M000010"
         ]
     },
     {
-        "_id": "B00000F",
-        "entityIds": [
-            "E000011"
+        "_id": "K00000F",
+        "biomoleculeIds": [
+            "M000011"
         ]
     },
     {
-        "_id": "B000010",
-        "entityIds": [
-            "E000012"
+        "_id": "K000010",
+        "biomoleculeIds": [
+            "M000012"
         ]
     },
     {
-        "_id": "B000011",
-        "entityIds": [
-            "E000013"
+        "_id": "K000011",
+        "biomoleculeIds": [
+            "M000013"
         ]
     },
     {
-        "_id": "B000012",
-        "entityIds": [
-            "E000014"
+        "_id": "K000012",
+        "biomoleculeIds": [
+            "M000014"
         ]
     },
     {
-        "_id": "B000013",
-        "entityIds": [
-            "E000015"
+        "_id": "K000013",
+        "biomoleculeIds": [
+            "M000015"
         ]
     },
     {
-        "_id": "B000014",
-        "entityIds": [
-            "E000016"
+        "_id": "K000014",
+        "biomoleculeIds": [
+            "M000016"
         ]
     },
     {
-        "_id": "B000015",
-        "entityIds": [
-            "E000017"
+        "_id": "K000015",
+        "biomoleculeIds": [
+            "M000017"
         ]
     },
     {
-        "_id": "B000016",
-        "entityIds": [
-            "E000018"
+        "_id": "K000016",
+        "biomoleculeIds": [
+            "M000018"
         ]
     },
     {
-        "_id": "B000017",
-        "entityIds": [
-            "E000019"
+        "_id": "K000017",
+        "biomoleculeIds": [
+            "M000019"
         ]
     },
     {
-        "_id": "B000018",
-        "entityIds": [
-            "E00001A"
+        "_id": "K000018",
+        "biomoleculeIds": [
+            "M00001A"
         ]
     },
     {
-        "_id": "B000019",
-        "entityIds": [
-            "E00001B"
+        "_id": "K000019",
+        "biomoleculeIds": [
+            "M00001B"
         ]
     },
     {
-        "_id": "B00001A",
-        "entityIds": [
-            "E000004",
-            "E00001D",
-            "E00001C"
+        "_id": "K00001A",
+        "biomoleculeIds": [
+            "M000004",
+            "M00001D",
+            "M00001C"
         ]
     },
     {
-        "_id": "B00001B",
-        "entityIds": [
-            "E00001E"
+        "_id": "K00001B",
+        "biomoleculeIds": [
+            "M00001E"
         ]
     },
     {
-        "_id": "B00001C",
-        "entityIds": [
-            "E00001F"
+        "_id": "K00001C",
+        "biomoleculeIds": [
+            "M00001F"
         ]
     },
     {
-        "_id": "B00001D",
-        "entityIds": [
-            "E000021",
-            "E000027",
-            "E000023",
-            "E000025",
-            "E000022",
-            "E000024",
-            "E000028",
-            "E000026",
-            "E000020"
+        "_id": "K00001D",
+        "biomoleculeIds": [
+            "M000021",
+            "M000027",
+            "M000023",
+            "M000025",
+            "M000022",
+            "M000024",
+            "M000028",
+            "M000026",
+            "M000020"
         ]
     },
     {
-        "_id": "B00001E",
-        "entityIds": [
-            "E000029"
+        "_id": "K00001E",
+        "biomoleculeIds": [
+            "M000029"
         ]
     },
     {
-        "_id": "B00001F",
-        "entityIds": [
-            "E00002A"
+        "_id": "K00001F",
+        "biomoleculeIds": [
+            "M00002A"
         ]
     },
     {
-        "_id": "B000020",
-        "entityIds": [
-            "E00002B"
+        "_id": "K000020",
+        "biomoleculeIds": [
+            "M00002B"
         ]
     },
     {
-        "_id": "B000021",
-        "entityIds": [
-            "E00002C"
+        "_id": "K000021",
+        "biomoleculeIds": [
+            "M00002C"
         ]
     },
     {
-        "_id": "B000022",
-        "entityIds": [
-            "E00002D"
+        "_id": "K000022",
+        "biomoleculeIds": [
+            "M00002D"
         ]
     },
     {
-        "_id": "B000023",
-        "entityIds": [
-            "E00002E"
+        "_id": "K000023",
+        "biomoleculeIds": [
+            "M00002E"
         ]
     },
     {
-        "_id": "B000024",
-        "entityIds": [
-            "E00002F"
+        "_id": "K000024",
+        "biomoleculeIds": [
+            "M00002F"
         ]
     },
     {
-        "_id": "B000025",
-        "entityIds": [
-            "E000030"
+        "_id": "K000025",
+        "biomoleculeIds": [
+            "M000030"
         ]
     },
     {
-        "_id": "B000026",
-        "entityIds": [
-            "E000031"
+        "_id": "K000026",
+        "biomoleculeIds": [
+            "M000031"
         ]
     },
     {
-        "_id": "B000027",
-        "entityIds": [
-            "E000032"
+        "_id": "K000027",
+        "biomoleculeIds": [
+            "M000032"
         ]
     },
     {
-        "_id": "B000028",
-        "entityIds": [
-            "E000033"
+        "_id": "K000028",
+        "biomoleculeIds": [
+            "M000033"
         ]
     },
     {
-        "_id": "B000029",
-        "entityIds": [
-            "E000034"
+        "_id": "K000029",
+        "biomoleculeIds": [
+            "M000034"
         ]
     },
     {
-        "_id": "B00002A",
-        "entityIds": [
-            "E000035",
-            "E000036"
+        "_id": "K00002A",
+        "biomoleculeIds": [
+            "M000035",
+            "M000036"
         ]
     },
     {
-        "_id": "B00002B",
-        "entityIds": [
-            "E000037"
+        "_id": "K00002B",
+        "biomoleculeIds": [
+            "M000037"
         ]
     },
     {
-        "_id": "B00002C",
-        "entityIds": [
-            "E000038"
+        "_id": "K00002C",
+        "biomoleculeIds": [
+            "M000038"
         ]
     },
     {
-        "_id": "B00002D",
-        "entityIds": [
-            "E000039"
+        "_id": "K00002D",
+        "biomoleculeIds": [
+            "M000039"
         ]
     },
     {
-        "_id": "B00002E",
-        "entityIds": [
-            "E00003A"
+        "_id": "K00002E",
+        "biomoleculeIds": [
+            "M00003A"
         ]
     },
     {
-        "_id": "B00002F",
-        "entityIds": [
-            "E00003B"
+        "_id": "K00002F",
+        "biomoleculeIds": [
+            "M00003B"
         ]
     },
     {
-        "_id": "B000030",
-        "entityIds": [
-            "E00003C",
-            "E00003D",
-            "E00003E",
-            "E00003F",
-            "E000040",
-            "E000041",
-            "E000042",
-            "E000043",
-            "E000044",
-            "E000045",
-            "E000046",
-            "E000047",
-            "E000048",
-            "E000049",
-            "E00004A",
-            "E00004B",
-            "E00004C",
-            "E00004D",
-            "E00004E",
-            "E00004F",
-            "E000050",
-            "E000051",
-            "E000052",
-            "E000053",
-            "E000054",
-            "E000055",
-            "E000056",
-            "E000057",
-            "E000058",
-            "E000059",
-            "E00005A",
-            "E00005B",
-            "E00005C",
-            "E00005D",
-            "E00005E"
+        "_id": "K000030",
+        "biomoleculeIds": [
+            "M00003C",
+            "M00003D",
+            "M00003E",
+            "M00003F",
+            "M000040",
+            "M000041",
+            "M000042",
+            "M000043",
+            "M000044",
+            "M000045",
+            "M000046",
+            "M000047",
+            "M000048",
+            "M000049",
+            "M00004A",
+            "M00004B",
+            "M00004C",
+            "M00004D",
+            "M00004E",
+            "M00004F",
+            "M000050",
+            "M000051",
+            "M000052",
+            "M000053",
+            "M000054",
+            "M000055",
+            "M000056",
+            "M000057",
+            "M000058",
+            "M000059",
+            "M00005A",
+            "M00005B",
+            "M00005C",
+            "M00005D",
+            "M00005E"
         ]
     },
     {
-        "_id": "B000031",
-        "entityIds": [
-            "E00005F"
+        "_id": "K000031",
+        "biomoleculeIds": [
+            "M00005F"
         ]
     },
     {
-        "_id": "B000032",
-        "entityIds": [
-            "E000060"
+        "_id": "K000032",
+        "biomoleculeIds": [
+            "M000060"
         ]
     },
     {
-        "_id": "B000033",
-        "entityIds": [
-            "E000061"
+        "_id": "K000033",
+        "biomoleculeIds": [
+            "M000061"
         ]
     }
 ]

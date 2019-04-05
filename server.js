@@ -24,13 +24,13 @@ if(true || process.env.NODE_ENV === "development"){
 	const jsonData = JSON.parse(fs.readFileSync('data/output/seed.json', 'utf8'));
 	seeder.connect(process.env.DB_CONNECTION, () => {
 		seeder.loadModels([
-			'server/models/Entity.js',
+			'server/models/Biomolecule.js',
 			'server/models/Biomarker.js',
 			'server/models/Source.js',
 			'server/models/Category.js',
 			'server/models/Evidence.js'
 		])
-		seeder.clearModels(['Entity','Biomarker','Source','Category', 'Evidence'], () => {
+		seeder.clearModels(['Biomolecule','Biomarker','Source','Category', 'Evidence'], () => {
 			seeder.populateModels(jsonData, () => {
 				//seeder.disconnect();
 			})

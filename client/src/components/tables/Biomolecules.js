@@ -33,7 +33,7 @@ const columns = [{
 }];
   
 
-class Entities extends Component {
+class Biomolecules extends Component {
 	render() {
 		
 		
@@ -41,4 +41,4 @@ class Entities extends Component {
 	}
 }
 
-export default Entities
+export default Biomolecules

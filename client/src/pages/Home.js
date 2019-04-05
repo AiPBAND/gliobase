@@ -3,22 +3,22 @@ import { Button, Divider, Skeleton } from 'antd';
 import './Home.css'
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import Entities from '../components/tables/Entities';
+import Biomolecules from '../components/tables/Biomolecules';
 import DataSummary from '../components/DataSummary';
 import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 
-const entitiesQuery = loader('../queries/entities.graphql');
+const biomoleculesQuery = loader('../queries/biomolecules.graphql');
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 const evidencesQuery = loader('../queries/evidences.graphql');
 const dataSummaryQuery = loader('../queries/dataSummary.graphql');
 
 function ExampleData(props) {
-	const entities = <Query query={entitiesQuery}>
+	const biomolecules = <Query query={biomoleculesQuery}>
 		{({ loading, error, data }) => {
 			if (loading) return <Skeleton active />;
 			if (error) return <p>Error</p>;
-			return <Entities data={data.entities}/>
+			return <Biomolecules data={data.biomolecules}/>
 		}}
 	</Query>
 
@@ -40,13 +40,13 @@ function ExampleData(props) {
 
 	switch (props.showData) {
 		case 0:
-			return entities;
+			return biomolecules;
 		case 1:
 			return biomarkers;
 		case 2:
 			return evidences;
 		default:
-			return entities;
+			return biomolecules;
 	}
 }
 
@@ -58,7 +58,7 @@ class Home extends Component {
 		};
 	}
 
-	showEntities = () => {
+	showBiomolecules = () => {
     this.setState({
       showData: 0,
     });
@@ -92,10 +92,10 @@ class Home extends Component {
 							if (error) return <p>Error</p>;
 							return (
 								<DataSummary
-									numberOfEntity = {data.entities.length}
+									numberOfBiomolecule = {data.biomolecules.length}
 									numberOfBiomarker = {data.biomarkers.length} 
 									numberOfEvidences = {data.evidences.length}
-									onClickEntities = {this.showEntities}
+									onClickBiomolecules = {this.showBiomolecules}
 									onClickBiomarkers = {this.showBiomarkers}
 									onClickEvidences = {this.showEvidences}
 								/>

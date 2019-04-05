@@ -1,5 +1,5 @@
 import Biomarker from '../../models/Biomarker';
-import Entity from '../../models/Entity';
+import Biomolecule from '../../models/Biomolecule';
 import Evidence from '../../models/Evidence';
 import Fuse from 'fuse.js';
 
@@ -26,7 +26,7 @@ export default {
 					minMatchCharLength: 1,
 					keys: [
 					  "id",
-					  "entityIds"
+					  "biomoleculeIds"
 				  ]
 				  };
 				  var fuse = new Fuse(list, options); // "list" is the item array
@@ -37,8 +37,8 @@ export default {
 		}      
 	},
 	Biomarker: {
-		entities: async (biomarker) => {
-			return await Entity.find({_id: {$in: biomarker.entityIds}}).exec();
+		biomolecules: async (biomarker) => {
+			return await Biomolecule.find({_id: {$in: biomarker.biomoleculeIds}}).exec();
 		},
 		evidences: async (biomarker) => {
 			return await Evidence.find({biomarkerId: biomarker.id}).exec();

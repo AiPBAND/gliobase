@@ -5,9 +5,9 @@ const schema = new mongoose.Schema({
 		type: String,
 		validate: {
 			validator: function(v) {
-			  return /E([A-Z0-9]){6}/.test(v);
+			  return /M([A-Z0-9]){6}/.test(v);
 			},
-			message: props => `${props.value} is not a valid entity ID of the form E-XXXXXX.`
+			message: props => `${props.value} is not a valid biomolecule ID of the form M-XXXXXX.`
 		  }
 	},
 	name: {
@@ -37,4 +37,4 @@ schema.index({
 	description: "text"
 })
 
-export default mongoose.model("Entity", schema);
+export default mongoose.model("Biomolecule", schema);

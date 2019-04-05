@@ -1,5 +1,5 @@
 query searchTerms($text: String){
-	entitiesSearch(text: $text) {
+	biomoleculesSearch(text: $text) {
 		id
 		name
 		shortName
@@ -12,8 +12,8 @@ query searchTerms($text: String){
 	},
 	biomarkerSearch(text: $text) {
 		id
-		entityIds
-		entities {
+		biomoleculeIds
+		biomolecules {
 			id
 			name
 			shortName
@@ -27,8 +27,8 @@ query searchTerms($text: String){
 		id
 		biomarkerId
 		biomarker {
-			entityIds
-			entities {
+			biomoleculeIds
+			biomolecules {
 				id
 				name
 				shortName

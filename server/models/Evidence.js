@@ -5,9 +5,9 @@ const schema = new mongoose.Schema({
 		type: String,
 		validate: {
 			validator: function(v) {
-			  return /V([A-Z0-9]){6}/.test(v);
+			  return /E([A-Z0-9]){6}/.test(v);
 			},
-			message: props => `${props.value} is not a valid evidence ID of the form VXXXXXX.`
+			message: props => `${props.value} is not a valid evidence ID of the form EXXXXXX.`
 		  }
 	},
 	biomarkerId: {
