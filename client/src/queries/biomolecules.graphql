@@ -1,5 +1,5 @@
 {
-	entities {
+	biomolecules {
 		id
 		name
 		shortName

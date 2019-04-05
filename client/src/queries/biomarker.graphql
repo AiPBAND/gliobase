@@ -1,8 +1,8 @@
 query Biomarker($id: String!){
 	biomarker(id: $id){
 		id
-		entityIds
-		entities {
+		biomoleculeIds
+		biomolecules {
 			id
 			name
 			shortName
@@ -13,8 +13,8 @@ query Biomarker($id: String!){
 		evidences {
 			id
 			biomarker {
-				entityIds
-				entities{
+				biomoleculeIds
+				biomolecules{
 					id
 					name
 					shortName

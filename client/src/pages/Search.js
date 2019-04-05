@@ -3,11 +3,11 @@ import { Input, AutoComplete, Divider } from 'antd';
 import { loader } from 'graphql.macro';
 import { ApolloConsumer } from 'react-apollo';
 import './Search.css'
-import Entities from '../components/tables/Entities';
+import Biomolecules from '../components/tables/Biomolecules';
 import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 
-const entitiesQuery = loader('../queries/searchTerms.graphql');
+const biomoleculesQuery = loader('../queries/searchTerms.graphql');
 
 const Option = AutoComplete.Option;
 const OptGroup = AutoComplete.OptGroup;
@@ -19,7 +19,7 @@ function renderTitle(title) {
 const processOptions = (options, value) => {
 	value = value?value:""
 
-	const entities = options.entitiesSearch.map(bm => (
+	const biomolecules = options.biomoleculesSearch.map(bm => (
 		<Option key={bm.id} value={bm.id}>
         	{bm.name}
         	<span className="certain-search-item-count">{bm.id}</span>
@@ -27,7 +27,7 @@ const processOptions = (options, value) => {
 	))
 	const biomarkers = options.biomarkerSearch.map(bms => (
 		<Option key={bms.id} value={bms.id}>
-        	{bms.entities.map(en => en.shortName).join(" ")}
+        	{bms.biomolecules.map(en => en.shortName).join(" ")}
         	<span className="certain-search-item-count">{bms.id}</span>
       	</Option>
 	))
@@ -37,12 +37,12 @@ const processOptions = (options, value) => {
         	<span className="certain-search-item-count">{e.biomarkerId}</span>
       	</Option>
 	))
-	entities.length = Math.min(entities.length, 5)
+	biomolecules.length = Math.min(biomolecules.length, 5)
 	biomarkers.length = Math.min(biomarkers.length, 5)
 	evidences.length = Math.min(evidences.length, 5)
 	return [
-		<OptGroup key="entities" label={renderTitle("Entities")}>
-			{entities}
+		<OptGroup key="biomolecules" label={renderTitle("Biomolecules")}>
+			{biomolecules}
 		</OptGroup>,
 		<OptGroup key="biomarkers" label={renderTitle("Biomarkers")}>
 			{biomarkers}
@@ -57,7 +57,7 @@ class Search extends Component {
 	state = {
 		data: [],
 		raw: {
-			entitiesSearch: [],
+			biomoleculesSearch: [],
 			biomarkerSearch: [],
 			evidencesSearch: []
 		}
@@ -68,14 +68,14 @@ class Search extends Component {
 				{client => {
 					const fetchData = async (value) => {
 						const { data } = await client.query({
-							query: entitiesQuery,
+							query: biomoleculesQuery,
 							variables: value?{text: value}:null
 						});
 						this.setState(() => ({data: processOptions(data, value)}));
 					}
 					const fetchResult = async (value) => {
 						const { data } = await client.query({
-							query: entitiesQuery,
+							query: biomoleculesQuery,
 							variables: value?{text: value}:null
 						});
 						this.setState(() => ({raw: data}));
@@ -96,8 +96,8 @@ class Search extends Component {
 							optionLabelProp="value">
 							<Input/>
 						</AutoComplete>
-						<Divider orientation="left">Entities</Divider>
-						<Entities data={this.state.raw.entitiesSearch}/>
+						<Divider orientation="left">Biomolecules</Divider>
+						<Biomolecules data={this.state.raw.biomoleculesSearch}/>
 						<Divider orientation="left">Biomarkers</Divider>
 						<Biomarkers data={this.state.raw.biomarkerSearch}/>
 						<Divider orientation="left">Evidences</Divider>

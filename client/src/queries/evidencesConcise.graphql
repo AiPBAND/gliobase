@@ -3,8 +3,8 @@
 		id
 		biomarkerId
 		biomarker {
-			entityIds
-			entities {
+			biomoleculeIds
+			biomolecules {
 				id
 				name
 				shortName

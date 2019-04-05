@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Table from 'antd/lib/table';
 import BioID from '../tags/BioID';
-import EntityList from '../lists/EntityList';
+import BiomoleculeList from '../lists/BiomoleculeList';
 
 const columns = [{
 	title: 'ID',
@@ -9,14 +9,14 @@ const columns = [{
 	key: 'id',
 	width: 180,
 	render: id => (
-		<BioID id={id} name="Biomarker"/>
+		<BioID id={id} name=""/>
 	)
 },{
-	title: 'Entities',
-	dataIndex: 'entities',
-	key: 'entities',
-	render: (entities) => {
-		const listIds = entities.map(en => {
+	title: 'Biomolecules',
+	dataIndex: 'biomolecules',
+	key: 'biomolecules',
+	render: (biomolecules) => {
+		const listIds = biomolecules.map(en => {
 			return <BioID id={en.id} name={en.shortName} key={en.id}></BioID>;
 		})
 		if(listIds.length > 15) {
@@ -34,7 +34,7 @@ const columns = [{
 }];
   
 const expanded = (record) => {
-	return <EntityList data={record.entities}></EntityList>
+	return <BiomoleculeList data={record.biomolecules}></BiomoleculeList>
 }
 
 class Biomarkers extends Component {

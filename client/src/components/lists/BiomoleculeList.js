@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import { List } from 'antd';
 import BioID from '../tags/BioID';
 import Category from '../tags/Category';
-import './EntityList.css';
+import './BiomoleculeList.css';
 
-class EntityList extends Component {
+class BiomoleculeList extends Component {
 	render() {
 		return <List
 			bordered
@@ -19,4 +19,4 @@ class EntityList extends Component {
 		/>;
 	}
 }
-export default EntityList
+export default BiomoleculeList

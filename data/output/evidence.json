@@ -1,8 +1,8 @@
 [
     {
-        "_id": "V000001",
+        "_id": "E000001",
         "pmid": 30311408,
-        "biomarkerId": "B000000",
+        "biomarkerId": "K000000",
         "sourceIds": [
             "Tissue"
         ],
@@ -77,9 +77,9 @@
         "comments": null
     },
     {
-        "_id": "V000002",
+        "_id": "E000002",
         "pmid": 30290990,
-        "biomarkerId": "B000001",
+        "biomarkerId": "K000001",
         "sourceIds": [
             "Tissue"
         ],
@@ -144,9 +144,9 @@
         "comments": null
     },
     {
-        "_id": "V000003",
+        "_id": "E000003",
         "pmid": 30279739,
-        "biomarkerId": "B000002",
+        "biomarkerId": "K000002",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -233,9 +233,9 @@
         "comments": null
     },
     {
-        "_id": "V000004",
+        "_id": "E000004",
         "pmid": 30277538,
-        "biomarkerId": "B000003",
+        "biomarkerId": "K000003",
         "sourceIds": [
             "Tissue"
         ],
@@ -304,9 +304,9 @@
         "comments": null
     },
     {
-        "_id": "V000005",
+        "_id": "E000005",
         "pmid": 30181543,
-        "biomarkerId": "B000004",
+        "biomarkerId": "K000004",
         "sourceIds": [
             "Tissue"
         ],
@@ -374,9 +374,9 @@
         "comments": null
     },
     {
-        "_id": "V000006",
+        "_id": "E000006",
         "pmid": 30146921,
-        "biomarkerId": "B000005",
+        "biomarkerId": "K000005",
         "sourceIds": [
             "Tissue"
         ],
@@ -444,9 +444,9 @@
         "comments": null
     },
     {
-        "_id": "V000007",
+        "_id": "E000007",
         "pmid": 30132538,
-        "biomarkerId": "B000006",
+        "biomarkerId": "K000006",
         "sourceIds": [
             "Tissue"
         ],
@@ -509,9 +509,9 @@
         "comments": null
     },
     {
-        "_id": "V000008",
+        "_id": "E000008",
         "pmid": 30132538,
-        "biomarkerId": "B000007",
+        "biomarkerId": "K000007",
         "sourceIds": [
             "Tissue"
         ],
@@ -574,9 +574,9 @@
         "comments": null
     },
     {
-        "_id": "V000009",
+        "_id": "E000009",
         "pmid": 30132538,
-        "biomarkerId": "B000008",
+        "biomarkerId": "K000008",
         "sourceIds": [
             "Tissue"
         ],
@@ -639,9 +639,9 @@
         "comments": null
     },
     {
-        "_id": "V00000A",
+        "_id": "E00000A",
         "pmid": 30132538,
-        "biomarkerId": "B000009",
+        "biomarkerId": "K000009",
         "sourceIds": [
             "Tissue"
         ],
@@ -704,9 +704,9 @@
         "comments": null
     },
     {
-        "_id": "V00000B",
+        "_id": "E00000B",
         "pmid": 30132538,
-        "biomarkerId": "B00000A",
+        "biomarkerId": "K00000A",
         "sourceIds": [
             "Tissue"
         ],
@@ -769,9 +769,9 @@
         "comments": null
     },
     {
-        "_id": "V00000C",
+        "_id": "E00000C",
         "pmid": 30132538,
-        "biomarkerId": "B00000B",
+        "biomarkerId": "K00000B",
         "sourceIds": [
             "Tissue"
         ],
@@ -834,9 +834,9 @@
         "comments": null
     },
     {
-        "_id": "V00000D",
+        "_id": "E00000D",
         "pmid": 30132538,
-        "biomarkerId": "B00000C",
+        "biomarkerId": "K00000C",
         "sourceIds": [
             "Tissue"
         ],
@@ -899,9 +899,9 @@
         "comments": null
     },
     {
-        "_id": "V00000E",
+        "_id": "E00000E",
         "pmid": 30129426,
-        "biomarkerId": "B00000D",
+        "biomarkerId": "K00000D",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -964,9 +964,9 @@
         "comments": null
     },
     {
-        "_id": "V00000F",
+        "_id": "E00000F",
         "pmid": 30129426,
-        "biomarkerId": "B00000E",
+        "biomarkerId": "K00000E",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1029,9 +1029,9 @@
         "comments": null
     },
     {
-        "_id": "V000010",
+        "_id": "E000010",
         "pmid": 30096248,
-        "biomarkerId": "B00000F",
+        "biomarkerId": "K00000F",
         "sourceIds": [
             "Tissue"
         ],
@@ -1100,9 +1100,9 @@
         "comments": null
     },
     {
-        "_id": "V000011",
+        "_id": "E000011",
         "pmid": 30080989,
-        "biomarkerId": "B000010",
+        "biomarkerId": "K000010",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1177,9 +1177,9 @@
         "comments": null
     },
     {
-        "_id": "V000012",
+        "_id": "E000012",
         "pmid": 30069164,
-        "biomarkerId": "B000011",
+        "biomarkerId": "K000011",
         "sourceIds": [
             "Tissue"
         ],
@@ -1246,9 +1246,9 @@
         "comments": null
     },
     {
-        "_id": "V000013",
+        "_id": "E000013",
         "pmid": 30053126,
-        "biomarkerId": "B000012",
+        "biomarkerId": "K000012",
         "sourceIds": [
             "Tissue"
         ],
@@ -1314,9 +1314,9 @@
         "comments": null
     },
     {
-        "_id": "V000014",
+        "_id": "E000014",
         "pmid": 30053126,
-        "biomarkerId": "B000013",
+        "biomarkerId": "K000013",
         "sourceIds": [
             "Tissue"
         ],
@@ -1382,9 +1382,9 @@
         "comments": null
     },
     {
-        "_id": "V000015",
+        "_id": "E000015",
         "pmid": 30053126,
-        "biomarkerId": "B000014",
+        "biomarkerId": "K000014",
         "sourceIds": [
             "Tissue"
         ],
@@ -1450,9 +1450,9 @@
         "comments": null
     },
     {
-        "_id": "V000016",
+        "_id": "E000016",
         "pmid": 30038102,
-        "biomarkerId": "B000003",
+        "biomarkerId": "K000003",
         "sourceIds": [
             "Tissue"
         ],
@@ -1520,9 +1520,9 @@
         "comments": null
     },
     {
-        "_id": "V000017",
+        "_id": "E000017",
         "pmid": 30015879,
-        "biomarkerId": "B000015",
+        "biomarkerId": "K000015",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1602,9 +1602,9 @@
         "comments": null
     },
     {
-        "_id": "V000018",
+        "_id": "E000018",
         "pmid": 30009411,
-        "biomarkerId": "B000016",
+        "biomarkerId": "K000016",
         "sourceIds": [
             "Tissue"
         ],
@@ -1680,9 +1680,9 @@
         "comments": null
     },
     {
-        "_id": "V000019",
+        "_id": "E000019",
         "pmid": 29995176,
-        "biomarkerId": "B000017",
+        "biomarkerId": "K000017",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1758,9 +1758,9 @@
         "comments": null
     },
     {
-        "_id": "V00001A",
+        "_id": "E00001A",
         "pmid": 29991527,
-        "biomarkerId": "B000018",
+        "biomarkerId": "K000018",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -1836,9 +1836,9 @@
         "comments": null
     },
     {
-        "_id": "V00001B",
+        "_id": "E00001B",
         "pmid": 29991124,
-        "biomarkerId": "B000019",
+        "biomarkerId": "K000019",
         "sourceIds": [
             "Tissue"
         ],
@@ -1916,9 +1916,9 @@
         "comments": null
     },
     {
-        "_id": "V00001C",
+        "_id": "E00001C",
         "pmid": 29984907,
-        "biomarkerId": "B00001A",
+        "biomarkerId": "K00001A",
         "sourceIds": [
             "Tissue",
             "Imaging"
@@ -1990,9 +1990,9 @@
         "comments": null
     },
     {
-        "_id": "V00001D",
+        "_id": "E00001D",
         "pmid": 29984907,
-        "biomarkerId": "B000003",
+        "biomarkerId": "K000003",
         "sourceIds": [
             "Tissue",
             "Imaging"
@@ -2064,9 +2064,9 @@
         "comments": null
     },
     {
-        "_id": "V00001E",
+        "_id": "E00001E",
         "pmid": 29966699,
-        "biomarkerId": "B00001B",
+        "biomarkerId": "K00001B",
         "sourceIds": [
             "Tissue"
         ],
@@ -2143,9 +2143,9 @@
         "comments": null
     },
     {
-        "_id": "V00001F",
+        "_id": "E00001F",
         "pmid": 29966699,
-        "biomarkerId": "B00001C",
+        "biomarkerId": "K00001C",
         "sourceIds": [
             "Tissue"
         ],
@@ -2222,9 +2222,9 @@
         "comments": null
     },
     {
-        "_id": "V000020",
+        "_id": "E000020",
         "pmid": 29959764,
-        "biomarkerId": "B00001D",
+        "biomarkerId": "K00001D",
         "sourceIds": [
             "Tissue"
         ],
@@ -2288,9 +2288,9 @@
         "comments": "Potential"
     },
     {
-        "_id": "V000021",
+        "_id": "E000021",
         "pmid": 29952031,
-        "biomarkerId": "B00001E",
+        "biomarkerId": "K00001E",
         "sourceIds": [
             "Tissue"
         ],
@@ -2357,9 +2357,9 @@
         "comments": null
     },
     {
-        "_id": "V000022",
+        "_id": "E000022",
         "pmid": 29914265,
-        "biomarkerId": "B00001F",
+        "biomarkerId": "K00001F",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2430,9 +2430,9 @@
         "comments": null
     },
     {
-        "_id": "V000023",
+        "_id": "E000023",
         "pmid": 29901177,
-        "biomarkerId": "B000020",
+        "biomarkerId": "K000020",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2494,9 +2494,9 @@
         "comments": null
     },
     {
-        "_id": "V000024",
+        "_id": "E000024",
         "pmid": 29782850,
-        "biomarkerId": "B000021",
+        "biomarkerId": "K000021",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2570,9 +2570,9 @@
         "comments": null
     },
     {
-        "_id": "V000025",
+        "_id": "E000025",
         "pmid": 29781781,
-        "biomarkerId": "B000022",
+        "biomarkerId": "K000022",
         "sourceIds": [
             "Tissue"
         ],
@@ -2641,9 +2641,9 @@
         "comments": null
     },
     {
-        "_id": "V000026",
+        "_id": "E000026",
         "pmid": 29753008,
-        "biomarkerId": "B000023",
+        "biomarkerId": "K000023",
         "sourceIds": [
             "Tissue"
         ],
@@ -2710,9 +2710,9 @@
         "comments": null
     },
     {
-        "_id": "V000027",
+        "_id": "E000027",
         "pmid": 29733521,
-        "biomarkerId": "B000024",
+        "biomarkerId": "K000024",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2797,9 +2797,9 @@
         "comments": "Potential"
     },
     {
-        "_id": "V000028",
+        "_id": "E000028",
         "pmid": 29733521,
-        "biomarkerId": "B000025",
+        "biomarkerId": "K000025",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -2884,9 +2884,9 @@
         "comments": null
     },
     {
-        "_id": "V000029",
+        "_id": "E000029",
         "pmid": 29731893,
-        "biomarkerId": "B000026",
+        "biomarkerId": "K000026",
         "sourceIds": [
             "Tissue"
         ],
@@ -2954,9 +2954,9 @@
         "comments": null
     },
     {
-        "_id": "V00002A",
+        "_id": "E00002A",
         "pmid": 29721393,
-        "biomarkerId": "B000027",
+        "biomarkerId": "K000027",
         "sourceIds": [
             "Tissue"
         ],
@@ -3026,9 +3026,9 @@
         "comments": null
     },
     {
-        "_id": "V00002B",
+        "_id": "E00002B",
         "pmid": 29720725,
-        "biomarkerId": "B000028",
+        "biomarkerId": "K000028",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3109,9 +3109,9 @@
         "comments": null
     },
     {
-        "_id": "V00002C",
+        "_id": "E00002C",
         "pmid": 29662659,
-        "biomarkerId": "B000029",
+        "biomarkerId": "K000029",
         "sourceIds": [
             "Tissue"
         ],
@@ -3185,9 +3185,9 @@
         "comments": null
     },
     {
-        "_id": "V00002D",
+        "_id": "E00002D",
         "pmid": 29662659,
-        "biomarkerId": "B00002A",
+        "biomarkerId": "K00002A",
         "sourceIds": [
             "Tissue"
         ],
@@ -3261,9 +3261,9 @@
         "comments": null
     },
     {
-        "_id": "V00002E",
+        "_id": "E00002E",
         "pmid": 29644003,
-        "biomarkerId": "B00002B",
+        "biomarkerId": "K00002B",
         "sourceIds": [
             "Cell line",
             "Tissue"
@@ -3341,9 +3341,9 @@
         "comments": null
     },
     {
-        "_id": "V00002F",
+        "_id": "E00002F",
         "pmid": 29642484,
-        "biomarkerId": "B00002C",
+        "biomarkerId": "K00002C",
         "sourceIds": [
             "Tissue"
         ],
@@ -3412,9 +3412,9 @@
         "comments": null
     },
     {
-        "_id": "V000030",
+        "_id": "E000030",
         "pmid": 29642043,
-        "biomarkerId": "B00002D",
+        "biomarkerId": "K00002D",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3490,9 +3490,9 @@
         "comments": null
     },
     {
-        "_id": "V000031",
+        "_id": "E000031",
         "pmid": 29631594,
-        "biomarkerId": "B00002E",
+        "biomarkerId": "K00002E",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3568,9 +3568,9 @@
         "comments": null
     },
     {
-        "_id": "V000032",
+        "_id": "E000032",
         "pmid": 29625108,
-        "biomarkerId": "B00002F",
+        "biomarkerId": "K00002F",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3641,9 +3641,9 @@
         "comments": null
     },
     {
-        "_id": "V000033",
+        "_id": "E000033",
         "pmid": 29614978,
-        "biomarkerId": "B000030",
+        "biomarkerId": "K000030",
         "sourceIds": [
             "Tissue"
         ],
@@ -3709,9 +3709,9 @@
         "comments": null
     },
     {
-        "_id": "V000034",
+        "_id": "E000034",
         "pmid": 29605294,
-        "biomarkerId": "B000031",
+        "biomarkerId": "K000031",
         "sourceIds": [
             "Tissue",
             "Cell line"
@@ -3790,9 +3790,9 @@
         "comments": "Potential"
     },
     {
-        "_id": "V000035",
+        "_id": "E000035",
         "pmid": 29550762,
-        "biomarkerId": "B000032",
+        "biomarkerId": "K000032",
         "sourceIds": [
             "Tissue"
         ],
@@ -3863,9 +3863,9 @@
         "comments": null
     },
     {
-        "_id": "V000036",
+        "_id": "E000036",
         "pmid": 29523123,
-        "biomarkerId": "B000033",
+        "biomarkerId": "K000033",
         "sourceIds": [
             "Tissue"
         ],

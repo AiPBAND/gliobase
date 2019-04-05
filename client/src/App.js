@@ -9,7 +9,7 @@ import Profile from './pages/user/Profile';
 import Settings from './pages/user/Settings';
 import Login from './pages/user/Login';
 import MainLayout from './layouts/MainLayout';
-import Entity from './pages/schemas/Entity';
+import Biomolecule from './pages/schemas/Biomolecule';
 import Evidence from './pages/schemas/Evidence';
 import Biomarker from './pages/schemas/Biomarker';
 import NotFound from './NotFound';
@@ -29,7 +29,7 @@ class App extends Component {
             <Route path="/exploration" component={Exploration} />
             <Route path="/profile" component={Profile} />
             <Route path="/settings" component={Settings} />
-            <Route path="/entity/:id" component={Entity} />
+            <Route path="/biomolecule/:id" component={Biomolecule} />
 			<Route path="/evidence/:id" component={Evidence} />
 			<Route path="/biomarker/:id" component={Biomarker} />
 			<Route path="/notfound" component={NotFound} />

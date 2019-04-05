@@ -1,4 +1,4 @@
-type Entity {
+type Biomolecule {
 	id: String!
     name: String!
 	shortName: String!

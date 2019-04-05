@@ -1,15 +1,15 @@
-# import Entity from "./Entity.graphql";
+# import Biomolecule from "./Biomolecule.graphql";
 # import Biomarker from "./Biomarker.graphql";
 # import Source from "./Source.graphql";
 # import Category from "./Category.graphql";
 # import Evidence from "./Evidence.graphql";
 
 type Query {
-    entity(id: String!): Entity
-    entities: [Entity]
-	entitiesBySource(source: String!): [Entity]
-	entitiesByCategory(category: String!): [Entity]
-	entitiesSearch(text: String): [Entity]
+    biomolecule(id: String!): Biomolecule
+    biomolecules: [Biomolecule]
+	biomoleculesBySource(source: String!): [Biomolecule]
+	biomoleculesByCategory(category: String!): [Biomolecule]
+	biomoleculesSearch(text: String): [Biomolecule]
 
 	biomarker(id: String!): Biomarker
 	biomarkers: [Biomarker]

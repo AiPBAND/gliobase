@@ -4,7 +4,7 @@ import random
 import lorem
 
 evidencesFile = "data/evidences.tsv"
-entitiesFile = "data/entities.tsv"
+biomoleculesFile = "data/biomolecules.tsv"
 sourcesFile = "data/sources.tsv"
 categoriesFile = "data/categories.tsv"
 output = "data/output/"
@@ -12,7 +12,7 @@ output = "data/output/"
 seed = []
 
 evidencesDf = pd.read_csv(evidencesFile, delimiter='\t',encoding='utf-8')
-entitiesDf = pd.read_csv(entitiesFile, delimiter='\t',encoding='utf-8')
+biomoleculesDf = pd.read_csv(biomoleculesFile, delimiter='\t',encoding='utf-8')
 sourcesDf = pd.read_csv(sourcesFile, delimiter='\t',encoding='utf-8')
 categoriesDf = pd.read_csv(categoriesFile, delimiter='\t',encoding='utf-8')
 
@@ -86,20 +86,20 @@ seed.append({
 	"documents": categoriesList
 })
 
-# Entities ***************************************************************************************
-entitiesList = []
-entitiesDict = {}
-for i, item in entitiesDf.iterrows():
-	hexid = "E"+hex(int(item['id'])).split('x')[-1].upper().zfill(6)
+# Biomolecules ***************************************************************************************
+biomoleculesList = []
+biomoleculesDict = {}
+for i, item in biomoleculesDf.iterrows():
+	hexid = "M"+hex(int(item['id'])).split('x')[-1].upper().zfill(6)
 	abb = item['abb'].strip()
 	cat = item['category'].strip()
-	if abb in entitiesDict:
-		print("Repeated entity abreviation: {}".format(abb))
+	if abb in biomoleculesDict:
+		print("Repeated biomolecule abreviation: {}".format(abb))
 	elif cat not in categoriesDict:
-		print("Invalid category: {0}, for entity {1}".format(cat, abb))
+		print("Invalid category: {0}, for biomolecule {1}".format(cat, abb))
 	else:
-		entitiesDict[abb] = hexid
-		entitiesList.append({
+		biomoleculesDict[abb] = hexid
+		biomoleculesList.append({
 			"_id": hexid,
 			"name": item['name'].strip(),
 			"shortName": abb,
@@ -107,10 +107,10 @@ for i, item in entitiesDf.iterrows():
 			"categoryId": cat,
 			"description": lorem.paragraph()
 		})
-writeJsonArray(entitiesList, output+"entities.json")
+writeJsonArray(biomoleculesList, output+"biomolecules.json")
 seed.append({
-	"model": "Entity",
-	"documents": entitiesList
+	"model": "Biomolecule",
+	"documents": biomoleculesList
 })
 
 # Biomarkers ***********************************************************************************
@@ -124,20 +124,20 @@ def allIn(a, b):
 biomarkerList = []
 biomarkerDict = {}
 for item in extractSets(evidencesDf['biomarker']):
-	if allIn(item, entitiesDict):
+	if allIn(item, biomoleculesDict):
 		s = []
 		for i in item:
-			s.append(entitiesDict[i])
+			s.append(biomoleculesDict[i])
 		s = tuple(s)
 		if s not in biomarkerDict:
-			hexid = "B"+hex(len(biomarkerList)).split('x')[-1].upper().zfill(6)
+			hexid = "K"+hex(len(biomarkerList)).split('x')[-1].upper().zfill(6)
 			biomarkerDict[s] = hexid
 			biomarkerList.append({
 				"_id": hexid,
-				"entityIds": s
+				"biomoleculeIds": s
 			})
 	else:
-		print("Entity not found for biomarker: {}".format(item))
+		print("Biomolecule not found for biomarker: {}".format(item))
 writeJsonArray(biomarkerList, output+"biomarkers.json")
 seed.append({
 	"model": "Biomarker",
@@ -154,8 +154,8 @@ def strNan(num):
 	return num if not pd.isna(num) else None
 
 for i, item in evidencesDf.iterrows():
-	hexid = "V"+hex(int(item['id'])).split('x')[-1].upper().zfill(6)
-	bids = tuple(entitiesDict[x] for x in sortedSet(item["biomarker"]))
+	hexid = "E"+hex(int(item['id'])).split('x')[-1].upper().zfill(6)
+	bids = tuple(biomoleculesDict[x] for x in sortedSet(item["biomarker"]))
 	sources = stripSplit(item["source"])
 	if allIn(sources, sourcesDict):
 		evidenceList.append({

@@ -3,15 +3,15 @@ import './BioID.css';
 class BioID extends Component {
 	render() {
         function refLink(ref) {
-			if (ref.charAt(0) === "E") return "entity";
-			if (ref.charAt(0) === "V") return "evidence";
-			if (ref.charAt(0) === "B") return "biomarker";
+			if (ref.charAt(0) === "M") return "biomolecule";
+			if (ref.charAt(0) === "E") return "evidence";
+			if (ref.charAt(0) === "K") return "biomarker";
 			else return "notfound";
 		}
 		function getColor(name) {
-			if (name.charAt(0) === "E") return " entity-id";
-			if (name.charAt(0) === "V") return " evidence-id";
-			if (name.charAt(0) === "B") return " biomarker-id";
+			if (name.charAt(0) === "M") return " biomolecule-id";
+			if (name.charAt(0) === "E") return " evidence-id";
+			if (name.charAt(0) === "K") return " biomarker-id";
 			else return "";
 		}
 		function drag(ev) {

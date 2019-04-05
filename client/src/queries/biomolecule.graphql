@@ -1,5 +1,5 @@
-query Entity($id: String!){
-	entity(id: $id){
+query Biomolecule($id: String!){
+	biomolecule(id: $id){
 		id
 		name
 		shortName
@@ -11,8 +11,8 @@ query Entity($id: String!){
 		}
 		biomarkers {
 			id
-			entityIds
-			entities {
+			biomoleculeIds
+			biomolecules {
 				id
 				name
 				shortName

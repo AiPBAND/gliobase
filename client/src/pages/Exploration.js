@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Tabs, Icon, Skeleton, Spin, Row, Col, Card, Select } from 'antd';
 import { Query } from 'react-apollo';
 import { loader } from 'graphql.macro';
-import Entities from '../components/tables/Entities';
+import Biomolecules from '../components/tables/Biomolecules';
 import Biomarkers from '../components/tables/Biomarkers';
 import Evidences from '../components/tables/Evidences';
 import PieChart from '../components/charts/PieChart';
@@ -14,7 +14,7 @@ import './Exploration.css'
 
 const Option = Select.Option;
 
-const entitiesQuery = loader('../queries/entities.graphql');
+const biomoleculesQuery = loader('../queries/biomolecules.graphql');
 const biomarkersQuery = loader('../queries/biomarkers.graphql');
 const evidencesQuery = loader('../queries/evidencesConcise.graphql');
 
@@ -192,9 +192,9 @@ class Exploration extends Component {
           </Query>
         </TabPane>
         
-        <TabPane tab={<span><Icon type="experiment" />Entities</span>} key="3">
-          <Query query={entitiesQuery}>
-            {({ loading, error, data: entityData }) => {
+        <TabPane tab={<span><Icon type="experiment" />Biomolecules</span>} key="3">
+          <Query query={biomoleculesQuery}>
+            {({ loading, error, data: biomoleculeData }) => {
               if (loading) return (
                 <div className='exploration-loading'>
                   <Spin size="large" />
@@ -202,14 +202,14 @@ class Exploration extends Component {
                 </div>
               );
               if (error) return <p>Error</p>;
-              const entityCategory = entityData.entities.map(el => el.category.id);
-              const entityCategoryChart = ShapeDataForCharts(entityCategory, 1);
+              const biomoleculeCategory = biomoleculeData.biomolecules.map(el => el.category.id);
+              const biomoleculeCategoryChart = ShapeDataForCharts(biomoleculeCategory, 1);
               return (
                 <div className='exploration-statistics'>
                   <Card>
-                    <PieChart data={entityCategoryChart} intervalWidth={2} colorSet={categoryColorSet} chartTitle={"Category"}/>  
+                    <PieChart data={biomoleculeCategoryChart} intervalWidth={2} colorSet={categoryColorSet} chartTitle={"Category"}/>  
                   </Card>    
-                  <Entities data={entityData.entities}/> 
+                  <Biomolecules data={biomoleculeData.biomolecules}/> 
                 </div>
               );
             }}
